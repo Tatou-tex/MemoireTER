@@ -90,23 +90,20 @@ plainpages = false}
 \usepackage{ntheorem}
 \theoremstyle{break}
 {\theorembodyfont{\upshape}
-\newtheorem{exo}{Exercice}}
-\newshadetheorem{thm}{Th\'eor\`eme}[chapter]
-\newshadetheorem{df}{D\'efinition}
-%\newtheorem{df}{D\'efinition}
+\newtheorem{exo}{Exercice}
 \newtheorem*{rmq}{Remarque :}
-\newtheorem*{dem}{D\'emonstration :}
 \newtheorem*{prv}{Preuve :}
 \newtheorem*{ex}{Exemples :}
-\newtheorem*{nota}{Notation :}
+\newtheorem{exe}{Exemple : }
+\newtheorem*{nota}{Notation :}}
+\newshadetheorem{thm}{Th\'eor\`eme}[chapter]
+\newshadetheorem{df}{D\'efinition}
+\newtheorem*{dem}{D\'emonstration :}
 \newshadetheorem{prop}{Proposition}[chapter]
 \newshadetheorem{propr}{Propri\'et\'e}[chapter]
 \newshadetheorem{lem}{Lemme}[chapter]
 \newshadetheorem{cor}{Corollaire}[chapter]
-\newtheorem{exe}{Exercice : }
-\newtheorem*{cc}{Conclusion}
-\newtheorem*{pblm}{Probl\'ematique}
-%\newshadetheorem{pblm}{Probl\'ematique}
+
 %---PAGE-DE-GARDE--------------------------------------------------------------
 
 \begin{Large}
@@ -178,7 +175,7 @@ est une algèbre de Lie, on la note $\gl(V)$.
 
 \subsection{Algèbre linéaire de Lie}
 
-\quad Considérons $V$ un espace vectoriel de dimension $n$. Nous allons approfondir l'exemple $\gl(V)$, en étudiant certains de ses sous-algèbres de Lie. Nous pouvons identifier $\gl(V)$  avec l'ensemble des matrices $n \times n$ sur $\KK$ que nous notons $\gl(n,\KK)$. Cette procédure est pratique, surtout pour les calculs explicites. Comme pour le calcul de la dimension de $\gl(V)$ :
+\quad Considérons $V$ un espace vectoriel de dimension $n$. Nous allons approfondir l'exemple $\gl(V)$, en étudiant certaines de ses sous-algèbres de Lie. Nous pouvons identifier $\gl(V)$  avec l'ensemble des matrices $n \times n$ sur $\KK$ que nous notons $\gl(n,\KK)$. Cette procédure est pratique, surtout pour les calculs explicites. Comme pour le calcul de la dimension de $\gl(V)$ :
 \begin{center}
 $dim$ $\gl(V)= dim$ $M_{n}(\KK) = n^{2}$
 \end{center}
