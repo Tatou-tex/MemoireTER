@@ -90,7 +90,6 @@ plainpages = false}
 \usepackage{ntheorem}
 \theoremstyle{break}
 {\theorembodyfont{\upshape}
-\newtheorem{exo}{Exercice}
 \newtheorem*{rmq}{Remarque :}
 \newtheorem*{prv}{Preuve :}
 \newtheorem*{ex}{Exemples :}
@@ -107,7 +106,7 @@ plainpages = false}
 %---PAGE-DE-GARDE--------------------------------------------------------------
 
 \begin{Large}
-\title{\textbf{\bf \scalebox{1.5} {Algèbre de Lie Semisimple}}}
+\title{\textbf{\bf \scalebox{1.5} {Sur les Algèbres de Lie Semisimples}}}
 \author{\shadowbox{\bf Cassandre SAIZ et Ezzahra ZLIGUI SAILLIER} \\ \shadowbox{\bf Encadrée par Stéphane BASEILHAC}}
 \end{Large}
 
@@ -157,7 +156,7 @@ $[x,[y,z]]+[y,[z,x]]+[z,[x,y]]=0$, $\forall x,y,z \in L$.
 
 \begin{ex}
 \begin{enumerate}
-\item Tout espace vectoriel muni du crochet nul, i.e . $[x,y]=0$, $\forall x,y \in L $, est une algèbre de Lie. Elle est appelée algèbre $\textbf{abélienne} $ ou $\textbf{commutatif}$.
+\item Tout espace vectoriel muni du crochet nul, i.e . $[x,y]=0$, $\forall x,y \in L $, est une algèbre de Lie. Elle est appelée algèbre $\textbf{abélienne} $ ou $\textbf{commutative}$.
 
 \item Si $V$ est un $\KK$-espace vectoriel,  alors $(End(V),+,\circ)$ muni du crochet : 
 \begin{center}
@@ -193,29 +192,29 @@ $ \delta_{ij} = \left \{
 \end{center}
 \quad Toute sous-algèbre de Lie de $\gl(V)$ est appelée \emph{\textbf{algèbre linéaire de Lie}}. Nous allons voir 4 exemples importants  $A_{\ell}, B_{\ell}, C_{\ell}, D_{\ell}$.\\
 \\
-$ A_{\ell} $ : dans ce cas \textbf{$dim$ $V= \ell +1$}, nous noterons $\ssl(V)$ ou $\ssl(\ell+1,\KK)$ l'ensemble des endomorphismes de $V$ dont la trace est nulle.
+$ A_{\ell} $ : Dans un premier temps regardons l'\emph{\textbf{algèbre linéaire spéciale}}. Dans ce cas \textbf{$dim$ $V= \ell +1$}. L'algèbre linéaire spéciale, notée $\ssl(V)$ ou $\ssl(\ell+1,\KK)$, est l'ensemble des endomorphismes de $V$ dont la trace est nulle.
 
-Rappelons que la trace d'une matrice est la somme de ses éléments diagonaux et qu'elle est indépendante du choix de la base. Comme nous pouvons identifier les matrice au endomorphisme, la trace a du sens pour les endomorphismes de $V$.
+Rappelons que la trace d'une matrice est la somme de ses éléments diagonaux et qu'elle est indépendante du choix de la base. Comme nous pouvons identifier les matrices aux endomorphismes, la trace a du sens pour les endomorphismes de $V$.
 
 Montrons que $\ssl(V)$ est bien une sous-algèbre de Lie. Comme $tr(xy)=tr(yx)$ et $tr(x+y)= tr(x) + tr(y)$ ,  pour tous $x,y  \in End(V)$ alors $tr([x,y])=tr(xy-yx)=tr(xy)-tr(yx)=0$, donc $[x,y] \in \ssl(V)$.
-D'où $\ssl(V)$ est bien une sous-algèbre de Lie, appelée l'\emph{\textbf{algèbre linéaire spéciale}}. % (en rapport avec le groupe linéaire spécial).
-Calculons la dimension de $\ssl(V)$:
+D'où $\ssl(V)$ est bien une sous-algèbre de Lie. % (en rapport avec le groupe linéaire spécial).
+Calculons la dimension de $\ssl(V)$, pour cela donnons une base de $\ssl(\ell+1,\KK)$:
 \begin{center}
 $\left \{
    \begin{array}{r c l}
 e_{ij }\quad 1\leq i \neq j \leq \ell \\
-e_{ii}-e_{i+1;i+1} \quad 1\leq i \leq \ell-1 .
+e_{ii}-e_{i+1,i+1} \quad 1\leq i \leq \ell
    \end{array}
    \right .$
-est une base de $\ssl(\ell+1,\KK)$.
 \end{center}
-Donc $dim$ $\ssl(V) = \ell^2-1$.
+Nous pouvons alors déduire $dim$ $\ssl(V) = (\ell + 1)^2 - (\ell + 1) + \ell = \ell^2+2\ell$.
+
 \quad Regardons le cas où $\ell=1$, c'est à dire $\ssl(2,\KK)$. Dans ce cas nous avons la base suivante:
 \begin{center}
 $ x=\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} $ ,\quad $ h=\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $, \quad $ z=\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} $
 \end{center}
 
-\quad Avant de commencer l'exemple $ C_{\ell} $, rappelons les définitions suivantes :
+Avant de commencer l'exemple $ C_{\ell} $, rappelons les définitions suivantes :
 
 \begin{df} 
 \quad Une \textbf{forme bilinéaire} $B$ d'un espace vectoriel $V$ sur $\KK$ est une application bilinéaire de $V\times V\to  \KK$. 
@@ -230,10 +229,10 @@ On dit que $B$ est :
 \end{df}
 
 \begin{rmq} 
-\quad Dans  les espaces vectoriels de dimension paire, si $B$ est une forme bilinéaire antisymétrique et non dégénérée, alors il existe une base dans laquelle, $[ B ]_\mathcal{B}=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} $.
+\quad Dans  les espaces vectoriels de dimension paire, si $B$ est une forme bilinéaire antisymétrique et non dégénérée, alors il existe une base $\mathcal{B}$ dans laquelle la matrice de $B$ est : $[ B ]_\mathcal{B}=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} $.
 \end{rmq}
 
-$ C_{\ell} $ : dans ce cas $dim$ $V=2 \ell$. Définisons l'\emph{\textbf{algébre sympléctique}}, notée $\ssp (2\ell,\KK)$, comme l'ensemble des endomorphismes $x \in \gl(V)$ qui satisfont $f(x(v),w)=-f(v,x(w))$ pour $f$ une forme bilinéaire antisymétrique non-dégénérée.
+$ C_{\ell} $ : Parlons maintenant de l'\emph{\textbf{algèbre symplèctique}}, dans ce cas $dim$ $V=2 \ell$. Lalgèbre symplètique est définie comme l'ensemble des endomorphismes $x \in \gl(V)$ qui satisfont $f(x(v),w)=-f(v,x(w))$ pour $f$ une forme bilinéaire \textit{antisymétrique} non-dégénérée. On la note $\ssp (2\ell,\KK)$.
 
 Montrons que $\ssp(2 \ell,\KK)$ est bien une sous-algèbre de $\gl(V)$. 
 Soit $ x,y \in \ssp (V) $:
@@ -248,7 +247,7 @@ En terme matriciel:
 
 $\ssp (2 \ell,\KK)= \left \{ x\in \gl(2\ell,\KK) \mid sx=-x^ts, \quad s=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} \right \}$.
 
-Cherchons maintenant une base de $\ssp(2 \ell,\KK)$, pour cela nous allons décrire de façon plus précise les matrices symplectiques.
+Cherchons maintenant une base de $\ssp(2 \ell,\KK)$, pour cela nous allons décrire de façon plus précise les matrices symplèctiques.
 
 Soit $ x=\begin{pmatrix} m & n \\ p & q \end{pmatrix}$ avec $m,n,p,q \in \gl(\ell, \KK)$. Après calcul nous trouvons le système suivant : 
 \[ \left\{
@@ -258,14 +257,16 @@ p^t & =p \\
  m^t & = -q
 \end{aligned}
 \right. \]
-\quad Il est alors facile de déduire des bases pour les espaces de $n$, $p$ et $q$, qui sont respectivement : 
+\quad Il est alors facile de déduire des bases pour les espaces de $n$, $p$ et $\begin{pmatrix}
+m & 0 \\ 0 & q \end{pmatrix}$ qui sont respectivement :
+\begin{center}
 $\left \{
    \begin{array}{r c l}
 e_{i,i+\ell}\quad & 1\leq i \leq \ell \\
 e_{i,j+\ell}+e_{j,i+\ell} & 1\leq i < j \leq \ell
    \end{array}
    \right  \}$
-, $\left \{
+,$\left \{
    \begin{array}{r c l}
 e_{i+\ell,i} &1\leq i \leq \ell \\
 e_{i+\ell,j}+e_{j+\ell,i} & 1\leq i < j \leq \ell
@@ -275,13 +276,14 @@ et $\left \{
    \begin{array}{r c l}
 e_{i,j}-e_{j+\ell,i+\ell} &1\leq i ,j \leq \ell
    \end{array}
-\right   \}$.\\
-\\
+\right   \}$.
+\end{center}
+
 Donc $dim$ $\ssp(2\ell,\KK) = 2\ell(\ell+1)/2+\ell^2 = 2\ell^2+1$.\\
 \\
-$ B_{\ell} $: dans ce cas $dim$ $V=2\ell+1$ et $car(\KK) \ne 2$. On nomme \emph{\textbf{algèbre orthogonale}} impair, notée  $\oo(2\ell+1,\KK)$, l'ensemble des $x \in \gl(V)$ tels que $f(x(v),w)=-f(v,x(w))$ pour $f$ une forme bilinéaire symétrique non-dégénérée.
+$ B_{\ell} $: On nomme \emph{\textbf{algèbre orthogonale}} impair, notée  $\oo(2\ell+1,\KK)$, l'ensemble des $x \in \gl(V)$ tels que $f(x(v),w)=-f(v,x(w))$ pour $f$ une forme bilinéaire \textit{symétrique} non-dégénérée, dans ce cas $dim$ $V=2\ell+1$ et $car(\KK) \ne 2$.
 
-On reprend la même idée que pour $ C_{l} $ :
+On reprend la même idée que pour $ C_{\ell} $ :
  
 $\oo(2\ell+1,\KK)= \left \{ x \in \gl(2\ell+1, \KK) \mid sx= -x^Ts,\quad s = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & I_\ell \\ 0 & I_\ell & 0 \end{pmatrix} \right \}$.
 
@@ -318,9 +320,9 @@ e_{i+\ell,j}-e_{j+\ell,i} & \quad 2 \leq i < j \leq \ell+1
 \right \} \]
 Alors $dim$ $\oo(2\ell+1,\KK)=2\ell^2+\ell$.\\
 \\
-$ D_{l} $ : dans ce cas $dim$ $V=2 \ell$ et $car(\KK) \ne 2$. On nomme l'\textbf{\emph{algèbre orthogonale}} pair, notée  $\oo (2\ell,\KK)$, l'ensemble $ \left \{ x \in \gl(2\ell+1, \KK) \mid sx= -x^Ts, \quad s =\begin{pmatrix} 0 & I_\ell \\ I_\ell & 0 \end{pmatrix} \right \}$.
+$ D_{l} $ : On nomme l'\textbf{\emph{algèbre orthogonale}} pair, notée  $\oo (2\ell,\KK)$, l'ensemble $ \left \{ x \in \gl(2\ell+1, \KK) \mid sx= -x^Ts, \quad s =\begin{pmatrix} 0 & I_\ell \\ I_\ell & 0 \end{pmatrix} \right \}$, dans ce cas $dim$ $V=2 \ell$ et $car(\KK) \ne 2$.
 
-Les calcules de bases et de dimensions se font de manière similaire à $B_{\ell}$. Nous donnerons donc le dimension de $\oo(2\ell,\KK)$ sans plus de précision, $dim$ $\oo(2\ell,\KK)=2\ell^2-\ell$.\\
+Les calculs de base et de dimension se font de manière similaire à $B_{\ell}$. Nous donnerons donc la dimension de $\oo(2\ell,\KK)$ sans plus de précision, $dim$ $\oo(2\ell,\KK)=2\ell^2-\ell$.\\
 \\
 \quad Nous pouvons aussi cité comme sous-algèbre de Lie de $\gl(V)$:
 \begin{itemize}
@@ -346,9 +348,9 @@ Une $\KK$-algèbre n'est pas nécessairement associative.
 \begin{enumerate}
 \item $A=End(V)$ \quad $x.y=x\circ y$.
 
-\item $A=L$ une algèbre de Lie avec $x. y= [x y]$.
+\item $A=L$ une algèbre de Lie avec $x. y= [x,y]$. C'est l'exemple principal d'algèbre non associative.
 
-\item $A=\gl(V)$, dans ce cas $A$ peut être une $\KK$-Algèbre avec deux manières différentes: avec $x. y= [x y]$ ou  $x.y=x\circ y$.
+\item $A=\gl(V)$, dans ce cas $A$ peut être une $\KK$-Algèbre avec deux manières différentes: avec $x. y= [x,y]$ ou  $x.y=x\circ y$.
 \end{enumerate}
 \end{ex}
 
@@ -370,7 +372,7 @@ De plus si $A$ est une algèbre de Lie, alors $Der(A)$ est une sous-algèbre de 
 a faire $\Box$
 \end{prv}
 
-\begin{ex}
+\begin{exe}
 %\begin{enumerate}
 %\item
 \quad Soit $L$ une algèbre de Lie. On appel \textbf{adjoint} de $x \in L$ l'application:
@@ -390,9 +392,12 @@ Ainsi $ad$ $x$ est bien une dérivation.
 %\item $L=\ssl(2,\CC)$ avec $\mathcal{B}= \left \{ e=\begin{pmatrix} 0 & 1\\ 0 & 0 \end{pmatrix}\quad h=\begin{pmatrix} -1 & 0\\ 0 & -1 \end{pmatrix}\quad f=\begin{pmatrix} 0 & 0\\ 1 & 0 \end{pmatrix} \right \}$ \\
 %$[ad$ $e]_\mathcal{B} = [ ad$ $e(e)\quad  ad$ $e(h) \quad ad$ $e(f) ] = \begin{pmatrix} 0 & -2 & 0 \\ 0 & 0 &1 \\ 0 & 0 & 0 \end{pmatrix} $
 %\end{enumerate}
-\end{ex}
+\end{exe}
 
-\section{Idéal et homomorphismes}
+Cette section nous est nécéssaire pour indroduire la notions de l'adjoint, notions qui nous sera utile dans la suite de ce rapport. 
+C'est aussi le seul exemple de dérivation que nous verrons ici.
+
+\section{Idéaux et homomorphismes}
 
 \subsection{Ideaux}
 
@@ -401,7 +406,7 @@ Ainsi $ad$ $x$ est bien une dérivation.
 \end{df}
 
 \begin{df}
-\quad Soit $L$ une algèbre de Lie. On appel l'\textbf{algèbre dérivée} de $L$ est le sous espace $[L,L]$
+\quad Soit $L$ une algèbre de Lie. On appel l'\textbf{algèbre dérivée} de $L$ le sous espace $[L,L]$.
 \end{df}
 
 \begin{df}
@@ -412,14 +417,14 @@ Ainsi $ad$ $x$ est bien une dérivation.
 \begin{enumerate}
 \item $\{0 \}$ , $L$ et $[L,L]$ sont des idéaux de $L$.
 
-\item $Z(L) = \{ z \in L  \mid [x,z]=0 \quad \forall x \in L\}$ est appelé le \textbf{centre} de $L$ est un idéal de $L$.
+\item $Z(L) = \{ z \in L  \mid [x,z]=0 \quad \forall x \in L\}$ est appelé le \textbf{centre} de $L$. C'est un idéal de $L$.
 
 \item Si $I$ et $J$ deux idéaux de $L$, alors $I+J:=\{i+j,\quad i\in I,\quad j\in J\}$ et $[I,J]$ sont des idéaux de L.
 
 En effet :
 \begin{itemize}
-\item[•] $[x,i+j]$=$[x,i]+[x,j]$ $\in I+J$
-\item[•]$[x,[i,j]]$=-$[i,[j,x]]$-$[j,[x,i]]$ = -$[j,j']$-$[j,i']$ $\in [I,J]$ ( Jacobi)
+\item[•] $[x,i+j]=[x,i]+[x,j]$ $\in I+J$
+\item[•]$[x,[i,j]]=-[i,[j,x]]-[j,[x,i]] = -[i,j']-[j,i']$ $\in [I,J]$ ( Jacobi)
 \end{itemize}
 (On a noté par [i,j] les éléments de [I,J] pour simplifier le calcul.)
 \end{enumerate}
@@ -429,19 +434,21 @@ En effet :
 \quad Toute algèbre de Lie $L$ non abélienne est dite \textbf{simple} si ses seuls idéaux sont $\{O\}$ et $L$.
 \end{df}
 
-\begin{ex}
+\begin{exe}
 \quad Soit $L = \ssl(2,\KK)$ avec $car(\KK)\ne 2$. On prend la base canonique de $\ssl(2,\KK)$ : 
 \begin{center}
-$\left \{ x=\begin{pmatrix} 0 & 1\\ 0 & 0 \end{pmatrix},\quad y=\begin{pmatrix} 0 & 0\\ 1 & 0 \end{pmatrix}\quad, h=\begin{pmatrix} -1 & 0\\ 0 & -1 \end{pmatrix} \right \}$.
+$\left \{ x=\begin{pmatrix} 0 & 1\\ 0 & 0 \end{pmatrix},\quad y=\begin{pmatrix} 0 & 0\\ 1 & 0 \end{pmatrix}\quad, h=\begin{pmatrix} 1 & 0\\ 0 & -1 \end{pmatrix} \right \}$.
 \end{center} 
 Par un simple calcul on trouve que : $[x,y]=h$,\quad $[h,x]=2x$, \quad $[h,y]=-2y$.
 
 Soient $I \ne$ $\{0 \}$ un idéal de $L$ et $ax+by+ch$ un élément non nul de $I$. En appliquant  $ad$ $x$ deux fois, on obtient $-2bx\in I$, de même en applique $ad$ $y$ deux fois, on obtient $-2ay\in I$. Donc si $a \ne 0$ et $b \ne 0$, alors $x \in I $ ou $y \in I$. Ainsi $I=L$.
 
 Sinon, si $a = b = 0$ alors $ch \in I$, donc $h \in I$. On conclu $I=L$, donc $L$ est simple.
-\end{ex}
+\end{exe}
 
-La construction de l'algèbre $L/I$ est formellement le même que le quotion d'anneaux :
+Dans la section $\star$ nous verrons des algèbres de Lie qui ne sont pas simple, notament $\ttt(n,\KK)$ et $\nn(n,\KK)$.\\
+\\
+\quad La construction de l'algèbre $L/I$ est formellement le même que le quotion d'anneaux :
 
 \begin{df}
 \quad Soient $L$ une algèbre de Lie et $I$ un idéal propre et non nul de $L$. L'\textbf{algèbre quotient} $L/I$ est l'espace quotient muni de la multiplication de Lie définie par:
@@ -477,7 +484,11 @@ $C_{L}(S) = \{x \in L\quad  | \quad [x,S]=0\}$.
 Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-algèbre de $L$ tel que $K$ soit un idéal.
 \end{rmq}
 
-\subsection{Homomorphisme et représentation}
+\begin{exe}
+sur les normalisateur et centralisateur
+\end{exe}
+
+\subsection{Homomorphismes et représentations}
 
 \begin{df}
 Soient $L_{1}$, $L_{2}$ deux algèbres de Lie et $\phi: L_{1} \rightarrow L_{2}$ une application linéaire, on dit que $\phi$ est un \textbf{morphisme d'algèbres de Lie} (ou \textbf{homomorphisme}) si :
@@ -561,11 +572,13 @@ Bien que nous ayons besoin que $L$ soit de dimension finie, il est utile de perm
 \item La \textbf{représentation triviale} de $L$ dans $V$ est l'application $\phi$ définie par $\forall x \in L , \phi(x)=0$.
 
 \item La \textbf{représentation adjointe} est l'application :
+\begin{center}
 $
 \begin{aligned}
 ad : L & \longrightarrow \gl(V) \\
 x & \longmapsto ad \enskip x : y\longmapsto [x,y]
 \end{aligned}$
+\end{center}
 Il est clair qu'elle est linéaire, montrons qu'elle préserve le crochet :
 \[
 \begin{aligned}
@@ -614,9 +627,9 @@ Cette constatation nous permet de déduire :
 %donc le produit $s=(expx)(exp(-y)$ induit un automorphisme $z:\longmapsto szs^{-1}$ de L.Un simple calcul %montre que $s=\left(\begin{array}{rr}0 & 1 \\ -1 & 0\end{array}\right)$ et que la conjugaison par s aa le %même effet sur L que l'application de $\sigma$
 %\end{ex}
 
-\section{Algèbre de Lie solvable et nilpotente}
+\section{Algèbres de Lie résolubles et nilpotentes}
 
-\subsection{Solvabilité }
+\subsection{Algèlbres résolubles}
 
 \quad Il est naturel pour étudier les algèbres de Lie d'étudier ses idéaux. En premier on définit une suite d'idéaux de L, que l'on appel série dérivée, par :
 \begin{center}
@@ -624,13 +637,14 @@ $L^{(0)} = L$ ,$L^{(1)} = [L,L]$, $L^{(2)} = [L^{(1)},L^{(1)}] \cdots L^{(i)} = 
 \end{center}
 
 \begin{df}
-\quad Une algèbre de Lie $L$ est dite \textbf{solvable} si : $\exists n \in \NN $ tel que $L^{(n)}=0$.
+\quad Une algèbre de Lie $L$ est dite \textbf{résoluble} si : $\exists n \in \NN $ tel que $L^{(n)}=0$.
 \end{df}
 
 \begin{rmq}
 \begin{itemize}
 \item[•]  $L$ abélien $\Rightarrow L$ solvable car $[L,L] = 0$.
 \item[•]  $L$ simple $\Rightarrow L$ n'est pas solvable, car $L = [L,L]$.
+détailllé car importent dans la suite
 \end{itemize}
 \end{rmq}
 
@@ -644,9 +658,9 @@ A FAIRE
 \begin{prop}\label{prop:solv}
 Soit $L$ une algèbre de Lie :
 \begin{itemize}
-\item[(a)] Si $L$ est solvable, alors toutes ses sous-algèbres et les images de ses homomorphismes sont solvables.
-\item[(b)] Si $I$ est un idéal solvable de $L$ tel que $L/I$ est solvable alors $L$ aussi est solvable.
-\item[(c)] Si $I$ , $J$ deux idéaux solvables de $L$, alors $I+J$ est solvable.
+\item[(a)] Si $L$ une algèbre résoluble, alors toutes ses sous-algèbres et les images de ses homomorphismes sont résoluble.
+\item[(b)] Si $I$ est un idéal résoluble de $L$ tel que $L/I$ est résoluble alors $L$ aussi est résoluble.
+\item[(c)] Si $I$ , $J$ deux idéaux résolubles de $L$, alors $I+J$ est résoluble.
 \end{itemize}
 \end{prop}
 
@@ -654,12 +668,12 @@ Soit $L$ une algèbre de Lie :
 \begin{enumerate}
 \item[(a)] Par définition, si $K$ est une sous algèbre de $L$, alors $K^{(i)} \subset L^{(i)}$, de même si $\phi: L \rightarrow M$ est épimorphisme une récurrence sur $i$ montre que $\phi\left(L^{(i)}\right)=M^{(i)}$.
 \item[(b)] Posons $(L / I)^{(n)}=0$, on applique le résultat (a) sur le morphisme canonique : $\pi: L \rightarrow L / I$, on a  $\pi\left(L^{(n)}\right)=0,$ ou  $L^{(n)} \subset I= ker$ $\pi$. Maintenant si  $I^{(m)}=0$ le fait évident que $\left(L^{(i)}\right)^{(j)}=L^{(i+j)}$ implique que  $L^{(n+m)}=0$. 
-\item[(c)] Le (d) du théorème (\ref{thm:iso}) donne un isomorphisme entre $(I+J) / J$ et $I /(I \cap J)$ comme image d'homomorphisme de $I$, $(I+J) / J$  est solvable donc d'après (b)  $(I+J)$ est solvable.
+\item[(c)] Le (d) du théorème (\ref{thm:iso}) donne un isomorphisme entre $(I+J) / J$ et $I /(I \cap J)$. Comme image d'homomorphisme de $I$, $(I+J) / J$  est résoluble donc d'après (b)  $(I+J)$ est résoluble.
 \end{enumerate}
 \end{prv}
 
 \begin{df}
-\quad On dit que $I$ est un idéal \textbf{solvable maximal} si il n'est inclut dans aucun idéal solvable. Cet idéal est unique et appelée \textbf{radical} de L, noté $Rad(L)$
+\quad On dit que $I$ est un idéal \textbf{résoluble maximal} si il n'est inclut dans aucun idéal résoluble. Cet idéal est unique et appelée \textbf{radical} de L, noté $Rad(L)$
 \end{df}
 
 \begin{df}
@@ -669,7 +683,7 @@ Soit $L$ une algèbre de Lie :
 \begin{ex}
 \begin{enumerate}
 \item Une algèbre de Lie simple est semisimple.
-En effet: $L$ est simple donc il n'a que deux idéaux ${0}$ et $L$. Or $L$ n'est pas solvable donc $Rad L= {0}$.
+En effet: $L$ est simple donc il n'a que deux idéaux ${0}$ et $L$. Or $L$ n'est pas résoluble donc $Rad L= {0}$.
 \item $L=0$ est semisimple.
 \end{enumerate}
 \end{ex}
