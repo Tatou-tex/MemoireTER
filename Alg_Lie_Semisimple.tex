@@ -497,7 +497,7 @@ $ \forall(x, y) \in L_{1} \times L_{1}, \quad \phi([x, y])=[\phi(x), \phi(y)]$.
 \end{center}
 De plus $\phi$ est:
 \begin{itemize}
-\item[•] un \textbf{monomorphisme} si $ker$ $\phi = \{ 0 \}$.
+\item[•] un \textbf{monomorphisme} si $Ker$ $\phi = \{ 0 \}$.
 \item[•] un \textbf{épimorphisme} si $Im$ $\phi = L_{2}$.
 \item[•] un \textbf{isomorphisme} si $\phi$ est un épimorphisme et un monomorphisme.
 \end{itemize}
@@ -541,7 +541,7 @@ Donc $\pi$ est bien un épimorphisme.
 \begin{rmq}
 \quad Soit $L_{1}$ et $L_{2}$ des algèbre de Lie, si $\phi$ est un morphisme de $L_{1}$ dans $L_{2}$, alors :
 \begin{itemize}
-\item[•] $ker$ $\phi$ est un idéale de $L_{1}$.
+\item[•] $Ker$ $\phi$ est un idéale de $L_{1}$.
 \item[•] $Im$ $\phi$ est une sous-algèbre de $L_{2}$.
 \end{itemize}
 \end{rmq}
@@ -552,8 +552,8 @@ Donc $\pi$ est bien un épimorphisme.
 Soit $\phi: L_{1}  \to L_{2} $ un homomorphisme d'algèbre de Lie. Et soient $I$ et $J$ deux idéaux de $L_{1}$.
 Alors :
 \begin{itemize}
-\item[(a)] $L / ker$ $\phi \cong Im$ $\phi$.
-\item[(b)] Si $I \subset ker$ $\phi$, alors il existe un unique homomorphisme $\psi: L_{1} / I \to L_{2} $ tel que $\psi \circ \pi= \phi$.
+\item[(a)] $L / Ker$ $\phi \cong Im$ $\phi$.
+\item[(b)] Si $I \subset Ker$ $\phi$, alors il existe un unique homomorphisme $\psi: L_{1} / I \to L_{2} $ tel que $\psi \circ \pi= \phi$.
 \item[(c)] Si $I \subset J$ alors $J / I$ est un idéal de $L/ I$ et $(L_{1} / I) /(J / I)\cong L_{1} / J$.
 \item[(d)] $(I+J) / J \cong I /(I \cap J)$.
 \end{itemize}
@@ -589,43 +589,13 @@ Il est clair qu'elle est linéaire, montrons qu'elle préserve le crochet :
 & = [[x y] z] \\
 & = ad \enskip [x y](z)
 \end{aligned} \]
-Soit $x \in L$ tel que $ad$ $x=0$, donc $ker$ $ad = Z(L)$. 
+Soit $x \in L$ tel que $ad$ $x=0$, donc $Ker$ $ad = Z(L)$. 
 
 Cette constatation nous permet de déduire :
 
 \quad Si $L$ est simple alors $ad: L \longrightarrow \gl(L)$ est un monomorphisme, ainsi toute algèbre de Lie simple est isomorphe à une algèbre de Lie linéaire.
 \end{enumerate}
 \end{ex}
-
-%\subsection{Automorphisme}
-%\begin{df}
-%Un \textbf{automorphisme} de $L$ est un isomorphisme de $L$ dans lui-même.
-%\quad On note $Aut$ $L$ le groupe des automorphismes de $L$.
-%\end{df}
-%\begin{ex}
-%Soit L une sous-algèbre de $\gl(V)$, si $g \in Gl(V)$ et si $gLg^{-1}=L$, alors $x \longmapsto gxg^{-1}$ est automorphisme de L.
-%\end{ex}
-%Maintenant nous nous intéressons au cas où $F$ est de caractéristique 0.
-%\begin{df}
-%on dit que $x\in L$ est nilpotent si $\exists k \in \NN^* $ tel que $ x^k=0$ 
-%\end{df}
-%Soit $x\in L$ tel que $adx$ est nilpotent, la série exponentielle pour la transformation linéaire sur $\CC$ a du sens sur$F$ puiqsu'il y a un nombre finies de termes:\quad \\$\exp (\text { ad } x)=1+$ ad $x+(\text { ad } x)^{2} / 2 !+(\text { ad } x)^{3} / 3 !+\ldots+(\text { ad } x)^{k-1} /(k-1)!$\\
-%on a même $exp(adx)\in aut (L)$, et plus généralement, si on remplace $adx$ par une dérivation nilpotente $\delta$ de L , ce qui précede reste vrai,\\
-%pour montrer ça on utilise la régle de Leibniz:\\
-%$\frac{\delta^{n}}{n !}(x y)=\sum_{i=0}^{n}(1 / i !)\left(\delta^{i} x\right)(1 /(n-i) !)\left(\delta^{n-i} y\right)$ , \\
-%pour la suite de calcul on utilise le fair que  $(\delta^k=0)$
-%$\begin{aligned} \exp \delta(x) \exp \delta(y) &=\left(\sum_{i=0}^{k-1}\left(\frac{\delta^{i} x}{i !}\right)\right)\left(\sum_{j=0}^{k-1}\left(\frac{\delta^{j} y}{j !}\right)\right) \\ &=\sum_{n=0}^{2 k-2}\left(\sum_{i=0}^{n}\left(\frac{\delta^{i} x}{i !}\right)\left(\frac{\delta^{n-i} y}{(n-i) !}\right)\right) \\ &=\sum_{n=0}^{2 k-2} \frac{\delta^{n}(x y)}{n !} \\ &=\sum_{n=0}^{k-1} \frac{\delta^{n}(x y)}{n !} \\ &=\exp \delta(x y) \end{aligned}$
-%\begin{df}
-%Un automorphisme de la forme $esp(adx),$ avec adx nilpotent est appelé un interne, plus généralement , le %sous groupe de $Aut L$ géneré par ces éléments est noté $Int L$ et appelée l'automorphisme intérieur.
-%\end{df}
-%\begin{ex}
-%$L=sl(2,F)$ avec la base standard $(x,y,h)$\\
-%on définit: $\sigma=\exp \text { ad } x \cdot \exp \text { ad }(-y) \cdot \exp \text { ad } x $, $(\sigma %%%\in \text { Int } L)$\\
-%on a $\sigma(x)=-y, \sigma(y)=-x, \sigma(h)=-h$\\
-%et en particulier $\sigma$ est d'ordre 2, noter que $exp(x)$ et $exp(-y)$ sont des éléments bien définies %
-%de $sl(2,F)$ la conjugaison pour laquelle L est invariant.\\
-%donc le produit $s=(expx)(exp(-y)$ induit un automorphisme $z:\longmapsto szs^{-1}$ de L.Un simple calcul %montre que $s=\left(\begin{array}{rr}0 & 1 \\ -1 & 0\end{array}\right)$ et que la conjugaison par s aa le %même effet sur L que l'application de $\sigma$
-%\end{ex}
 
 \section{Algèbres de Lie résolubles et nilpotentes}
 
@@ -667,13 +637,15 @@ Soit $L$ une algèbre de Lie :
 \begin{prv}
 \begin{enumerate}
 \item[(a)] Par définition, si $K$ est une sous algèbre de $L$, alors $K^{(i)} \subset L^{(i)}$, de même si $\phi: L \rightarrow M$ est épimorphisme une récurrence sur $i$ montre que $\phi\left(L^{(i)}\right)=M^{(i)}$.
+
 \item[(b)] Posons $(L / I)^{(n)}=0$, on applique le résultat (a) sur le morphisme canonique : $\pi: L \rightarrow L / I$, on a  $\pi\left(L^{(n)}\right)=0,$ ou  $L^{(n)} \subset I= ker$ $\pi$. Maintenant si  $I^{(m)}=0$ le fait évident que $\left(L^{(i)}\right)^{(j)}=L^{(i+j)}$ implique que  $L^{(n+m)}=0$. 
+
 \item[(c)] Le (d) du théorème (\ref{thm:iso}) donne un isomorphisme entre $(I+J) / J$ et $I /(I \cap J)$. Comme image d'homomorphisme de $I$, $(I+J) / J$  est résoluble donc d'après (b)  $(I+J)$ est résoluble.
 \end{enumerate}
 \end{prv}
 
 \begin{df}
-\quad On dit que $I$ est un idéal \textbf{résoluble maximal} si il n'est inclut dans aucun idéal résoluble. Cet idéal est unique et appelée \textbf{radical} de L, noté $Rad(L)$
+\quad On dit que $I$ est un idéal \textbf{résoluble maximal} si il n'est inclut dans aucun idéal résoluble. Cet idéal est unique et appelée \textbf{radical} de L, noté $Rad(L)$.
 \end{df}
 
 \begin{df}
@@ -684,7 +656,8 @@ Soit $L$ une algèbre de Lie :
 \begin{enumerate}
 \item Une algèbre de Lie simple est semisimple.
 En effet: $L$ est simple donc il n'a que deux idéaux ${0}$ et $L$. Or $L$ n'est pas résoluble donc $Rad L= {0}$.
-\item $L=0$ est semisimple.
+
+\item $L= \{0\}$ est semisimple.
 \end{enumerate}
 \end{ex}
 
@@ -702,19 +675,19 @@ Ainsi, $L$ est abélienne si et seulement si $L^{2}=0$.
 L'algèbre de Lie $L$ est dite \textbf{nilpotente} si $L^{n}=0$ pour un certain $n \in \NN^{*}$.
 \end{df}
 
-\begin{ex}
+\begin{exe}
 Toute algèbre abélienne est nilpotente.
 
 On clairement $L^{(i)}\subset L^{i}$ $\forall i$, donc les algèbres nilpotentes sont solvables.
 Le contraire est faux ( exemple a mettre après).
-\end{ex}
+\end{exe}
 
 \begin{prop}\label{prop:nilp}
 \quad Soit $L$ une algèbre de Lie. Alors :
 \begin{itemize}
 \item[(a)] Si $L$ est nilpotente, alors ses sous-algèbres et les images de ses homomorphismes sont aussi nilpotentes.
 
-\item[(b)]  Si $L/Z(L)$, alors $L$ est nilpotente.
+\item[(b)]  Si $L/Z(L)$ est nilpotente, alors $L$ est nilpotente.
 
 \item[(c)] Si $L$ est nilpotente et non nulle alors $Z(L) \ne 0$.
 \end{itemize}
@@ -731,12 +704,12 @@ Le contraire est faux ( exemple a mettre après).
 \begin{rmq}
 La condition de nilpotence de $L$, peut être reformuler comme suit:
 
-Soit $n\in\NN$ (qui dépend pas de $L$) $ad$ $x_{1}$ $ad$ $x_{2} \ldots$ $ad$ $x_{n}(y)=0$  $\forall$ $x_{i}$, $y \in L$.
+Soit $n \in \NN$ (qui ne dépend pas de $L$) $ad$ $x_{1}$ $ad$ $x_{2} \ldots$ $ad$ $x_{n}(y)=0$  $\forall$ $x_{i}$, $y \in L$.
 En particulier:
 $(x_{1})^n=0$, $\forall x \in L$.
 \end{rmq}
 
-\chapter{Théorème d'Engel}
+\chapter{Le théorème d'Engel}
 
 \quad Nous avons vu dans le chapitre précédent la notion d'algèbre nilpotente, que nous pouvons compléter avec la définition suivante:
 
@@ -748,9 +721,7 @@ $(x_{1})^n=0$, $\forall x \in L$.
 \quad Soit $L$ une algèbre de Lie nilpotente, alors $\forall x \in L$, $x$ est ad-nilpotent.
 \end{prop}
 
-\begin{prv}
-A faire $\Box$
-\end{prv}
+%\begin{prv} A faire $\Box$ \end{prv}
 
 La réciproque de cette proposition est le Théorème d'Engel:
 
@@ -777,13 +748,13 @@ On peut conclure que $ad$ $x$ est nilpotent. $\Box$
 \end{prv}
 
 \begin{rmq}
-\quad Une matrice peut être ad-nilpotente sans être nilpotente. C'est le cas de la matrice identités. 
+\quad Une matrice peut être ad-nilpotente sans être nilpotente. C'est le cas de la matrice identitée. 
 \end{rmq}
 
-Nous allons déduire le Théorème d'Engel du résultat qui va suivre. Mais avant rappelons qu'une application linéaire nilpotente à toujours au moins un vecteur propre, associé à son unique valeur propre $0$. C'est le cas $dim$  $L = 1$ du théorème qui suit:
+Nous allons déduire le Théorème d'Engel du résultat qui va suivre. Mais avant rappelons qu'une application linéaire nilpotente a toujours au moins un vecteur propre, associé à son unique valeur propre $0$. C'est le cas $dim$  $L = 1$ du théorème qui suit:
 
 \begin{thm}\label{thm:E1}
-\quad Soit $L$ une sous-algèbre de Lie de $\gl (V)$, avec $dim$ $V < + \infty$. Si tous les éléments de $L$ sont nilpotents et $V  \neq  0$, alors il existe un vecteur $v \in V$ non nul tel que $L.v = 0$.
+\quad Soit $L$ une sous-algèbre de Lie de $\gl (V)$, avec $dim$ $V < + \infty$. Si tous les éléments de $L$ sont nilpotents et $V  \neq  \{0\}$, alors il existe un vecteur $v \in V$ non nul tel que $L.v = 0$.
 \end{thm}
 
 \begin{dem}
@@ -791,14 +762,14 @@ Nous allons déduire le Théorème d'Engel du résultat qui va suivre. Mais avan
 
 Les cas $dim$ $L = 0$ ou $1$ sont évident.
 
-Supponsons que $K \neq 0$ est une sous-algèbre de Lie de $L$. Par le Lemme (\ref{lem:E1}) $K$ agit (via $ad$) comme une algèbre de Lie, d'application linéaire nilpotente, dans l'espace vectoriel $L$, d'où sur l'espace vectoriel $L/K$. Comme $dim$ $K < dim$ $L$, l'hypothèse de récurrence assure l’existence d'un vecteur $x + K \neq K $ dans $L/K$, qui est tué par l'image de $K$ dans $\gl(L/K)$, c.à.d $[yx]$ $\in K, \forall K$, tandis que $x \notin K$. En d'autre mot, $K$ est un espace propre de $N_{L}(K)$.
+Supponsons que $K \neq \{0\}$ est une sous-algèbre de Lie de $L$. Par le Lemme (\ref{lem:E1}) $K$ agit (via $ad$) comme une algèbre de Lie, d'applications linéaires nilpotentes, dans l'espace vectoriel $L$, d'où sur l'espace vectoriel $L/K$. Comme $dim$ $K < dim$ $L$, l'hypothèse de récurrence assure l’existence d'un vecteur $x + K \neq K $ dans $L/K$, qui est annulé par l'image de $K$ dans $\gl(L/K)$, c.à.d $[y,x]$ $\in K, \forall y \in K$, tandis que $x \notin K$. En d'autre mot, $K$ est strictement inclue dans $N_{L}(K)$.
 
-Maintenant prenons $K$ la sous algèbre propre maximal de $L$. L'argument précédent force $N_{L}(K) = L$, i.e $K$ est un idéal de $L$. Si $dim$ $L/K$ est supérieur à $1$ alors il existe $\overline{H} \subset L/K$ de dimension $1$. Par passage à l'image inverse , on a $H \subset L$, $H$ est une sous algèbre propre de $L$, mais par maximalisé de $K$, on a $H \subset K$. Contradiction !
+Maintenant prenons $K$ une sous algèbre maximal strictement inclue dans $L$. L'argument précédent force $N_{L}(K) = L$, i.e $K$ est un idéal de $L$. Si $dim$ $L/K$ est supérieur à $1$ alors il existe $\overline{H} \subset L/K$ de dimension $1$, tel que par passage à l'image inverse , on a $K \subset H \subset L$ et $H$ est une sous algèbre strictement inclue dans $L$. Mais par maximalisé de $K$, on a $H \subset K$. Contradiction !
 
 On déduit alors que $K$ est de codimension $1$. On peut donc écrire $L=K+ \KK z$ pour $z \in L-K$.
-Par récurrence, $W = \{ v \in V \mid K.v = 0\}$ est non nul puisque K est un idéal. $W$ est stable dans $L$ : 
+Par récurrence, $W = \{ v \in V \mid K.v = 0\}$ est non nul. Puisque K est un idéal, $W$ est stable sous $L$ : 
 \begin{center}
-$x+L$, $y \in K$, $w \in W$, $\quad yx.w = xy.w - [xy]w =0$.
+$x \in L$, $y \in K$, $w \in W$, $\quad yx.w = xy.w - [x,y]w =0$.
 \end{center}
 \quad On choisi $z \in L-K$ comme ci-dessus, donc l'endomorphisme nilpotent $z$ (dans le sous-espace $W$) a un vecteur propre, i.e. il existe un vecteur $v \in V$ non nul pour lequel $z.v = 0$.
 
@@ -837,15 +808,16 @@ Par récurrence sur la dimension de $V$, $W$ a un drapeau stabilisé par $L$, pa
 Pour finir ce chapitre, évoquons une application  typique du Théorème (\ref{thm:E1}), dont nous aurons besoin plus tard : 
 
 \begin{lem}\label{lem:E2}
-\quad Soit $L$ une algèbre de Lie nilpotente, $K$ un idéal de $L$. Alors si $K \neq 0$, $K \cap Z(L) \neq$.
-En particulier, $Z(L) \neq 0$.
+\quad Soit $L$ une algèbre de Lie nilpotente, $K$ un idéal de $L$. Alors si $K \neq \{0\}$, $K \cap Z(L) \neq \{ 0 \}$.
+En particulier, $Z(L) \neq \{ 0 \}$.
 \end{lem}
 
 \begin{prv}
-\quad $L$ agit sur $L$, via la représentation adjointe, donc le Théorème (\ref{thm:E1}) donne $x \in K$ non nul tuer par $L$, i.e. $[Lx]=0$. Ainsi $x \in K \cap Z(L)$. $\Box$
+\quad $L$ agit sur $L$, via la représentation adjointe, donc le Théorème (\ref{thm:E1}) donne $x \in K$ non nul annulé par $L$, i.e. $[Lx]=0$. Ainsi $x \in K \cap Z(L)$. $\Box$
 \end{prv}
 
-\chapter{Théorème de Lie}
+\chapter{Le théorème de Lie}
+
 \quad Dans les chapitres précédent nous avons regardé les algèbres de Lie sur un corps $\KK$ quelconque. Dans la suite nous avons besoin que $\KK$ soit de caractéristique $0$. En outre pour avoir à disposition les valeurs propres de $ad$ $x$ pour un $x$ quelconque, et non seulement pour $ad$ $x$ nilpotent. Nous supposerons aussi que $\KK$ est algébriquement clos, si tel n'ai pas le cas nous le préciserons.
 
 \quad L'essence du Théorème d'Engel est l’existence d'un vecteur propre commun pour les endomorphismes nilpotents, pour les algèbres de Lie cela consiste en un endomorphisme nilpotent.
@@ -905,19 +877,19 @@ En d'autre mot, les matrices de $L$, dans une base de $V$ bien choisi, sont tria
 \quad On utilise le théorème (\ref{thm:L1}), ainsi qu'une récurrence sur la dimention de $V$. $\Box$
 \end{prv}
 
-\quad Plus généralement, si on considère $L$ une algèbre de Lie solvable, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de L. Alors $\phi(L)$ est solvable, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
+\quad Plus généralement, si on considère $L$ une algèbre de Lie solvable, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de L. Alors $\phi(L)$ est résoluble, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
 
-\quad De plus, si $\phi$ la représentation adjointe, un drapeau de sous-espaces stables par $L$, est juste une chaîne d'idéal de $L$, chacuns de codimension 1.
+\quad De plus, si $\phi$ est la représentation adjointe, un drapeau de sous-espaces stables par $L$, est juste une chaîne d'idéaux de $L$, chacuns de codimension 1.
 
 On en déduit le corollaire suivant :
 
 \begin{cor}\label{cor:L2}
-\quad Soit $L$ solvable. 
-Alors il existe une chaîne d'idéal de $L$, $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$, telle que $dim$ $L_{i}=i$.
+\quad Soit $L$ résoluble. 
+Alors il existe une chaîne d'idéaux de $L$, $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$, telle que $dim$ $L_{i}=i$.
 \end{cor}
 
 \begin{cor}\label{cor:L3}
-\quad Soit $L$ une algèbre de Lie solvable. Alors $x \in [LL]$ implique que $ad_{L}$ $x$ est nilpotent.
+\quad Soit $L$ une algèbre de Lie résoluble. Alors $x \in [LL]$ implique que $ad_{L}$ $x$ est nilpotent.
 En particulier, $[LL]$ est nilpotente.
 \end{cor}
 
@@ -1019,7 +991,7 @@ Choisissons une base $(v_{1},\cdots,v_{n})$ de $V$ telle que la matrice de $x$ s
 
 \subsection{Critère de nilpotence d'un endomorphisme}\label{a}
 
-\quad Nous pouvons obtenir un critère puissant en ce basant sur la trace de certains endomorphismes de $L$. Il est évidant que $L$ va être solvable si $[LL]$ est nilpotente, c'est un conséquence du corollaire (\ref{cor:L3}).
+\quad Nous pouvons obtenir un critère puissant en ce basant sur la trace de certains endomorphismes de $L$. Il est évidant que $L$ va être résoluble si $[LL]$ est nilpotente, c'est un conséquence du corollaire (\ref{cor:L3}).
  
 \quad Le théorème d'Engel (\ref{thm:engel}) nous dit que $[LL]$ est nilpotente si (et seulement si) tout $ad_{[LL]}$ $x$, $x \in [LL]$, est nilpotent. Nous commencerons avec un critère sur la "trace" pour la nilpotence d'un endomorphisme.
 
@@ -1044,7 +1016,7 @@ On utilise l'hypothèse $tr(xy)=0$, on a $\sum a_{i}f(a_{i}) = 0$. Le côté gau
 
 \section{Critère de Cartan et conséquences}
 
-Avant d'énoncer le Critère de Cartan, critère de solvabilité, rappelons une identité qui nous sera utile dans la suite : 
+Avant d'énoncer le Critère de Cartan, un critère de solvabilité, rappelons une identité qui nous sera utile dans la suite : 
 \begin{center}
 Si $x,y,z$ des endomorphismes d'espace vectoriel de dimension finie, alors $tr([x,y]z)=tr(x[y,z])$ $(\star)$
 \end{center}
