@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.26)  12 MAY 2020 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.26)  12 MAY 2020 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,18 +1368,18 @@ Package xcolor Warning: Incompatible color definition on input line 889.
 Package xcolor Warning: Incompatible color definition on input line 889.
 
 
-Package xcolor Warning: Incompatible color definition on input line 894.
-
-
-Package xcolor Warning: Incompatible color definition on input line 894.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.61858pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [17]
+
+Package xcolor Warning: Incompatible color definition on input line 894.
+
+
+Package xcolor Warning: Incompatible color definition on input line 894.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.61858pt.
@@ -1481,6 +1481,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1052.
 
 Package rerunfilecheck Info: File `Alg_Lie_Semisimple.out' has not changed.
 (rerunfilecheck)             Checksum: 9C0B4F37D6F57C6430727C8FC0D02CD4;1541.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1052.
  ) 
 Here is how much of TeX's memory you used:
@@ -1490,7 +1494,7 @@ Here is how much of TeX's memory you used:
  14101 multiletter control sequences out of 15000+600000
  32347 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 31i,13n,43p,732b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,13n,43p,722b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600
 pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.60
 0pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.6
@@ -1515,10 +1519,10 @@ ler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxf
 ont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Alg_Lie_Semisimple.pdf (23 pages, 311673 bytes).
+Output written on Alg_Lie_Semisimple.pdf (23 pages, 311866 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
+ 829 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
  139 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

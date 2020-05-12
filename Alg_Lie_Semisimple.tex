@@ -781,14 +781,14 @@ On a finalement, $L.v = 0$ comme désiré. $\Box$
 Nous avons maintenant tout ce qu'il faut pour démontrer le Théorème d'Engel.
 
 \begin{dem}[Théorème d'Engel]
-\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotent, par conséquent $ad$ $L \subset \gl(V)$ qui satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq 0$).
+\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotent. Par conséquent $ad$ $L \subset \gl(V)$  satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq 0$).
 
-Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[Lx]=0$, i.e. $Z(L) \neq 0$. Maintenant $L/Z(L)$ contient évidement des éléments ad-nilpotent et $dim$ $L/Z(L) < dim$ $L$.
+Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[L,x]=\{0\}$, i.e. $Z(L) \neq \{0\}$. Maintenant les éléments de $L/Z(L)$ sont ad-nilpotent et $dim$ $L/Z(L) < dim$ $L$.
 
 Par récurrence sur la dimension de $L$, on  trouve que $L/Z(L)$ est nilpotent. Par le $(b)$ de la proposition (\ref{prop:nilp}), on a que $L$ est aussi nilpotent. $\Box$
 \end{dem}
 
-Nous pouvons maintenant déduire un Corollaire très utile, cet énonce est même équivalent à celui du théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
+Nous pouvons maintenant déduire un Corollaire très utile, cet énoncé est même équivalent à celui du théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
 
 \begin{df}
 \quad Soit $V$ un espace vectoriel de dimension fini, un \textbf{drapeau de $V$} est une chaîne de sous-espace vectoriel : $0 = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$, avec $dim$ $V_{i} = i$.
@@ -800,7 +800,7 @@ Si $x \in End$ $V$, on dit que $x$ est \textbf{stable} si on obtient, avec le dr
 \end{cor}
 
 \begin{prv}
-\quad On commence avec un vecteur $v \in V$ non nul tuer par $L$, son existence est assurée par le théorème (\ref{thm:E1}). Posons $V_{1} = \KK v$. Soit $W= V/V_{1}$ et on observe l'action induite de $L$ dans $W$ est un endomorphisme nilpotent.
+\quad On commence avec un vecteur $v \in V$ non nul annulé par $L$, son existence est assurée par le théorème (\ref{thm:E1}). Posons $V_{1} = \KK v$. Soit $W= V/V_{1}$ et on observe l'action induite de $L$ dans $W$ est un endomorphisme nilpotent.
 
 Par récurrence sur la dimension de $V$, $W$ a un drapeau stabilisé par $L$, par passage à l'image inverse on obtient le résultat voulu. $\Box$
 \end{prv}
@@ -813,7 +813,7 @@ En particulier, $Z(L) \neq \{ 0 \}$.
 \end{lem}
 
 \begin{prv}
-\quad $L$ agit sur $L$, via la représentation adjointe, donc le Théorème (\ref{thm:E1}) donne $x \in K$ non nul annulé par $L$, i.e. $[Lx]=0$. Ainsi $x \in K \cap Z(L)$. $\Box$
+\quad $L$ agit sur $L$, via la représentation adjointe, donc le Théorème (\ref{thm:E1}) donne $x \in K$ non nul annulé par $L$, i.e. $[L,x]=0$. Ainsi $x \in K \cap Z(L)$. $\Box$
 \end{prv}
 
 \chapter{Le théorème de Lie}
@@ -831,32 +831,32 @@ En particulier, $Z(L) \neq \{ 0 \}$.
 \begin{dem}
 \quad On utilise une récurrence sur la dimension de $L$. 
 Le cas $dim$ $L=0$ est trivial. 
-On tentera d'imité la preuve du théorème (\ref{prop:E1}). La démonstration suivra la schéma suivant:
+On tentera d'imiter la preuve du théorème (\ref{prop:E1}). La démonstration suivra la schéma suivant:
 \begin{itemize}
-\item[(1)] Localiser un idéal $K$ de codimension $1$.
-\item[(2)] Monter par récurrence qu'un vecteur propre commun existe pour $K$.
+\item[(1)] Montrer qu'il existe un idéal $K$ de codimension $1$.
+\item[(2)] Montrer par récurrence qu'un vecteur propre commun existe pour $K$.
 \item[(3)] Vérifier que $L$ stabilise un espace composé de tels vecteurs propres.
 \item[(4)] Trouver dans cet espace un vecteur propre qui pour $z \in L$ satisfait $L=K+\KK z$.
 \end{itemize}
 Commençons maintenant la démonstration :
 \begin{itemize}
-\item[(1)] Puisque $L$ est solvable, de dimension positive ($\neq  0$), $L$ contient entièrement $[LL]$. Ainsi $L/[LL]$ est abélien, d'où tout sous-espace est automatiquement un idéal. On prend un sous-espace de codimension $1$, alors sont image inverse $K$ est un idéal de codimension $1$ de $L$ (qui contient $[LL]$).
+\item[(1)] Puisque $L$ est solvable, de dimension positive ($\neq  0$), $L$ contient strictement $[L,L]$. Ainsi $L/[L,L]$ est abélien, d'où tout sous-espace est automatiquement un idéal. On prend un sous-espace de codimension $1$, alors son image inverse $K$ est un idéal de codimension $1$ de $L$ (qui contient $[L,L]$).
 
-\item[(2)] On utilise une récurrence pour trouver un vecteur propre commun $v \in V$ pour $K$. $K$ est bien sur solvable, si $K=0$, alors $L$ est abélien de dimension 1 et un vecteur propre pour une base de $L$ fini le preuve. Dans le cas ou $K \neq 0$, on a pour $x \in K$, $x.v= \lambda(x)v$, avec $\lambda : K \to \KK$ une application linéaire. On fixe $\lambda$, et on note $W$ le sous-espace:
+\item[(2)] On utilise une récurrence pour trouver un vecteur propre commun $v \in V$ pour $K$. $K$ est résoluble par la proposition (\ref{prop:solv}), si $K = \{ 0 \}$, alors $L$ est abélien de dimension 1 et un vecteur propre pour une base de $L$ finit la preuve. Dans le cas où $K \neq \{ 0 \}$, l'hypothèse de récurrence fourni, pour $x \in K$, $x.v= \lambda(x)v$, avec $\lambda : K \to \KK$ une application linéaire. On fixe $\lambda$, et on note $W$ le sous-espace:
 \begin{center}
 $W=\{ w \in V \mid x.w= \lambda(x)w$, $\forall x \in K \} $
 \end{center}
-On a bien que $W \neq 0$.
+On a bien que $W \neq \{0\}$.
 
-\item[(3)] Montrons que $L$ laisse $W$ invariant. Soit $w \in W$ et $x \in L$. Pour déterminer si $x.w$ vie dans $W$, prenons $w \in W$ et examinons :
+\item[(3)] Montrons que $L$ laisse $W$ invariant. Soit $w \in W$ et $x \in L$. Pour déterminer si $x.w$ vie dans $W$, prenons $y \in W$ et examinons :
 \begin{center}
 $yx.w=xy.w-[x,y].w= \lambda(y)x.y- \lambda([x,y])w $
 \end{center}
-Ainsi il faut montrer que $\lambda([x,y])=0$. Pour cela fixons $w \in W$ et $x \in L$. Soit $n>0$ le plus petit entier pour lequel $w$, $x.w, \cdots$, $x^{n}.w$ est linéairement indépendant. Notons $W_{i}$ le sous espace généré par $w$, $\cdots$, $x^{i-1}.w$, donc $dim$ $W_{n}=n$ et $W_{n}=W_{n+i}$ ($i\geq 0$) et $x$ est une application de $W_{n}$ dans $W_{n}$. Il est facile de vérifier que chaque $y \in K$ laisse chacun des $W_{i}$ invariant. Relativement à la base $w$, $x.w$, $\cdots$, $x^{n}.w$, on affirme que $y \in K$ est représenté par une matrice triangulaire supérieur dont les éléments diagonaux sont égaux à $\lambda(y)$. Il suit immédiatement la congruence :
+Ainsi il faut montrer que $\lambda([x,y])=0$. Pour cela fixons $w \in W$ et $x \in L$. Soit $n>0$ le plus petit entier pour lequel $w$, $x.w, \cdots$, $x^{n}.w$ sont linéairement indépendant. Notons $W_{i}$ le sous espace engendré par $w$, $\cdots$, $x^{i-1}.w$, donc $dim$ $W_{n}=n$ et $W_{n}=W_{n+i}$ ($i\geq 0$) et $x$ est une application de $W_{n}$ dans $W_{n}$. Il est facile de vérifier que chaque $y \in K$ laisse chacun des $W_{i}$ invariant. Relativement à la base $w$, $x.w$, $\cdots$, $x^{n}.w$, on affirme que $y \in K$ est représenté par une matrice triangulaire supérieur dont les éléments diagonaux sont égaux à $\lambda(y)$. Il vient de la congruence :
 \begin{center}
 $(\star) \quad yx^{i}.w = \lambda(y)x^{i} \quad (mod$ $W_{i})$
 \end{center}
-Qu'on prouve par récurrence sur $i$, le cas $i=0$ est évidant. Écrivons :
+Qu'on prouve par récurrence sur $i$. Le cas $i=0$ est évidant. Écrivons :
 \begin{center}
 $yx^{i}.w = yxx^{i-1}.w = xyx^{i-1}.w -[x,y]x^{i-1}.w $
 \end{center}
