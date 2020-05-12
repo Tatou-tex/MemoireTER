@@ -93,11 +93,11 @@ plainpages = false}
 \newtheorem*{rmq}{Remarque :}
 \newtheorem*{prv}{Preuve :}
 \newtheorem*{ex}{Exemples :}
-\newtheorem{exe}{Exemple : }
-\newtheorem*{nota}{Notation :}}
+\newtheorem*{exe}{Exemple : }
+\newtheorem*{nota}{Notation :}
+\newtheorem*{dem}{D\'emonstration :}}
 \newshadetheorem{thm}{Th\'eor\`eme}[chapter]
 \newshadetheorem{df}{D\'efinition}
-\newtheorem*{dem}{D\'emonstration :}
 \newshadetheorem{prop}{Proposition}[chapter]
 \newshadetheorem{propr}{Propri\'et\'e}[chapter]
 \newshadetheorem{lem}{Lemme}[chapter]
@@ -877,7 +877,7 @@ En d'autre mot, les matrices de $L$, dans une base de $V$ bien choisi, sont tria
 \quad On utilise le théorème (\ref{thm:L1}), ainsi qu'une récurrence sur la dimention de $V$. $\Box$
 \end{prv}
 
-\quad Plus généralement, si on considère $L$ une algèbre de Lie solvable, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de L. Alors $\phi(L)$ est résoluble, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
+\quad Plus généralement, si on considère $L$ une algèbre de Lie résoluble, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de L. Alors $\phi(L)$ est résoluble, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
 
 \quad De plus, si $\phi$ est la représentation adjointe, un drapeau de sous-espaces stables par $L$, est juste une chaîne d'idéaux de $L$, chacuns de codimension 1.
 
@@ -899,13 +899,13 @@ En particulier, $[LL]$ est nilpotente.
 
 \chapter{Critère de Cartan}
 
-\quad Il serait utile d'avoir un critère pour étudier la solvabilité d'une algèbre de Lie. C'est exactement ce qui va nous intéresser dans cette partie. 
+\quad Il serait utile d'avoir un critère pour étudier si une algèbre de Lie est résoluble. C'est exactement ce qui va nous intéresser dans cette partie. 
 
 \section{Les outils}
 
 \subsection{La décomposition de Jordan-Chevalley}
 
-\quad Dans cette sous-section uniquement on considère $car$ $\KK$ quelconque. Nous sortons un peut du cadre des algèbre de Lie pour introduire un outils très utile dans l’étude est application linéaire. Rappelons la forme de Jordan pour un endomorphisme $x$ sur un corps algébriquement clos. Sous forme matricielle c'est une matrice diagonal par bloc avec des bloc de la forme :
+\quad Dans cette sous-section uniquement on considère $car$ $\KK$ quelconque. Nous sortons un peut du cadre des algèbre de Lie pour introduire un outils très utile dans l’étude des applications linéaires. Rappelons la forme de Jordan pour un endomorphisme $x$ sur un corps algébriquement clos. Sous forme matricielle c'est une matrice diagonals par blosc avec des bloc de la forme :
 \begin{center}
 $
 \begin{pmatrix}
