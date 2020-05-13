@@ -1082,5 +1082,48 @@ Le lemme qui va suivre aurait pu être utile si nous avions poussé plus loin ce
 \quad Rapelons un fait d'algèbre linéaire : Si $W$ un sous-espace de $V$ de dimension fini, et $\phi$ un endomorphisme de $V$, tel que $Im$ $\phi \subset W$, alors $tr(\phi) = tr(\phi_{\mid W})$. Pour prouver cela, il faut étendre une base de $W$ en une base de $V$ et regarder la matrice de $\phi$ dans cette base. Maintenant si $x,y \in I$, alors ($ad$ $x)(ad$ $y)$ est un andomorphisme de $L$, application de $L$ dans $I$, donc la trace de $\kappa(x,y)$ coïncide avec la trace de $\kappa_{I}(x,y)$, soit $(ad$ $x)(ad$ $y)_{\mid I}=(ad_I$ $x)(ad_I$ $y)$. $\Box$
 \end{prv}
 
+\quad En général, une forme bilinéaire symétrique $\beta(x,y)$ est appeler non-dégénéré si son noyau ou radical $S$ est $\{0\}$, où $S = \{ x \in L \mid \beta(x,y)=0 \forall y \in L \}$. Du fait que la forme de Killing est associative, son noyaux est plus qu'un simple sous-espace: S est un idéal de $L$ Pour les algèbre linéaire, un moyen pratique de tester le non dégénérecence suit: On fixe une base $x_1, \cdots, x_n$ de $L$. Alors $\kappa$ est non dégénéré si et seulement si la matrice de taille $n \times n$ telle que son entré $i,j$ est égal à $\kappa(x_i,x_j)$ soit de déterminant non nul. 
+
+\begin{exe}
+\quad Calculons la forme de Killing de $\ssl(2,\KK)$, pour cela utilisons la base cannonique donner dans le paragraphe (\ref{ssl:base}), nous changerons seulement l'ordre $(x,h,y)$. On a :
+\begin{center}
+$ad$ $x = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -2 \end{pmatrix}$,
+$ad$ $h = \begin{pmatrix} 0 & -2 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$,
+$ad$ $y = \begin{pmatrix} 0 & 0 & 0 \\ -1 & 0 & 0 \\ 0 & 2 & 0 \end{pmatrix}$.
+\end{center} 
+\quad Par consequence la matrice de $\kappa$ est 
+$\begin{pmatrix} 
+0 & 0 & 4 \\
+0 & 8 & 0 \\
+4 & 0 & 0
+\end{pmatrix}$, son déterminant est $-128$, ainsi $\kappa$ est non dégénéré. (Ceci est vrai temps que $car$ $\KK \neq 2$.)
+\end{exe}
+
+\quad Rappelons qu'une algèbre de Lie est semisimple si $Rad$ $L = \{0\}$. 
+
+\begin{prop}
+\center $L$ est semisimple si et seulement si le seul idéal abélien de $L$ est $\{0\}$.
+\end{prop}
+
+\begin{prv}
+\quad En effet, un idéal abélien sera automatiquement résoluble, donc inclue dans $Rad$ $L$. Et réciproquement, si $Rad$ $L \neq \{0\}$ il $Rad$ $L$.
+\end{prv}
+
+\begin{thm}
+\quad Soit $L$ une algèbre de Lie. Alors $L$ est semisimple si et seulement si sa forme de Killing est non dégénéré. 
+\end{thm}
+
+\begin{dem}
+\quad Suposons dabord que $Rad$ $L = \{0\}$. Soit $S$ le noyaux de $\kappa$. Par définition, $tr(ad$ $x$ $ad$ $y)=0$, $\forall x \in S,y \in L$ (en particulier pour $y \in [L,L]$). Selon le critére de Cartan (\ref{cartan}), $ad_L$ $S$ est résoluble, par consequent $S$ est résoluble. Comme remarquer plus haut $S$ est un idéal de $L$, donc $S \subset Rad$ $L = \{0\}$. Ainsi $\kappa$ est non dégénéré. 
+
+\quad Résiproquement, supposons que $S = \{0 \}$. Pour montrer que $L$ est semisimple, il suffit de prouver que tout idéal abélien $I$ de $L$ est inclue dans $S$. Soient $x \in I,y \in L$. Alors $ad$ $x$ $ad$ $y$ application de $L \to I$, et $(ad$ $x$ $ad$ $y)^2$ une application de $L$ dans $[I,I] =\{0\}$. Ceci nous dit que $ad$ $x$ $ad$ $y$ est nilpotent, donc que $0 = tr(ad$ $x$ $ad$ $y)= \kappa(x,y)$. Ainsi $I \subset S = \{0\}$. $\Box$
+\end{dem}
+
+\begin{rmq}
+\quad La deuxième partie de la preuve reste valide  si la caractéristique de $\KK$ est première.
+\end{rmq}
+
+Pour finir ce memoire, nous soulignerons que cette démonstration montrer que nous avons toujours $S \subset Rad$ $L$. 
+
 
 \end{document}
