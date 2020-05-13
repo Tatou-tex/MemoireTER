@@ -2,6 +2,7 @@
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+
 %---PACKAGES-------------------------------------------------------------------
 \usepackage[Lenny]{fncychap} % Lenny, Conny ,Bjarne, ejne, Glenn, Sonny
 \usepackage{fancyhdr}
@@ -106,34 +107,33 @@ plainpages = false}
 %---PAGE-DE-GARDE--------------------------------------------------------------
 
 
-\title{\textbf{\scalebox{1.25}{Sur les Algèbres de Lie Semisimples}}}
-\author{\bf Cassandre SAIZ \& Ezzahra ZLIGUI SAILLIER \\ \bf Encadrée par Stéphane BASEILHAC}
+\title{Memoire TER: \\ Sur les Algèbres de Lie Semisimples}
+\author{\bf Cassandre SAIZ \& Ezzahra ZLIGUI SAILLIER \\ \bf Encadrée par Stéphane BASEILHAC \\ \\Université de Montpellier \\ \\cassandre.saiz@etu.umontpellier.fr \\ ezzahra.zligui-saillier@etu.umontpellier.fr }
 
 
 
-\date{05/2020}
+\date{29/05/2020}
 
 \begin{document} 
 
 \maketitle
-
-\centerline{Université de Montpellier, Montpellier, France}
-\centerline{cassandre.saiz@etu.umontpellier.fr}
-\centerline{ezzahra.zligui-saillier@etu.umontpellier.fr}
-%\thispagestyle{fancy}
-%\newpage
-%\vspace{4mm}
-%\clearpage
+\thispagestyle{fancy}
+\newpage
+\vspace{4mm}
+\clearpage
 \tableofcontents
 \clearpage
 
-\begin{center}
-\huge{\vspace*{2cm}\textbf{Introduction}}
-\end{center}
+%\begin{center}
+%\huge{\vspace*{2cm}\textbf{Introduction}}
+%\end{center}
 
-\addcontentsline{toc}{chapter}{Introduction}
-\vspace*{2cm}
-$\quad$    \newpage 
+%\addcontentsline{toc}{chapter}{Introduction}
+%\vspace*{2cm}
+%$\quad$    \newpage 
+
+\chapter*{\textbf{Introduction}}
+\quad Dans se rapport nous nous interreserons aux algèbres de Lie, plus particulièrement des algèbres de Lie semisimples.
 
 \chapter{Notions préliminaires }
 Dans tout le rapport $\KK$ sera un corps commutatif et $V$ un $\KK$-espace vectoriel.
@@ -1053,5 +1053,34 @@ Alors $L$ est solvable.
 \begin{prv}
 \quad on applique le théorème à le représentation adjointe de $L$, et on obtient que $ad$ $L$ est solvable. Puisque $Ker$ $ad = Z(L)$ est solvable, $L$ est lui-même est solvable (proposition (\ref{prop:solv}). $\Box$
 \end{prv}
+
+\chapter{Forme de Killing et algèbres de Lie Semisimple}
+
+\begin{df}
+\quad Soit $L$ une algèbre de Lie quelconque. On n'appel \textbf{forme de Killing} la forme bilinéaire symétrique définie par:
+\begin{align*}
+\kappa : L \times L & \longrightarrow \KK \\
+(x,y) & \longmapsto tr(ad \enskip x \enskip ad \enskip y)
+\end{align*}
+\end{df}
+
+\begin{prop}
+\quad $\kappa$ est associative, au sens où $\kappa([x,y],z)=\kappa(x,[y,z])$.
+\end{prop}
+
+\begin{prv}
+En utilisant l'identitée $tr([x,y]z)=tr(x[y,z])$ le résultat est évident. $\Box$
+\end{prv}
+
+Le lemme qui va suivre aurait pu être utile si nous avions poussé plus loin ce travaille de recherche. 
+
+\begin{lem}
+\quad Soit $I$ un idéal de $L$. Si $\kappa$ la forme de Killing de $L$ et $\kappa_I$ la forme de Killing de $I$ (vu comme une algèbre de Lie), alors $\kappa_I = \kappa_{\mid I \times I}$.
+\end{lem}
+
+\begin{prv}
+\quad Rapelons un fait d'algèbre linéaire : Si $W$ un sous-espace de $V$ de dimension fini, et $\phi$ un endomorphisme de $V$, tel que $Im$ $\phi \subset W$, alors $tr(\phi) = tr(\phi_{\mid W})$. Pour prouver cela, il faut étendre une base de $W$ en une base de $V$ et regarder la matrice de $\phi$ dans cette base. Maintenant si $x,y \in I$, alors ($ad$ $x)(ad$ $y)$ est un andomorphisme de $L$, application de $L$ dans $I$, donc la trace de $\kappa(x,y)$ coïncide avec la trace de $\kappa_{I}(x,y)$, soit $(ad$ $x)(ad$ $y)_{\mid I}=(ad_I$ $x)(ad_I$ $y)$. $\Box$
+\end{prv}
+
 
 \end{document}
