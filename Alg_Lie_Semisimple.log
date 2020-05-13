@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.26)  13 MAY 2020 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.26)  13 MAY 2020 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,11 +899,11 @@ Package lastpage Info: Please have a look at the pageslts package at
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=426.79135pt
-* \textheight=674.33032pt
+* \textheight=702.78308pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
 * \topmargin=-23.91173pt
@@ -984,74 +984,80 @@ l.125 \clearpage
                  [1
 
 
-] [2
+]
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61858pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2
 
 ]
 Chapitre 1.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 138.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 138.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 139.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package hyperref Info: bookmark level for unknown shadedf defaults to 0 on inpu
-t line 143.
+t line 144.
 
 
-Package xcolor Warning: Incompatible color definition on input line 156.
+Package xcolor Warning: Incompatible color definition on input line 157.
 
 
-Package xcolor Warning: Incompatible color definition on input line 156.
+Package xcolor Warning: Incompatible color definition on input line 157.
 
 Package hyperref Info: bookmark level for unknown rmq defaults to 0 on input li
-ne 159.
+ne 160.
 Package hyperref Info: bookmark level for unknown ex defaults to 0 on input lin
-e 163.
-LaTeX Font Info:    Try loading font information for U+euf on input line 170.
+e 164.
+LaTeX Font Info:    Try loading font information for U+euf on input line 171.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-Package xcolor Warning: Incompatible color definition on input line 178.
+Package xcolor Warning: Incompatible color definition on input line 179.
 
 
-Package xcolor Warning: Incompatible color definition on input line 178.
+Package xcolor Warning: Incompatible color definition on input line 179.
 
 [3
 
 ]
 
-LaTeX Warning: Command \` invalid in math mode on input line 186.
+LaTeX Warning: Command \` invalid in math mode on input line 187.
 
 Missing character: There is no è in font cmr8!
 
-LaTeX Warning: Command \` invalid in math mode on input line 186.
+LaTeX Warning: Command \` invalid in math mode on input line 187.
 
 Missing character: There is no è in font cmr8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 199--202
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 228.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 229.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 228.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
-Package xcolor Warning: Incompatible color definition on input line 234.
+Package xcolor Warning: Incompatible color definition on input line 235.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1060,7 +1066,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
 
  []
 
@@ -1071,12 +1077,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
 
  []
 
 
-Overfull \hbox (189.55617pt too wide) in paragraph at lines 325--329
+Overfull \hbox (189.55617pt too wide) in paragraph at lines 326--330
 \OML/cmm/m/it/12 D[]$ \T1/cmr/m/n/12 : On nomme l'\T1/cmr/bx/it/12 algèbre or-t
 ho-go-nale \T1/cmr/m/n/12 pair, no-tée $\U/euf/m/n/12 o\OT1/cmr/m/n/12 (2\OML/c
 mm/m/it/12 `; \U/msb/m/n/12 K\OT1/cmr/m/n/12 )$\T1/cmr/m/n/12 , l'en-semble $[]
@@ -1084,23 +1090,23 @@ $,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--333
+Underfull \hbox (badness 10000) in paragraph at lines 331--334
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 334.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
 
-Package xcolor Warning: Incompatible color definition on input line 346.
-
-
-Package xcolor Warning: Incompatible color definition on input line 346.
+Package xcolor Warning: Incompatible color definition on input line 347.
 
 
-Package xcolor Warning: Incompatible color definition on input line 365.
+Package xcolor Warning: Incompatible color definition on input line 347.
 
 
-Package xcolor Warning: Incompatible color definition on input line 365.
+Package xcolor Warning: Incompatible color definition on input line 366.
+
+
+Package xcolor Warning: Incompatible color definition on input line 366.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1110,37 +1116,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 Package hyperref Info: bookmark level for unknown nota defaults to 0 on input l
-ine 368.
+ine 369.
 Package hyperref Info: bookmark level for unknown shadeprop defaults to 0 on in
-put line 372.
+put line 373.
 
 
-Package xcolor Warning: Incompatible color definition on input line 374.
+Package xcolor Warning: Incompatible color definition on input line 375.
 
 
-Package xcolor Warning: Incompatible color definition on input line 374.
+Package xcolor Warning: Incompatible color definition on input line 375.
 
 Package hyperref Info: bookmark level for unknown prv defaults to 0 on input li
-ne 377.
+ne 378.
 Package hyperref Info: bookmark level for unknown exe defaults to 0 on input li
-ne 383.
+ne 384.
 
-Package xcolor Warning: Incompatible color definition on input line 411.
-
-
-Package xcolor Warning: Incompatible color definition on input line 411.
+Package xcolor Warning: Incompatible color definition on input line 412.
 
 
-Package xcolor Warning: Incompatible color definition on input line 415.
+Package xcolor Warning: Incompatible color definition on input line 412.
 
 
-Package xcolor Warning: Incompatible color definition on input line 415.
+Package xcolor Warning: Incompatible color definition on input line 416.
 
 
-Package xcolor Warning: Incompatible color definition on input line 419.
+Package xcolor Warning: Incompatible color definition on input line 416.
 
 
-Package xcolor Warning: Incompatible color definition on input line 419.
+Package xcolor Warning: Incompatible color definition on input line 420.
+
+
+Package xcolor Warning: Incompatible color definition on input line 420.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1150,27 +1156,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 441.
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 441.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--457
+Underfull \hbox (badness 10000) in paragraph at lines 455--458
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 461.
+Package xcolor Warning: Incompatible color definition on input line 462.
 
 
-Package xcolor Warning: Incompatible color definition on input line 461.
+Package xcolor Warning: Incompatible color definition on input line 462.
 
 
-Package xcolor Warning: Incompatible color definition on input line 484.
+Package xcolor Warning: Incompatible color definition on input line 485.
 
 
-Package xcolor Warning: Incompatible color definition on input line 484.
+Package xcolor Warning: Incompatible color definition on input line 485.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1180,10 +1186,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
-Package xcolor Warning: Incompatible color definition on input line 510.
+Package xcolor Warning: Incompatible color definition on input line 511.
 
 
-Package xcolor Warning: Incompatible color definition on input line 510.
+Package xcolor Warning: Incompatible color definition on input line 511.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1193,19 +1199,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 Package hyperref Info: bookmark level for unknown shadethm defaults to 0 on inp
-ut line 556.
+ut line 557.
 
 
-Package xcolor Warning: Incompatible color definition on input line 565.
+Package xcolor Warning: Incompatible color definition on input line 566.
 
 
-Package xcolor Warning: Incompatible color definition on input line 565.
+Package xcolor Warning: Incompatible color definition on input line 566.
 
 
-Package xcolor Warning: Incompatible color definition on input line 571.
+Package xcolor Warning: Incompatible color definition on input line 572.
 
 
-Package xcolor Warning: Incompatible color definition on input line 571.
+Package xcolor Warning: Incompatible color definition on input line 572.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1215,28 +1221,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-Package xcolor Warning: Incompatible color definition on input line 616.
+Package xcolor Warning: Incompatible color definition on input line 617.
 
 
-Package xcolor Warning: Incompatible color definition on input line 616.
+Package xcolor Warning: Incompatible color definition on input line 617.
 
 
-Package xcolor Warning: Incompatible color definition on input line 640.
+Package xcolor Warning: Incompatible color definition on input line 641.
 
 
-Package xcolor Warning: Incompatible color definition on input line 640.
+Package xcolor Warning: Incompatible color definition on input line 641.
 
 
-Package xcolor Warning: Incompatible color definition on input line 654.
+Package xcolor Warning: Incompatible color definition on input line 655.
 
 
-Package xcolor Warning: Incompatible color definition on input line 654.
+Package xcolor Warning: Incompatible color definition on input line 655.
 
 
-Package xcolor Warning: Incompatible color definition on input line 658.
+Package xcolor Warning: Incompatible color definition on input line 659.
 
 
-Package xcolor Warning: Incompatible color definition on input line 658.
+Package xcolor Warning: Incompatible color definition on input line 659.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1246,16 +1252,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 
-Package xcolor Warning: Incompatible color definition on input line 681.
+Package xcolor Warning: Incompatible color definition on input line 682.
 
 
-Package xcolor Warning: Incompatible color definition on input line 681.
+Package xcolor Warning: Incompatible color definition on input line 682.
 
 
-Package xcolor Warning: Incompatible color definition on input line 699.
+Package xcolor Warning: Incompatible color definition on input line 700.
 
 
-Package xcolor Warning: Incompatible color definition on input line 699.
+Package xcolor Warning: Incompatible color definition on input line 700.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1266,42 +1272,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12]
 Chapitre 2.
 
-Package xcolor Warning: Incompatible color definition on input line 723.
+Package xcolor Warning: Incompatible color definition on input line 724.
 
 
-Package xcolor Warning: Incompatible color definition on input line 723.
+Package xcolor Warning: Incompatible color definition on input line 724.
 
 
-Package xcolor Warning: Incompatible color definition on input line 727.
+Package xcolor Warning: Incompatible color definition on input line 728.
 
 
-Package xcolor Warning: Incompatible color definition on input line 727.
+Package xcolor Warning: Incompatible color definition on input line 728.
 
 
-Package xcolor Warning: Incompatible color definition on input line 736.
+Package xcolor Warning: Incompatible color definition on input line 737.
 
 
-Package xcolor Warning: Incompatible color definition on input line 736.
+Package xcolor Warning: Incompatible color definition on input line 737.
 
 Package hyperref Info: bookmark level for unknown shadelem defaults to 0 on inp
-ut line 742.
+ut line 743.
 
-Package xcolor Warning: Incompatible color definition on input line 744.
+Package xcolor Warning: Incompatible color definition on input line 745.
 
 
-Package xcolor Warning: Incompatible color definition on input line 744.
+Package xcolor Warning: Incompatible color definition on input line 745.
 
 [13
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 763.
+Package xcolor Warning: Incompatible color definition on input line 764.
 
 
-Package xcolor Warning: Incompatible color definition on input line 763.
+Package xcolor Warning: Incompatible color definition on input line 764.
 
 Package hyperref Info: bookmark level for unknown dem defaults to 0 on input li
-ne 766.
+ne 767.
+
+Package xcolor Warning: Incompatible color definition on input line 802.
+
+
+Package xcolor Warning: Incompatible color definition on input line 802.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.61858pt.
@@ -1309,25 +1321,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-
-Package xcolor Warning: Incompatible color definition on input line 801.
-
-
-Package xcolor Warning: Incompatible color definition on input line 801.
-
 Package hyperref Info: bookmark level for unknown shadecor defaults to 0 on inp
-ut line 803.
-
-Package xcolor Warning: Incompatible color definition on input line 805.
+ut line 804.
 
 
-Package xcolor Warning: Incompatible color definition on input line 805.
+Package xcolor Warning: Incompatible color definition on input line 806.
 
 
-Package xcolor Warning: Incompatible color definition on input line 818.
+Package xcolor Warning: Incompatible color definition on input line 806.
 
 
-Package xcolor Warning: Incompatible color definition on input line 818.
+Package xcolor Warning: Incompatible color definition on input line 819.
+
+
+Package xcolor Warning: Incompatible color definition on input line 819.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1338,25 +1345,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [15]
 Chapitre 3.
 
-Package xcolor Warning: Incompatible color definition on input line 834.
+Package xcolor Warning: Incompatible color definition on input line 835.
 
 
-Package xcolor Warning: Incompatible color definition on input line 834.
+Package xcolor Warning: Incompatible color definition on input line 835.
 
 [16
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 879.
+Package xcolor Warning: Incompatible color definition on input line 880.
 
 
-Package xcolor Warning: Incompatible color definition on input line 879.
+Package xcolor Warning: Incompatible color definition on input line 880.
 
 
-Package xcolor Warning: Incompatible color definition on input line 894.
+Package xcolor Warning: Incompatible color definition on input line 895.
 
 
-Package xcolor Warning: Incompatible color definition on input line 894.
+Package xcolor Warning: Incompatible color definition on input line 895.
+
+
+Package xcolor Warning: Incompatible color definition on input line 900.
+
+
+Package xcolor Warning: Incompatible color definition on input line 900.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1366,12 +1379,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17]
 
-Package xcolor Warning: Incompatible color definition on input line 899.
-
-
-Package xcolor Warning: Incompatible color definition on input line 899.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.61858pt.
  We now make it that large for the rest of the document.
@@ -1380,40 +1387,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [18]
 Chapitre 4.
 
-Package xcolor Warning: Incompatible color definition on input line 928.
+Package xcolor Warning: Incompatible color definition on input line 929.
 
 
-Package xcolor Warning: Incompatible color definition on input line 928.
+Package xcolor Warning: Incompatible color definition on input line 929.
 
 
-Package xcolor Warning: Incompatible color definition on input line 932.
+Package xcolor Warning: Incompatible color definition on input line 933.
 
 
-Package xcolor Warning: Incompatible color definition on input line 932.
+Package xcolor Warning: Incompatible color definition on input line 933.
 
 
-Package xcolor Warning: Incompatible color definition on input line 952.
+Package xcolor Warning: Incompatible color definition on input line 953.
 
 
-Package xcolor Warning: Incompatible color definition on input line 952.
+Package xcolor Warning: Incompatible color definition on input line 953.
 
 [19
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 956.
+Package xcolor Warning: Incompatible color definition on input line 957.
 
 
-Package xcolor Warning: Incompatible color definition on input line 956.
+Package xcolor Warning: Incompatible color definition on input line 957.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.61858pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-Overfull \hbox (14.1834pt too wide) in paragraph at lines 986--987
+Overfull \hbox (14.1834pt too wide) in paragraph at lines 987--988
 []\T1/cmr/m/n/12 Choisissons une base $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v[]; [
 ]  ; v[]\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 de $\OML/cmm/m/it/12 V$ \T1/cmr/m/n/1
 2 telle que la ma-trice de $\OML/cmm/m/it/12 x$ \T1/cmr/m/n/12 soit $\OML/cmm/m
@@ -1422,16 +1423,23 @@ Overfull \hbox (14.1834pt too wide) in paragraph at lines 986--987
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 991.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61858pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package xcolor Warning: Incompatible color definition on input line 992.
 
 
-Package xcolor Warning: Incompatible color definition on input line 991.
+Package xcolor Warning: Incompatible color definition on input line 992.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1006.
+Package xcolor Warning: Incompatible color definition on input line 1007.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1006.
+Package xcolor Warning: Incompatible color definition on input line 1007.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1441,16 +1449,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [21]
 
-Package xcolor Warning: Incompatible color definition on input line 1033.
+Package xcolor Warning: Incompatible color definition on input line 1034.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1033.
+Package xcolor Warning: Incompatible color definition on input line 1034.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1051.
+Package xcolor Warning: Incompatible color definition on input line 1052.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1051.
+Package xcolor Warning: Incompatible color definition on input line 1052.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1461,43 +1469,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [22]
 Chapitre 5.
 
-Package xcolor Warning: Incompatible color definition on input line 1065.
+Package xcolor Warning: Incompatible color definition on input line 1066.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1065.
+Package xcolor Warning: Incompatible color definition on input line 1066.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1069.
+Package xcolor Warning: Incompatible color definition on input line 1070.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1069.
+Package xcolor Warning: Incompatible color definition on input line 1070.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1079.
+Package xcolor Warning: Incompatible color definition on input line 1080.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1079.
+Package xcolor Warning: Incompatible color definition on input line 1080.
+
+
+LaTeX Warning: Reference `ssl:base' on page 23 undefined on input line 1089.
 
 [23
 
 ]
 
-LaTeX Warning: Reference `ssl:base' on page 24 undefined on input line 1088.
+Package xcolor Warning: Incompatible color definition on input line 1107.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1106.
+Package xcolor Warning: Incompatible color definition on input line 1107.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1106.
+Package xcolor Warning: Incompatible color definition on input line 1115.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1114.
+Package xcolor Warning: Incompatible color definition on input line 1115.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1114.
-
-
-LaTeX Warning: Reference `cartan' on page 24 undefined on input line 1117.
+LaTeX Warning: Reference `cartan' on page 24 undefined on input line 1118.
 
 
 AED: lastpage setting LastPage
@@ -1511,40 +1519,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@thm=\write6
 \openout6 = `Alg_Lie_Semisimple.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1129.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1129.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1130.
  (./Alg_Lie_Semisimple.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1129.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1130.
 
 Package rerunfilecheck Info: File `Alg_Lie_Semisimple.out' has not changed.
-(rerunfilecheck)             Checksum: DACB6F250706411617EC050C91F4BBE6;1579.
+(rerunfilecheck)             Checksum: 178E77E2050EC91C006280F169C9F37B;1628.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1129.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1130.
  ) 
 Here is how much of TeX's memory you used:
- 11153 strings out of 494853
- 156676 string characters out of 6178458
- 272554 words of memory out of 5000000
- 14101 multiletter control sequences out of 15000+600000
- 31569 words of font info for 82 fonts, out of 8000000 for 9000
+ 11155 strings out of 494853
+ 156703 string characters out of 6178458
+ 271468 words of memory out of 5000000
+ 14103 multiletter control sequences out of 15000+600000
+ 32347 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 32i,14n,43p,722b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1200.600
-pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.60
-0pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.6
-00pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.
-600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/tatou/
-.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/tatou
+ 31i,14n,43p,722b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600
+pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.60
+0pk> </home/tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.6
+00pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/tatou/.
+texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/tatou/
+.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1200.600pk> </home/tatou
 /.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/tato
 u/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/tat
 ou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/ta
 tou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/t
 atou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/
-tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/s
+tatou/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-
@@ -1557,10 +1568,10 @@ ler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxf
 ont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Alg_Lie_Semisimple.pdf (25 pages, 331607 bytes).
+Output written on Alg_Lie_Semisimple.pdf (25 pages, 328190 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 154 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 883 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,7 +14,7 @@
 \contentsline {exe}{{Exemple : }{1}{}}{7}{exe.1}
 \contentsline {shadedf}{{D\'efinition}{6}{}}{7}{shadedf.6}
 \contentsline {shadedf}{{D\'efinition}{7}{}}{7}{shadedf.7}
-\contentsline {shadedf}{{D\'efinition}{8}{}}{8}{shadedf.8}
+\contentsline {shadedf}{{D\'efinition}{8}{}}{7}{shadedf.8}
 \contentsline {ex}{{Exemples :}{3}{}}{8}{ex.3}
 \contentsline {shadedf}{{D\'efinition}{9}{}}{8}{shadedf.9}
 \contentsline {exe}{{Exemple : }{2}{}}{8}{exe.2}
@@ -34,9 +34,9 @@
 \contentsline {ex}{{Exemples :}{6}{}}{11}{ex.6}
 \contentsline {shadeprop}{{Proposition}{1.{2}}{}}{11}{shadeprop.1.2}
 \contentsline {prv}{{Preuve :}{2}{}}{11}{prv.2}
-\contentsline {shadedf}{{D\'efinition}{15}{}}{12}{shadedf.15}
-\contentsline {shadedf}{{D\'efinition}{16}{}}{12}{shadedf.16}
-\contentsline {ex}{{Exemples :}{7}{}}{12}{ex.7}
+\contentsline {shadedf}{{D\'efinition}{15}{}}{11}{shadedf.15}
+\contentsline {shadedf}{{D\'efinition}{16}{}}{11}{shadedf.16}
+\contentsline {ex}{{Exemples :}{7}{}}{11}{ex.7}
 \contentsline {shadedf}{{D\'efinition}{17}{}}{12}{shadedf.17}
 \contentsline {exe}{{Exemple : }{4}{}}{12}{exe.4}
 \contentsline {shadeprop}{{Proposition}{1.{3}}{}}{12}{shadeprop.1.3}
@@ -47,7 +47,7 @@
 \contentsline {shadethm}{{Th\'eor\`eme}{2.{1}}{Théorème d'Engel}}{13}{shadethm.2.1}
 \contentsline {shadelem}{{Lemme}{2.{1}}{}}{13}{shadelem.2.1}
 \contentsline {prv}{{Preuve :}{4}{}}{13}{prv.4}
-\contentsline {rmq}{{Remarque :}{9}{}}{14}{rmq.9}
+\contentsline {rmq}{{Remarque :}{9}{}}{13}{rmq.9}
 \contentsline {shadethm}{{Th\'eor\`eme}{2.{2}}{}}{14}{shadethm.2.2}
 \contentsline {dem}{{D\'emonstration :}{1}{}}{14}{dem.1}
 \contentsline {dem}{{D\'emonstration :}{2}{Théorème d'Engel}}{14}{dem.2}
@@ -60,7 +60,7 @@
 \contentsline {dem}{{D\'emonstration :}{3}{}}{16}{dem.3}
 \contentsline {shadecor}{{Corollaire}{3.{1}}{Théorème de Lie}}{17}{shadecor.3.1}
 \contentsline {prv}{{Preuve :}{7}{}}{17}{prv.7}
-\contentsline {shadecor}{{Corollaire}{3.{2}}{}}{18}{shadecor.3.2}
+\contentsline {shadecor}{{Corollaire}{3.{2}}{}}{17}{shadecor.3.2}
 \contentsline {shadecor}{{Corollaire}{3.{3}}{}}{18}{shadecor.3.3}
 \contentsline {prv}{{Preuve :}{8}{Corollaire \ref {cor:L3}}}{18}{prv.8}
 \contentsline {shadedf}{{D\'efinition}{20}{}}{19}{shadedf.20}

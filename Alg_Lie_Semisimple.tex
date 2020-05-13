@@ -15,7 +15,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb,mathtools,mathrsfs}
 \usepackage{latexsym}
-\usepackage[left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage[left=3cm, right=3cm, top=3cm, bottom=2cm]{geometry}
 \usepackage{color,xcolor}
 \usepackage{graphics}
 \usepackage{float}
@@ -78,12 +78,12 @@ plainpages = false}
 \newcommand{\ssp}{\mathfrak{sp}}
 \newcommand{\oo}{\mathfrak{o}}
 %---EN-TETE-ET-PIED-DE-PAGE----------------------------------------------------
-\renewcommand{\headrulewidth}{1,5pt}
+\renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1 pt}
 \pagestyle{fancy}
-\lhead{\thechapter}
+\lhead{}
 %\chead{}
-%rhead{}
+%\rhead{}
 %\lfoot{}
 %\cfoot{  \thepage\ }
 %\rfoot{}
@@ -107,10 +107,10 @@ plainpages = false}
 %---PAGE-DE-GARDE--------------------------------------------------------------
 
 
-\title{Memoire TER: \\ Sur les Algèbres de Lie Semisimples}
-\author{\bf Cassandre SAIZ \& Ezzahra ZLIGUI SAILLIER \\ \bf Encadrée par Stéphane BASEILHAC \\ \\Université de Montpellier \\ \\cassandre.saiz@etu.umontpellier.fr \\ ezzahra.zligui-saillier@etu.umontpellier.fr }
+\title{\textbf{Memoire TER: \\ Sur les Algèbres de Lie Semisimples}}
+\author{\bf Cassandre SAIZ \& Ezzahra ZLIGUI SAILLIER \\ \bf Encadrée par Stéphane BASEILHAC \\ \\Université de Montpellier}
 
-
+%\\ \\cassandre.saiz@etu.umontpellier.fr \\ ezzahra.zligui-saillier@etu.umontpellier.fr
 
 \date{29/05/2020}
 
@@ -124,16 +124,17 @@ plainpages = false}
 \tableofcontents
 \clearpage
 
-%\begin{center}
-%\huge{\vspace*{2cm}\textbf{Introduction}}
-%\end{center}
+\begin{center}
+\huge{\vspace*{2cm}\textbf{Introduction}}
+\end{center}
 
-%\addcontentsline{toc}{chapter}{Introduction}
-%\vspace*{2cm}
-%$\quad$    \newpage 
-
-\chapter*{\textbf{Introduction}}
 \quad Dans se rapport nous nous interreserons aux algèbres de Lie, plus particulièrement des algèbres de Lie semisimples.
+
+\addcontentsline{toc}{chapter}{Introduction}
+\vspace*{2cm}
+    \newpage 
+
+
 
 \chapter{Notions préliminaires }
 Dans tout le rapport $\KK$ sera un corps commutatif et $V$ un $\KK$-espace vectoriel.
