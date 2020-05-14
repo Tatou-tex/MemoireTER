@@ -66,6 +66,8 @@ plainpages = false}
 \fi
 %----Macro-----------------
 \newcommand{\KK}{\mathbb{K}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\FF}{\mathbb{F}}
 \newcommand{\NN}{\mathbb{N}}
 \newcommand{\MM}{\mathbb{M}}
 \newcommand{\QQ}{\mathbb{Q}}
@@ -894,7 +896,53 @@ En particulier, $[LL]$ est nilpotente.
 Au début de ce chapitre nous avons instiqué sur l'importance que $car$ $\KK = 0$, nous allons maintenant donner un exemple de ce phenoméne :
 
 \begin{exe}
+\quad Dans cet exemple le corps sera $\FF = \ZZ /3 \ZZ$. On a alors $car$ $\FF = 3$. Considérons les matrice de $\gl(3,\FF)$ suivantes: 
+\begin{center}
+$x = \begin{pmatrix}
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+1 & 0 & 0 
+\end{pmatrix}$, \quad
+$y = \begin{pmatrix}
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 2 
+\end{pmatrix}$
+\end{center}
+On a: $[x,y] = xy - yx = 
+\begin{pmatrix} 
+0 & 1 & 0 \\
+0 & 0 & 2 \\
+0 & 0 & 0 
+\end{pmatrix}-\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 1 \\
+2 & 0 & 0 
+\end{pmatrix} = \begin{pmatrix}
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+-2 & 0 & 0 
+\end{pmatrix} = x $.\\
+\\
+\quad Montrons que l'espace $L$ engendré par $x$ et $y$ est une sous-algèbre de Lie résoluble. Soient $z_1,z_2 \in L$, tels que $z_1 = a_1x+b_1y$ et $z_2=a_2x+b_2y$ avec $a_i,b_i \in \FF$. On a:
+\begin{align*}
+[z_1,z_2] &= [a_1x+b_1y,a_2x+b_y]\\
+& = a_1a_2[x,x]+a_1b_2[x,y]+b_2a_1[y,x]+b_1b_2[y,y]\\
+& = (a_1b_2-b_2a_1)[x,y]\\
+& = (a_1b_2-b_2a_1)x \in L
+\end{align*}
+\quad $L$ est bien une sous algèbre de Lie. De plus comme $[x,y]=x$, on a que $[L,L]$ est engendré par $x$. Ainsi $[L,L]$ est abélienne, donc $L$ résoluble. 
 
+Pour la matrice $y$ il est facile de trouver des vecteurs propre. $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, $e_2 = \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}$ et $e_3 = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}$ sont des vecteurs propres de $y$ respectivement associés aux valeurs propres $0$, $1$ et $2$.
+
+Regardons si $x$ a un vecteur propre commun avec $y$:
+\begin{center}
+$xe_1 = e_3$, \quad $xe_2=e_1$, \quad $xe_3=e_2$
+\end{center}
+
+\quad Il est alors évidant qu'aucun de ces trois vecteurs est vecteur propre de $x$. 
+
+La conclusion du théorème de Lie est donc faux dans ce cas. 
 \end{exe}
 
 \chapter{Critère de Cartan}
@@ -911,8 +959,8 @@ $
 \begin{pmatrix}
 a & 1 & \cdots & 0 \\
 \vdots & \ddots & \ddots & \vdots \\
- \vdots & & \ddots & 1 \\
-0 & \cdots & \cdots & a
+ 0 & \cdots & a & 1 \\
+0 & \cdots & 0 & a
 \end{pmatrix}
 $ avec $a$ valeur propre de $x$.
 \end{center}
