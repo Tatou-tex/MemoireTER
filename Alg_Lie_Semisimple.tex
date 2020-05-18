@@ -663,21 +663,22 @@ En effet: on a  $L$ est simple donc $L$ n'est pas  abélien et il n'a pas d'idea
 \end{rmq}
 
 \begin{ex}
-\begin{enumerate}
-\item Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
+Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
 
 Pour montrer que $L = \ttt(n,\KK)$  est résoluble on commute explicitement ses séries dérivées en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $.
-qui est équivalente en particulier à  $[ e_{ii},e_{il} ]  = e_{il} $ pour i<j $\quad (\star) $\\ pour cette démarche nous considérons la notion de niveau d'un élément de le base $e_{ij}$ qui est égale a l'entier j-i.
+Cette formule est équivalente à  $[ e_{ii},e_{ij} ]  = e_{ij}$ pour $i<j$ $(\star)$.
 
-Avec $(\star) $ on remarque que pour avoir n'importe quel élément des niveaux 1 et plus, il suffit de le  commuter avec un élément de niveau 0.
+Définisons le \textbf{niveau} d'un élément $e_{ij}$ comme l'entier $j-i$. 
 
-Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $( où  $ \nn(n,\KK)$ est  la sous algèbre des matrices strictement triangulaires supérieures, et comme $\ttt(n,\KK)=\dd(n,\KK) \oplus \nn(n,\KK)$. et $\dd(n,\KK)$ est abélienne on conclut que $ \nn(n,\KK) = [L,L] $.
+Avec $(\star)$ on remarque que pour avoir un élément de niveau $1$ ou plus, il suffit de le commuter avec un élément de niveau $0$.
 
-\item Travaillons maintenant sur la sous algèbre $ \nn(n,\KK): $
+Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $. De plus comme $\ttt(n,\KK)=\dd(n,\KK) \oplus \nn(n,\KK)$ et que $\dd(n,\KK)$ est abélienne, on conclut que $ \nn(n,\KK) = [L,L] $.
 
-par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\
-finalement on a $L^{(k)}=0$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
-\end{enumerate}
+Reste à monter que la sous-algèbre $\nn(n,\KK)$ est résoluble.
+
+Par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\
+finalement on a $L^{(k)}= \{0\}$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
+
 \end{ex}
 
 \begin{prop}\label{prop:solv}
@@ -778,6 +779,8 @@ Soit $n \in \NN$ (qui ne dépend pas de $L$) $ad$ $x_{1}$ $ad$ $x_{2} \ldots$ $a
 En particulier:
 $(x_{1})^n=0$, $\forall x \in L$.
 \end{rmq}
+
+
 
 \chapter{Le théorème d'Engel}
 
@@ -880,6 +883,8 @@ En particulier, $Z(L) \neq \{ 0 \}$.
 \begin{prv}
 \quad $L$ agit sur $L$, via la représentation adjointe, donc le Théorème (\ref{thm:E1}) donne $x \in K$ non nul, annulé par $L$, i.e. $[L,x]= \{0 \}$. Ainsi $x \in K \cap Z(L)$. $\Box$
 \end{prv}
+
+
 
 \chapter{Le théorème de Lie}
 
@@ -1016,6 +1021,7 @@ Il est alors évidant qu'aucun de ces trois vecteurs est vecteur propre de $x$.
 
 La conclusion du théorème de Lie est donc faux dans ce cas. 
 \end{exe}
+
 
 \chapter{Critère de Cartan}
 
@@ -1177,6 +1183,7 @@ Alors $L$ est résoluble.
 \quad On applique le théorème à le représentation adjointe de $L$, et on obtient que $ad$ $L$ résoluble. Puisque $Ker$ $ad = Z(L)$ est résoluble, $L$ est lui-même est résoluble (proposition (\ref{prop:solv}). $\Box$
 \end{prv}
 
+
 \chapter{Forme de Killing et algèbres de Lie Semisimple}
 
 \begin{df}
@@ -1249,5 +1256,6 @@ $\begin{pmatrix}
 \end{rmq}
 
 Pour finir ce memoire, nous soulignerons que cette démonstration montrer que nous avons toujours $S \subset Rad(L)$. 
+
 
 \end{document}
