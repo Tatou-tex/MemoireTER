@@ -392,9 +392,27 @@ Une $\KK$-algèbre n'est pas nécessairement associative.
 De plus si $A$ est une algèbre de Lie, alors $Der(A)$ est une sous-algèbre de Lie. 
 \end{prop}
 
-%\begin{prv}
-%a faire $\Box$
-%\end{prv}
+\begin{prv}
+Soit A une algèbre de Lie. Montrons que $Der(A)$ est une sous-algèbre de $\gl(A)$. Cela revient à montrer que pour tout $\delta ,\delta^{\prime} \in Der(A)$, on a:
+\begin{center}
+$[\delta,\delta^{\prime}](a.b) \in Der(A)$
+\end{center}
+c. à. d $[\delta,\delta^{\prime}](a.b)$ = $a[\delta,\delta^{\prime}](b)+[\delta,\delta^{\prime}](a).b\quad$ $a,b\in A$.
+
+Rappelons que $[\delta,\delta^{\prime}]=\delta\circ\delta^{\prime}-\delta^{\prime}\circ\delta$.
+
+Soit $a,b\in A$:
+\begin{align*}
+[\delta,\delta^{\prime}](a.b) & = \delta\circ\delta^{\prime}-\delta^{\prime}\circ\delta(a.b) \\
+& = \delta\circ\delta^{\prime}(a.b)-\delta^{\prime}\circ\delta(a.b)\\
+& = \delta(a\delta^{\prime}(b)+\delta^{\prime}(a).b)-\delta^{\prime}(a\delta(b)+\delta(a).b)\\
+& = \delta(a\delta^{\prime}(b))+\delta (\delta^{\prime}(a).b)-\delta^{\prime}(a\delta(b))-\delta^{\prime}(\delta(a).b)\\
+& = a\delta\delta^{\prime}(b)+\delta(a)\delta^{\prime}(b)+\delta^{\prime}(a)\delta(b)+\delta\delta^{\prime}(a).b-\delta^{\prime}(a)\delta(b)-\delta(a)\delta^{\prime}(b)-\delta^{\prime}\delta(a).b \\
+& = a(\delta\delta^{\prime}(b)-\delta^{\prime}\delta(b))+(\delta\delta^{\prime}(a)-\delta^{\prime}\delta(a)).b \\
+& = a[\delta,\delta^{\prime}].b+[\delta,\delta^{\prime}](a).b\
+\end{align*}
+ $\Box$
+\end{prv}
 
 \begin{exe}
 \quad Soit $L$ une algèbre de Lie. On appel \textbf{adjoint} de $x \in L$ l'application:
@@ -502,8 +520,14 @@ $C_{L}(S) = \{x \in L\quad  | \quad [x,S]=0\}$.
 Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-algèbre de $L$ tel que $K$ soit un idéal.
 \end{rmq}
 
-\begin{ex}
-\end{ex}
+\begin{exe}
+\begin{enumerate}
+\item Comme auto-normalisateur on trouve l'algèbre des matrices diagonales\\ $ \dd(n,\CC) \subset \gl(n,\CC)$
+
+\item dans le cas ou S=L le centralisateur de S est son centre; $C_L(L)=Z(L)$
+
+\end{enumerate}
+\end{exe}
 
 \subsection{Homomorphismes et représentations}
 
@@ -632,16 +656,28 @@ $L^{(0)} = L$, $L^{(1)} = [L,L]$, $L^{(2)} = [L^{(1)},L^{(1)}] \cdots L^{(i)} = 
 \begin{itemize}
 \item[•]  $L$ abélien $\Rightarrow L$ résoluble. Remarquons que $L$ abélienne équivaut à $L^{(1)} = \{0\}$, donc $L$ est résoluble.
 
-\item[•]  $L$ simple $\Rightarrow L$ n'est pas résoluble, car $L = [L,L]$.
-détailllé car importent dans la suite
+\item[•]  $L$ simple $\Rightarrow L$ n'est pas résoluble.
+
+En effet: on a  $L$ est simple donc $L$ n'est pas  abélien et il n'a pas d'ideal alors, $L = [L,L]$, et $L^{(2)} = [L^{(1)},L^{(1)}] = L$, $\cdots$ , $L^{(i)} = [L^{(i-1)},L^{(i-1)}]=L $ c'est à dire que $\forall n \in \NN $  $L^{(n)}\ne 0$.
 \end{itemize}
 \end{rmq}
 
 \begin{ex}
-\quad Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij}\quad1\leq i \leq j\leq n \}$.
+\begin{enumerate}
+\item Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
 
 Pour montrer que $L = \ttt(n,\KK)$  est résoluble on commute explicitement ses séries dérivées en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $.
-A FAIRE 
+qui est équivalente en particulier à  $[ e_{ii},e_{il} ]  = e_{il} $ pour i<j $\quad (\star) $\\ pour cette démarche nous considérons la notion de niveau d'un élément de le base $e_{ij}$ qui est égale a l'entier j-i.
+
+Avec $(\star) $ on remarque que pour avoir n'importe quel élément des niveaux 1 et plus, il suffit de le  commuter avec un élément de niveau 0.
+
+Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $( où  $ \nn(n,\KK)$ est  la sous algèbre des matrices strictement triangulaires supérieures, et comme $\ttt(n,\KK)=\dd(n,\KK) \oplus \nn(n,\KK)$. et $\dd(n,\KK)$ est abélienne on conclut que $ \nn(n,\KK) = [L,L] $.
+
+\item Travaillons maintenant sur la sous algèbre $ \nn(n,\KK): $
+
+par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\
+finalement on a $L^{(k)}=0$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
+\end{enumerate}
 \end{ex}
 
 \begin{prop}\label{prop:solv}
@@ -711,14 +747,26 @@ Le contraire est faux ( exemple a mettre après).
 
 \item[(b)]  Si $L/Z(L)$ est nilpotente, alors $L$ est nilpotente.
 
-\item[(c)] Si $L$ est nilpotente et non nulle alors $Z(L) \ne 0$.
+\item[(c)] Si $L$ est nilpotente et non nulle alors $Z(L) \ne \{0\}$.
 \end{itemize}
 \end{prop}
 
 \begin{prv}
 \begin{itemize}
 \item[(a)]  Pareil que la preuve pour une algèbre résoluble.
-\item[(b)]  Supposons que $L^n\subset Z(L)$, alors $L^{n+1}=[L,L^n]\subset [L,Z(L)]=0$.
+\item[(b)]  Supposons que $L/Z(L)$ est nilpotente. Alors il existe $n \in \NN$ tel que:
+\begin{center}
+$(L/Z(L))^{n}= \{ 0 \}$.
+\end{center} 
+
+Comme $(L/Z(L))^{n}= \{ 0 \} +Z(L)$ et $\pi(L^n) = (L/Z(L))^{n}$, alors:
+\begin{center}
+$\pi(L^n)= \{0\} +Z(L)$.
+\end{center}
+Ce qui implique que $L^n \subset ker(\pi)=Z(L)$.
+
+Ainsi $L^{n+1}=[L,L^n]\subset [L,Z(L)]= \{0\}$. Posons $m = n+1$, on a trouvé $m$ tel que $L^m= \{0\}$. Donc $L$ est nilpotente.
+
 \item[(c)] Le dernier terme non nul dans la série centrale descendante est le centre.
 \end{itemize}
 \end{prv}
