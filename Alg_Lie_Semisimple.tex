@@ -508,7 +508,7 @@ Si $K = N_{L}(K)$ on dit que $K$ est un \textbf{auto-normalisateur}.
 
 \item[•] Le \textbf{centralisateur} d'un sous-ensemble $S$ de $L$ est:
 \begin{center}
-$C_{L}(S) = \{x \in L\quad  | \quad [x,S]=0\}$.
+$C_{L}(S) = \{x \in L \mid [x,S]=0\}$.
 
 \end{center} 
 \end{itemize}
@@ -522,9 +522,9 @@ Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-al
 
 \begin{exe}
 \begin{enumerate}
-\item Comme auto-normalisateur on trouve l'algèbre des matrices diagonales\\ $ \dd(n,\CC) \subset \gl(n,\CC)$
+\item L'algèbre des matrices diagonales $ \dd(n,\CC) \subset \gl(n,\CC)$ est un exemple d'auto-normalisateur.
 
-\item dans le cas ou S=L le centralisateur de S est son centre; $C_L(L)=Z(L)$
+\item Soit $L$ une algèbre de Lie. Le centralisateur de $L$ est son centre, i.e. $C_L(L)=Z(L)$.
 
 \end{enumerate}
 \end{exe}
@@ -662,24 +662,29 @@ En effet: on a  $L$ est simple donc $L$ n'est pas  abélien et il n'a pas d'idea
 \end{itemize}
 \end{rmq}
 
-\begin{ex}
+\begin{exe}
 Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
 
-Pour montrer que $L = \ttt(n,\KK)$  est résoluble on commute explicitement ses séries dérivées en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $.
-Cette formule est équivalente à  $[ e_{ii},e_{ij} ]  = e_{ij}$ pour $i<j$ $(\star)$.
+Pour montrer que $L = \ttt(n,\KK)$  est résoluble on calcul explicitement ses séries dérivées, en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $ $(\star)$. En particulier, nous avons:  $[ e_{ii},e_{ij} ]  = e_{ij}$ pour $i<j$. Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $. De plus comme $\ttt(n,\KK) = \dd(n,\KK) \oplus \nn(n,\KK)$ et que $\dd(n,\KK)$ est abélienne, on conclut que $ \nn(n,\KK) = [L,L]$.
 
-Définisons le \textbf{niveau} d'un élément $e_{ij}$ comme l'entier $j-i$. 
+Reste à monter que la sous-algèbre $\nn(n,\KK)$ est résoluble. Avant cela définisons le \textbf{niveau} d'un élément $e_{ij}$ comme l'entier $j-i$.
 
-Avec $(\star)$ on remarque que pour avoir un élément de niveau $1$ ou plus, il suffit de le commuter avec un élément de niveau $0$.
+Pour cela, regardons l'action du crochet sur deux éléments de la base de $\nn(n,\KK)$, $e_{ij}$ et $e_{kl}$ avec $i<j$ et $k<l$. On peut aussi supposé, sans perdre d'éléments, que $i \neq l$. On a alors:
+\begin{center}
+$[e_{ij},e_{kl}] = \left \{
+\begin{aligned}
+e_{il} &\quad si \quad j = k \\
+0 &\quad sinon
+\end{aligned}
+\right. $
+\end{center}
+Le niveau de $e_{il}$ est égal à la somme des niveaux de $e_{ij}$ et de $e_{kl}$. Ainsi, le niveau du crochet de deux éléments de niveau $1$ sera $2$. On a donc que $L^{(2)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2$. Par réccurence on obtient que $L^{(i)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2^{i-1}$. Finalement, il est clair que $L^{(i)} = \{0\}$ quand $2^{i-1} > n$. Ainsi $\nn(n, \KK)$ est résoluble. 
 
-Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $. De plus comme $\ttt(n,\KK)=\dd(n,\KK) \oplus \nn(n,\KK)$ et que $\dd(n,\KK)$ est abélienne, on conclut que $ \nn(n,\KK) = [L,L] $.
+Donc $\ttt(n, \KK]$ est également résoluble. 
 
-Reste à monter que la sous-algèbre $\nn(n,\KK)$ est résoluble.
+%Par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\ finalement on a $L^{(k)}= \{0\}$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
 
-Par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\
-finalement on a $L^{(k)}= \{0\}$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
-
-\end{ex}
+\end{exe}
 
 \begin{prop}\label{prop:solv}
 Soit $L$ une algèbre de Lie: 
@@ -727,19 +732,19 @@ $L^{1}=L, \quad L^{2}=[L, L]=\left[L, L^{1}\right], \quad L^{3}=\left[L, L^{2}\r
 \end{center}
 
 \begin{df}
-\quad L'algèbre de Lie $L$ est dite \textbf{nilpotente} si $L^{n}=0$ pour un certain $n \in \NN^{*}$.
+\quad L'algèbre de Lie $L$ est dite \textbf{nilpotente} si $L^{n} = \{0\}$ pour un certain $n \in \NN^{*}$.
 \end{df}
 
-\begin{rmq}
-\quad On a équivalence entre $L$ abélienne et $L^{2}= \{ 0 \}$. Donc $L$ abélienne $\Rightarrow$ $L$ nilpotentes.
-\end{rmq}
+\begin{ex}
+\begin{enumerate}
+\item On a équivalence entre $L$ abélienne et $L^{2}= \{ 0 \}$. Donc $L$ abélienne $\Rightarrow$ $L$ nilpotentes.
 
-\begin{exe}
-\quad Toute algèbre abélienne est nilpotente.
-
-On clairement $L^{(i)}\subset L^{i}$ $\forall i$, donc les algèbres nilpotentes sont résoluble.
-Le contraire est faux ( exemple a mettre après).
-\end{exe}
+\item On clairement $L^{(i)}\subset L^{i}$ $\forall i$, donc les algèbres nilpotentes sont résoluble. Pour illustré prenons la sous-algèbre des matrices strictement triangulaires supérieures $L = \nn(4,\KK)$. $L $ est engendré par $\{e_{12},e_{13},e_{14},e_{23},e_{24},e_{34}\}$. En procédant comme dans l'exemple de la section (\ref{d}) sur l'algèbre résoluble $\ttt(n, \KK)$, on trouve que $L^{1}$ est engendré par ${e_{13},e_{14},e_{24}}$, 
+ et $L^{2}$ est engendré par $\{e_{14}\}$, ainsi que $ L^{3}=0 $. Donc $L$ est nilpotente.
+ 
+\item Une algèbre résoluble n'est cependant pas nécessairement nilpotente. Considèrons la sous-algèbre $L = \ttt(3,\KK)$. Par le même type de calculs que précedament, on a: $L^2 = \nn(3, \KK) = \{ e_{12} \}$. Or $L^3 = [L,L^2]$, donc $[e_{11},e_{12}] = e_{12} \in L^3$. On déduit $L^i = \nn(3, \KK)$, $\forall i \geq 2$. L'algèbre $\ttt(3, \KK)$ n'est donc pas nilpotente.
+\end{enumerate} 
+\end{ex}
 
 \begin{prop}\label{prop:nilp}
 \quad Soit $L$ une algèbre de Lie. Alors :
