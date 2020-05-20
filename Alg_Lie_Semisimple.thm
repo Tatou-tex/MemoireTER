@@ -44,49 +44,50 @@
 \contentsline {rmq}{{Remarque :}{8}{}}{13}{rmq.8}
 \contentsline {shadedf}{{D\'efinition}{18}{}}{14}{shadedf.18}
 \contentsline {shadeprop}{{Proposition}{2.{1}}{}}{14}{shadeprop.2.1}
+\contentsline {prv}{{Preuve :}{4}{}}{14}{prv.4}
 \contentsline {shadethm}{{Th\'eor\`eme}{2.{1}}{Théorème d'Engel}}{14}{shadethm.2.1}
 \contentsline {shadelem}{{Lemme}{2.{1}}{}}{14}{shadelem.2.1}
-\contentsline {prv}{{Preuve :}{4}{}}{14}{prv.4}
-\contentsline {rmq}{{Remarque :}{9}{}}{14}{rmq.9}
+\contentsline {prv}{{Preuve :}{5}{}}{14}{prv.5}
+\contentsline {rmq}{{Remarque :}{9}{}}{15}{rmq.9}
 \contentsline {shadethm}{{Th\'eor\`eme}{2.{2}}{}}{15}{shadethm.2.2}
 \contentsline {dem}{{D\'emonstration :}{1}{}}{15}{dem.1}
 \contentsline {dem}{{D\'emonstration :}{2}{Théorème d'Engel}}{15}{dem.2}
 \contentsline {shadedf}{{D\'efinition}{19}{}}{16}{shadedf.19}
 \contentsline {shadecor}{{Corollaire}{2.{1}}{}}{16}{shadecor.2.1}
-\contentsline {prv}{{Preuve :}{5}{}}{16}{prv.5}
-\contentsline {shadelem}{{Lemme}{2.{2}}{}}{16}{shadelem.2.2}
 \contentsline {prv}{{Preuve :}{6}{}}{16}{prv.6}
+\contentsline {shadelem}{{Lemme}{2.{2}}{}}{16}{shadelem.2.2}
+\contentsline {prv}{{Preuve :}{7}{}}{16}{prv.7}
 \contentsline {shadethm}{{Th\'eor\`eme}{3.{1}}{}}{17}{shadethm.3.1}
 \contentsline {dem}{{D\'emonstration :}{3}{}}{17}{dem.3}
 \contentsline {shadecor}{{Corollaire}{3.{1}}{Théorème de Lie}}{18}{shadecor.3.1}
-\contentsline {prv}{{Preuve :}{7}{}}{18}{prv.7}
+\contentsline {prv}{{Preuve :}{8}{}}{18}{prv.8}
 \contentsline {shadecor}{{Corollaire}{3.{2}}{}}{18}{shadecor.3.2}
 \contentsline {shadecor}{{Corollaire}{3.{3}}{}}{19}{shadecor.3.3}
-\contentsline {prv}{{Preuve :}{8}{Corollaire \ref {cor:L3}}}{19}{prv.8}
+\contentsline {prv}{{Preuve :}{9}{Corollaire \ref {cor:L3}}}{19}{prv.9}
 \contentsline {exe}{{Exemple : }{5}{}}{19}{exe.5}
 \contentsline {shadedf}{{D\'efinition}{20}{}}{20}{shadedf.20}
 \contentsline {shadeprop}{{Proposition}{4.{1}}{}}{20}{shadeprop.4.1}
 \contentsline {rmq}{{Remarque :}{10}{}}{20}{rmq.10}
 \contentsline {shadeprop}{{Proposition}{4.{2}}{}}{21}{shadeprop.4.2}
 \contentsline {shadedf}{{D\'efinition}{21}{}}{21}{shadedf.21}
-\contentsline {prv}{{Preuve :}{9}{}}{21}{prv.9}
+\contentsline {prv}{{Preuve :}{10}{}}{21}{prv.10}
 \contentsline {ex}{{Exemples :}{8}{}}{22}{ex.8}
 \contentsline {shadelem}{{Lemme}{4.{1}}{}}{22}{shadelem.4.1}
-\contentsline {prv}{{Preuve :}{10}{}}{22}{prv.10}
-\contentsline {shadelem}{{Lemme}{4.{2}}{}}{22}{shadelem.4.2}
 \contentsline {prv}{{Preuve :}{11}{}}{22}{prv.11}
+\contentsline {shadelem}{{Lemme}{4.{2}}{}}{22}{shadelem.4.2}
+\contentsline {prv}{{Preuve :}{12}{}}{22}{prv.12}
 \contentsline {shadethm}{{Th\'eor\`eme}{4.{1}}{Critère de Cartan}}{23}{shadethm.4.1}
 \contentsline {dem}{{D\'emonstration :}{4}{}}{23}{dem.4}
 \contentsline {shadecor}{{Corollaire}{4.{1}}{}}{23}{shadecor.4.1}
-\contentsline {prv}{{Preuve :}{12}{}}{23}{prv.12}
+\contentsline {prv}{{Preuve :}{13}{}}{23}{prv.13}
 \contentsline {shadedf}{{D\'efinition}{22}{}}{24}{shadedf.22}
 \contentsline {shadeprop}{{Proposition}{5.{1}}{}}{24}{shadeprop.5.1}
-\contentsline {prv}{{Preuve :}{13}{}}{24}{prv.13}
-\contentsline {shadelem}{{Lemme}{5.{1}}{}}{24}{shadelem.5.1}
 \contentsline {prv}{{Preuve :}{14}{}}{24}{prv.14}
+\contentsline {shadelem}{{Lemme}{5.{1}}{}}{24}{shadelem.5.1}
+\contentsline {prv}{{Preuve :}{15}{}}{24}{prv.15}
 \contentsline {exe}{{Exemple : }{6}{}}{25}{exe.6}
 \contentsline {shadeprop}{{Proposition}{5.{2}}{}}{25}{shadeprop.5.2}
-\contentsline {prv}{{Preuve :}{15}{}}{25}{prv.15}
+\contentsline {prv}{{Preuve :}{16}{}}{25}{prv.16}
 \contentsline {shadethm}{{Th\'eor\`eme}{5.{1}}{}}{25}{shadethm.5.1}
 \contentsline {dem}{{D\'emonstration :}{5}{}}{25}{dem.5}
 \contentsline {rmq}{{Remarque :}{11}{}}{25}{rmq.11}

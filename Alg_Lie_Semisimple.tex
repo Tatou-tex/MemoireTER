@@ -69,7 +69,7 @@ plainpages = false}
 \newcommand{\ZZ}{\mathbb{Z}}
 \newcommand{\FF}{\mathbb{F}}
 \newcommand{\NN}{\mathbb{N}}
-\newcommand{\MM}{\mathbb{M}}
+\newcommand{\MM}{\mathcal{M}}
 \newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\CC}{\mathbb{C}}
 \newcommand{\gl}{\mathfrak{gl}}
@@ -182,9 +182,9 @@ est une algèbre de Lie, on la note $\gl(V)$.
 
 \subsection{Algèbre linéaire de Lie}\label{b}
 
-Considérons $V$ un espace vectoriel de dimension $n$. Nous allons approfondir l'exemple $\gl(V)$, en étudiant certaines de ses sous-algèbres de Lie. Nous pouvons identifier $\gl(V)$  avec l'ensemble des matrices $n \times n$ sur $\KK$ que nous noterons $\gl(n,\KK)$. Cette procédure est pratique, surtout pour les calculs explicites. Comme pour le calcul de la dimension de $\gl(V)$ :
+Considérons $V$ un espace vectoriel de dimension $n$. Nous allons approfondir l'exemple $\gl(V)$, en étudiant certaines de ses sous-algèbres de Lie. Nous pouvons identifier $\gl(V)$  avec l'ensemble des matrices $n \times n$ sur $\KK$, que nous noterons $\gl(n,\KK)$. Cette procédure est pratique, surtout pour les calculs explicites. Comme pour le calcul de la dimension de $\gl(V)$ :
 \begin{center}
-$dim$ $\gl(V)= dim$ $M_{n}(\KK) = n^{2}$
+$dim$ $\gl(V)= dim$ $\MM_{n}(\KK) = n^{2}$
 \end{center}
 
 Nous pouvons aussi définir une base de $\gl(n,\KK)$ : $ \{ e_{ij} \}$, où $e_{ij}$ est la matrice dont le seul coefficient non nul est sur la $i$-ième ligne et la $j$-ième colonne.
@@ -206,7 +206,7 @@ $ A_{\ell} $ : Dans un premier temps regardons l'\emph{\textbf{algèbre linéair
 
 Rappelons que la trace d'une matrice est la somme de ses éléments diagonaux et qu'elle est indépendante du choix de la base. Comme nous pouvons identifier les matrices aux endomorphismes, la trace a du sens pour les endomorphismes de $V$.
 
-Montrons que $\ssl(V)$ est bien une sous-algèbre de Lie. Comme $tr(xy)=tr(yx)$ et $tr(x+y)= tr(x) + tr(y)$ ,  pour tous $x,y  \in End(V)$ alors:
+Montrons que $\ssl(V)$ est bien une sous-algèbre de Lie. Comme $tr(xy)=tr(yx)$ et $tr(x+y)= tr(x) + tr(y)$,  pour tous $x,y  \in End(V)$ alors:
 \begin{center}
 $tr([x,y])=tr(xy-yx)=tr(xy)-tr(yx)=0$
 \end{center} 
@@ -228,6 +228,7 @@ Regardons le cas où $\ell=1$, c'est à dire $\ssl(2,\KK)$. Dans ce cas nous avo
 \begin{center}
 $ x=\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} $ ,\quad $ h=\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $, \quad $ z=\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} $
 \end{center}
+\bigskip
 
 Avant de commencer l'exemple $ C_{\ell} $, rappelons les définitions suivantes :
 
@@ -245,7 +246,7 @@ On dit que $B$ est :
 \end{df}
 
 \begin{rmq} 
-\quad Dans  les espaces vectoriels de dimension paire, si $B$ est une forme bilinéaire antisymétrique et non dégénérée, alors il existe une base $\mathcal{B}$ dans laquelle la matrice de $B$ est : $[ B ]_\mathcal{B}=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} $.
+\quad Dans les espaces vectoriels de dimension paire, si $B$ est une forme bilinéaire antisymétrique et non dégénérée, alors il existe une base $\mathcal{B}$ dans laquelle la matrice de $B$ est : $[ B ]_\mathcal{B}=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} $.
 \end{rmq}
 
 $ C_{\ell} $: Parlons maintenant de l'\emph{\textbf{algèbre symplèctique}}, dans ce cas $dim$ $V=2 \ell$. L'algèbre symplètique est définie comme l'ensemble des endomorphismes $x \in \gl(V)$ qui satisfont $f(x(v),w)=-f(v,x(w))$, pour $f$ une forme bilinéaire \textit{antisymétrique} non-dégénérée. On la note $\ssp (2\ell,\KK)$.
@@ -350,9 +351,9 @@ Les calculs de base et de dimension se font de manière similaire à $B_{\ell}$.
 \\
 \quad Nous pouvons aussi cité comme sous-algèbre de Lie de $\gl(n,\KK)$:
 \begin{itemize}
-\item[•] Les matrices triangulaires supérieures $\ttt(n,\KK)$ : $(a_{ij})= 0  \quad si \quad i>j.$
+\item[•] Les matrices triangulaires supérieures $\ttt(n,\KK)$: $(a_{ij})= 0  \quad si \quad i>j.$
 
-\item[•] Les matrices strictement  triangulaires  $ \nn(n,\KK) $ : $(a_{ij})= 0  \quad si \quad i \geq j.$
+\item[•] Les matrices strictement  triangulaires  $ \nn(n,\KK)$: $(a_{ij})= 0  \quad si \quad i \geq j.$
 
 \item[•] Les matrices diagonales $\dd(n,\KK)$: $(a_{ij})= 0  \quad si \quad i \ne j .$
 \end{itemize}
@@ -384,7 +385,7 @@ Une $\KK$-algèbre n'est pas nécessairement associative.
 \end{df}
 
 \begin{nota}
-\quad On note $Der(A)=\{ $toute les dérivations de $A \}$
+\quad On note $Der(A)=\{ $toutes les dérivations de $A \}$
 \end{nota}
 
 \begin{prop}
@@ -393,7 +394,7 @@ De plus si $A$ est une algèbre de Lie, alors $Der(A)$ est une sous-algèbre de 
 \end{prop}
 
 \begin{prv}
-Soit A une algèbre de Lie. Montrons que $Der(A)$ est une sous-algèbre de $\gl(A)$. Cela revient à montrer que pour tout $\delta ,\delta^{\prime} \in Der(A)$, on a:
+Soit A une algèbre de Lie. Montrons que $Der(A)$ est une sous-algèbre de $\gl(A)$. Cela revient à montrer que pour tous $\delta ,\delta^{\prime} \in Der(A)$, on a:
 \begin{center}
 $[\delta,\delta^{\prime}](a.b) \in Der(A)$
 \end{center}
@@ -440,7 +441,7 @@ Ainsi $ad$ $x$ est bien une dérivation.
 \end{df}
 
 \begin{df}
-\quad Soit $L$ une algèbre de Lie. On appel l'\textbf{algèbre dérivée} de $L$ le sous espace $[L,L]$.
+\quad Soit $L$ une algèbre de Lie. On appel l'\textbf{algèbre dérivée} de $L$ le sous-espace $[L,L]$.
 \end{df}
 
 \begin{df}
@@ -453,7 +454,7 @@ Ainsi $ad$ $x$ est bien une dérivation.
 
 \item $Z(L) = \{ z \in L  \mid [x,z]=0 \quad \forall x \in L\}$ est appelé le \textbf{centre} de $L$. C'est un idéal de $L$.
 
-\item Si $I$ et $J$ deux idéaux de $L$, alors $I+J:=\{i+j,\quad i\in I,\quad j\in J\}$ et $[I,J]$ sont des idéaux de L.
+\item Si $I$ et $J$ deux idéaux de $L$, alors $I+J:=\{i+j \mid i \in I$, $j \in J\}$ et $[I,J]$ sont des idéaux de $L$.
 
 En effet pour $x \in L$, $i \in I$ et $j \in J$:
 \begin{itemize}
@@ -476,7 +477,7 @@ $\left \{ x=\begin{pmatrix} 0 & 1\\ 0 & 0 \end{pmatrix},\quad y=\begin{pmatrix} 
 
 Par un simple calcul on trouve que : $[x,y]=h$,\quad $[h,x]=2x$, \quad $[h,y]=-2y$.
 
-Soit $I \ne$ $\{0 \}$ un idéal de $L$ et $ax+by+ch$ un élément non nul de $I$. En appliquant  $ad$ $x$ deux fois à cet élément, on obtient $-2bx\in I$. De même en appliquant $ad$ $y$ deux fois, on obtient $-2ay\in I$. Donc si $a \ne 0$ et $b \ne 0$, alors $x \in I $ ou $y \in I$. Ainsi $I=L$.
+Soit $I \ne$ $\{0 \}$ un idéal de $L$ et $ax+by+ch$ un élément non nul de $I$. En appliquant  $ad$ $x$ deux fois à cet élément, on obtient $-2bx\in I$. De même en appliquant $ad$ $y$ deux fois, on obtient $-2ay \in I$. Donc si $a \ne 0$ et $b \ne 0$, alors $x \in I $ ou $y \in I$. Ainsi $I=L$.
 
 Sinon, si $a = b = 0$ alors $ch \in I$, donc $h \in I$. On conclu $I=L$, donc $L$ est simple.
 \end{exe}
@@ -484,7 +485,7 @@ Sinon, si $a = b = 0$ alors $ch \in I$, donc $h \in I$. On conclu $I=L$, donc $L
 Dans la section (\ref{d}) nous verrons des sous-algèbres de Lie qui ne sont pas simples, notamment les sous-algèbres $\ttt(n,\KK)$ et $\nn(n,\KK)$.\\
 \\
 
-La construction de l'algèbre $L/I$ est formellement le même que le quotient d'anneaux :
+La construction de l'algèbre $L / I$ est formellement le même que le quotient d'anneaux :
 
 \begin{df}
 \quad Soient $L$ une algèbre de Lie et $I$ un idéal propre et non nul de $L$. L'\textbf{algèbre quotient} $L/I$ est l'espace quotient muni de la multiplication de Lie définie par:
@@ -502,14 +503,13 @@ Pour un usage ultérieur, nous allons introduire quelques notions connexes, anal
 
 \item[•] Le \textbf{normalisateur} d'un sous-espace $K$ de $L$ est l'ensemble:  
  \begin{center}
-$ N_{L}(K)=\{x \in L \quad |\quad [x,K] \subset K \} $ 
+$ N_{L}(K)=\{x \in L \mid [x,K] \subset K \} $ 
  \end{center}
 Si $K = N_{L}(K)$ on dit que $K$ est un \textbf{auto-normalisateur}.
 
 \item[•] Le \textbf{centralisateur} d'un sous-ensemble $S$ de $L$ est:
 \begin{center}
 $C_{L}(S) = \{x \in L \mid [x,S]=0\}$.
-
 \end{center} 
 \end{itemize}
 \end{df}
@@ -517,7 +517,7 @@ $C_{L}(S) = \{x \in L \mid [x,S]=0\}$.
 \begin{rmq} 
 \quad Par l’identité de Jacobi, $N_L(K)$ et $C_L(S)$ sont des sous-algèbres de $L$.
 
-Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-algèbre de $L$ tel que $K$ soit un idéal.
+Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-algèbre de $L$ telle que $K$ soit un idéal.
 \end{rmq}
 
 \begin{exe}
@@ -558,7 +558,7 @@ $\theta([x,y]) = 0 = [0,0] = [\theta(x),\theta(y)]$, donc $\theta$ est bien un m
 
 \item La trace d'un endomorphisme est définie par: 
 \begin{center}
-$tr: \gl(n,F) \longrightarrow \KK$.
+$tr: \gl(n,\KK) \longrightarrow \KK$.
 \end{center}
 Montrons que $tr$ est un morphisme d’algèbre de Lie.
 
@@ -580,7 +580,7 @@ Donc $\pi$ est bien un épimorphisme.
 \end{ex}
 
 \begin{rmq}
-\quad Soit $L_{1}$ et $L_{2}$ des algèbre de Lie, si $\phi$ est un morphisme de $L_{1}$ dans $L_{2}$, alors :
+\quad Soient $L_{1}$ et $L_{2}$ des algèbres de Lie, si $\phi$ est un morphisme de $L_{1}$ dans $L_{2}$, alors :
 \begin{itemize}
 \item[•] $Ker$ $\phi$ est un idéale de $L_{1}$.
 \item[•] $Im$ $\phi$ est une sous-algèbre de $L_{2}$.
@@ -603,7 +603,7 @@ Alors:
 \begin{df}
 \quad  Une \textbf{représentation} d’algèbre de Lie $L$ est un homomorphisme $\phi: L \rightarrow \gl(V)$, où $V$ est un $\KK$-espace vectoriel.
 
-Si $\phi$ est injectif, on dit que c'est une représentation  $\textbf{fidèle}$.
+Si $\phi$ est injectif, on dit que c'est une représentation  \textbf{fidèle}.
 \end{df}
 
 \quad Bien que nous ayons besoin que $L$ soit de dimension finie, il est utile de permettre à $V$ d'être de dimension quelconque, $\gl(V)$ à du sens en toute dimension.
@@ -631,7 +631,7 @@ Il est clair qu'elle est linéaire, montrons qu'elle préserve le crochet :
 & = [[x y] z] \\
 & = ad \enskip [x y](z)
 \end{aligned} \]
-Soit $x \in L$ tel que $ad$ $x=0$, donc $Ker$ $ad = Z(L)$. 
+Soit $x \in L$ tel que $ad$ $x = 0$, donc $Ker$ $ad = Z(L)$. 
 
 Cette constatation nous permet de déduire :
 
@@ -649,7 +649,7 @@ $L^{(0)} = L$, $L^{(1)} = [L,L]$, $L^{(2)} = [L^{(1)},L^{(1)}] \cdots L^{(i)} = 
 \end{center}
 
 \begin{df}
-\quad Une algèbre de Lie $L$ est dite \textbf{résoluble} si: $\exists n \in \NN $ tel que $L^{(n)}=0$.
+\quad Une algèbre de Lie $L$ est dite \textbf{résoluble} si: $\exists n \in \NN $ tel que $L^{(n)} = \{0\}$.
 \end{df}
 
 \begin{rmq}
@@ -658,14 +658,14 @@ $L^{(0)} = L$, $L^{(1)} = [L,L]$, $L^{(2)} = [L^{(1)},L^{(1)}] \cdots L^{(i)} = 
 
 \item[•]  $L$ simple $\Rightarrow L$ n'est pas résoluble.
 
-En effet: on a  $L$ est simple donc $L$ n'est pas  abélien et il n'a pas d'ideal alors, $L = [L,L]$, et $L^{(2)} = [L^{(1)},L^{(1)}] = L$, $\cdots$ , $L^{(i)} = [L^{(i-1)},L^{(i-1)}]=L $ c'est à dire que $\forall n \in \NN $  $L^{(n)}\ne 0$.
+En effet: on a  $L$ est simple donc $L$ n'est pas  abélien et n'a pas d'ideaux, alors $L = [L,L]$, et $L^{(2)} = [L^{(1)},L^{(1)}] = L$, $\cdots$ , $L^{(i)} = [L^{(i-1)},L^{(i-1)}]=L $, i.e. $\forall n \in \NN $  $L^{(n)}\ne \{0\}$.
 \end{itemize}
 \end{rmq}
 
 \begin{exe}
-Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
+\quad Regardons l'algèbre des matrices triangulaires supérieures $\ttt(n,\KK)$. Une base de $\ttt(n,\KK)$ est $\{ e_{ij} \mid 1\leq i \leq j\leq n \}$.
 
-Pour montrer que $L = \ttt(n,\KK)$  est résoluble on calcul explicitement ses séries dérivées, en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $ $(\star)$. En particulier, nous avons:  $[ e_{ii},e_{ij} ]  = e_{ij}$ pour $i<j$. Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $. De plus comme $\ttt(n,\KK) = \dd(n,\KK) \oplus \nn(n,\KK)$ et que $\dd(n,\KK)$ est abélienne, on conclut que $ \nn(n,\KK) = [L,L]$.
+Pour montrer que $L = \ttt(n,\KK)$  est résoluble on calcul explicitement sa série dérivée, en utilisant la formule $ [ e_{ij},e_{kl} ]  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $ $(\star)$. En particulier, nous avons:  $[ e_{ii},e_{ij} ]  = e_{ij}$ pour $i<j$. Ce qui montre que  $ \nn(n,\KK) \subset [L,L] $. De plus, comme $\ttt(n,\KK) = \dd(n,\KK) \oplus \nn(n,\KK)$ et que $\dd(n,\KK)$ est abélienne, on conclut que $ \nn(n,\KK) = [L,L]$.
 
 Reste à monter que la sous-algèbre $\nn(n,\KK)$ est résoluble. Avant cela définisons le \textbf{niveau} d'un élément $e_{ij}$ comme l'entier $j-i$.
 
@@ -680,16 +680,15 @@ e_{il} &\quad si \quad j = k \\
 \end{center}
 Le niveau de $e_{il}$ est égal à la somme des niveaux de $e_{ij}$ et de $e_{kl}$. Ainsi, le niveau du crochet de deux éléments de niveau $1$ sera $2$. On a donc que $L^{(2)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2$. Par réccurence on obtient que $L^{(i)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2^{i-1}$. Finalement, il est clair que $L^{(i)} = \{0\}$ quand $2^{i-1} > n$. Ainsi $\nn(n, \KK)$ est résoluble. 
 
-Donc $\ttt(n, \KK]$ est également résoluble. 
+Donc $\ttt(n, \KK)$ est également résoluble. 
 
-%Par des calculs de crochet des éléments de la base selon les niveaux et en utilisant la même formule de départ on remarque que quand on commute une premier fois on tombe sur les éléments de niveau 1, et quand on commute une deuxième fois on tombe sur les éléments de niveau 2, puis on commutant une troisième fois on trouve les éléments de niveau 4 et ainsi de suite. ce qui veux dire que: si $L=\ttt(n,\KK)$ alors $L^{(k)}$ est engendré par les $e_{ij}$ avec $j-i\ge 2^{k-i}$\\ finalement on a $L^{(k)}= \{0\}$ une fois $2^{k}>n-1$.d'où  $L=\ttt(n,\KK)$ est résoluble.
-
+En particulier, $ttt(n, \KK)$ et $\nn(n,\KK)$ ne sont pas simple.
 \end{exe}
 
 \begin{prop}\label{prop:solv}
 Soit $L$ une algèbre de Lie: 
 \begin{itemize}
-\item[(a)] Si $L$ une algèbre résoluble, alors toutes ses sous-algèbres et les images de ses homomorphismes sont résoluble.
+\item[(a)] Si $L$ une algèbre résoluble, alors toutes ses sous-algèbres et les images de ses homomorphismes sont résolubles.
 \item[(b)] Si $I$ est un idéal résoluble de $L$ tel que $L/I$ est résoluble alors $L$ aussi est résoluble.
 \item[(c)] Si $I$ et $J$ sont deux idéaux résolubles de $L$, alors $I+J$ est résoluble.
 \end{itemize}
@@ -699,7 +698,7 @@ Soit $L$ une algèbre de Lie:
 \begin{enumerate}
 \item[(a)] Par définition, si $K$ est une sous algèbre de $L$, alors $K^{(i)} \subset L^{(i)}$, de même si $\phi: L \rightarrow M$ est épimorphisme une récurrence sur $i$ montre que $\phi\left(L^{(i)}\right)=M^{(i)}$.
 
-\item[(b)] Posons $(L / I)^{(n)}=0$, on applique le résultat (a) sur le morphisme canonique : $\pi: L \rightarrow L / I$, on a  $\pi\left(L^{(n)}\right)=0,$ ou  $L^{(n)} \subset I= ker$ $\pi$. Maintenant si  $I^{(m)}=0$ le fait évident que $\left(L^{(i)}\right)^{(j)}=L^{(i+j)}$ implique que  $L^{(n+m)}=0$. 
+\item[(b)] Posons $(L / I)^{(n)}= \{0\}$, on applique le résultat (a) sur le morphisme canonique : $\pi: L \rightarrow L / I$, on a  $\pi\left(L^{(n)}\right)= \{0\}$, d'où  $L^{(n)} \subset I = ker$ $\pi$. Maintenant si  $I^{(m)}= \{0\}$ le fait évident que $\left(L^{(i)}\right)^{(j)}=L^{(i+j)}$ implique que  $L^{(n+m)}= \{0\}$. 
 
 \item[(c)] Le (d) du théorème (\ref{thm:iso}) donne un isomorphisme entre $(I+J) / J$ et $I /(I \cap J)$. Comme image d'homomorphisme de $I$, $(I+J) / J$  est résoluble donc d'après (b)  $(I+J)$ est résoluble.
 \end{enumerate}
@@ -710,7 +709,7 @@ Soit $L$ une algèbre de Lie:
 \end{df}
 
 \begin{df}
-\quad Si $Rad (L) = 0$ on dit que $L$ est \textbf{semisimple}.
+\quad Si $Rad (L) = \{0\}$ on dit que $L$ est \textbf{semisimple}.
 \end{df}
 
 \begin{ex}
@@ -739,8 +738,7 @@ $L^{1}=L, \quad L^{2}=[L, L]=\left[L, L^{1}\right], \quad L^{3}=\left[L, L^{2}\r
 \begin{enumerate}
 \item On a équivalence entre $L$ abélienne et $L^{2}= \{ 0 \}$. Donc $L$ abélienne $\Rightarrow$ $L$ nilpotentes.
 
-\item On clairement $L^{(i)}\subset L^{i}$ $\forall i$, donc les algèbres nilpotentes sont résoluble. Pour illustré prenons la sous-algèbre des matrices strictement triangulaires supérieures $L = \nn(4,\KK)$. $L $ est engendré par $\{e_{12},e_{13},e_{14},e_{23},e_{24},e_{34}\}$. En procédant comme dans l'exemple de la section (\ref{d}) sur l'algèbre résoluble $\ttt(n, \KK)$, on trouve que $L^{1}$ est engendré par ${e_{13},e_{14},e_{24}}$, 
- et $L^{2}$ est engendré par $\{e_{14}\}$, ainsi que $ L^{3}=0 $. Donc $L$ est nilpotente.
+\item On clairement $L^{(i)} \subset L^{i}$, $\forall i$, donc les algèbres nilpotentes sont résolubles. Pour illustrer prenons la sous-algèbre des matrices strictement triangulaires supérieures $L = \nn(4,\KK)$. $L$ est engendrée par $\{e_{12},e_{13},e_{14},e_{23},e_{24},e_{34}\}$. En procédant comme dans l'exemple de la section (\ref{d}) sur l'algèbre résoluble $\ttt(n, \KK)$, on trouve que $L^{1}$ est engendré par ${e_{13},e_{14},e_{24}}$, et $L^{2}$ est engendré par $\{e_{14}\}$, ainsi que $ L^{3}=0 $. Donc $L$ est nilpotente.
  
 \item Une algèbre résoluble n'est cependant pas nécessairement nilpotente. Considèrons la sous-algèbre $L = \ttt(3,\KK)$. Par le même type de calculs que précedament, on a: $L^2 = \nn(3, \KK) = \{ e_{12} \}$. Or $L^3 = [L,L^2]$, donc $[e_{11},e_{12}] = e_{12} \in L^3$. On déduit $L^i = \nn(3, \KK)$, $\forall i \geq 2$. L'algèbre $\ttt(3, \KK)$ n'est donc pas nilpotente.
 \end{enumerate} 
@@ -753,7 +751,7 @@ $L^{1}=L, \quad L^{2}=[L, L]=\left[L, L^{1}\right], \quad L^{3}=\left[L, L^{2}\r
 
 \item[(b)]  Si $L/Z(L)$ est nilpotente, alors $L$ est nilpotente.
 
-\item[(c)] Si $L$ est nilpotente et non nulle alors $Z(L) \ne \{0\}$.
+\item[(c)] Si $L$ est nilpotente et non nulle, alors $Z(L) \ne \{0\}$.
 \end{itemize}
 \end{prop}
 
@@ -769,9 +767,9 @@ Comme $(L/Z(L))^{n}= \{ 0 \} +Z(L)$ et $\pi(L^n) = (L/Z(L))^{n}$, alors:
 \begin{center}
 $\pi(L^n)= \{0\} +Z(L)$.
 \end{center}
-Ce qui implique que $L^n \subset ker(\pi)=Z(L)$.
+Ce qui implique que $L^n \subset Ker(\pi)=Z(L)$.
 
-Ainsi $L^{n+1}=[L,L^n]\subset [L,Z(L)]= \{0\}$. Posons $m = n+1$, on a trouvé $m$ tel que $L^m= \{0\}$. Donc $L$ est nilpotente.
+Ainsi $L^{n+1}=[L,L^n] \subset [L,Z(L)]= \{0\}$. Posons $m = n+1$, on a trouvé $m$ tel que $L^m= \{0\}$. Donc $L$ est nilpotente.
 
 \item[(c)] Le dernier terme non nul dans la série centrale descendante est le centre.
 \end{itemize}
@@ -799,11 +797,15 @@ $(x_{1})^n=0$, $\forall x \in L$.
 \quad Soit $L$ une algèbre de Lie nilpotente, alors $\forall x \in L$, $x$ est ad-nilpotent.
 \end{prop}
 
+\begin{prv}
+\quad Utiliser la remarque de la page précedente. $\Box$
+\end{prv}
+
 La réciproque de cette proposition est le Théorème d'Engel:
 
 \begin{thm}[Théorème d'Engel]\label{thm:engel}
 \quad Soit $L$ une algèbre de Lie.
-Si tous les éléments de $L$ sont ad-nilpotent, alors $L$ est nilpotente.
+Si tous les éléments de $L$ sont ad-nilpotents, alors $L$ est nilpotente.
 \end{thm}
 
 \section{Les Outils}
@@ -828,7 +830,7 @@ $ad$ $x(y)= [xy] = xy-yx = \lambda_{x} - \rho_{x}$, on conclut que $ad$ $x$ est 
 Nous allons déduire le Théorème d'Engel du résultat qui va suivre. Mais avant rappelons qu'une application linéaire nilpotente a toujours au moins un vecteur propre, associé à son unique valeur propre $0$. C'est le cas $dim$  $L = 1$ du théorème qui suit:
 
 \begin{thm}\label{thm:E1}
-\quad Soit $L$ une sous-algèbre de Lie de $\gl (V)$, avec $dim$ $V < + \infty$. Si tous les éléments de $L$ sont nilpotents et $V  \neq  \{0\}$, alors il existe un vecteur $v \in V$ non nul tel que $L.v = 0$.
+\quad Soit $L$ une sous-algèbre de Lie de $\gl (V)$, avec $dim$ $V < + \infty$. Si tous les éléments de $L$ sont nilpotents et $V  \neq  \{0\}$, alors il existe un vecteur $v \in V$, non nul, tel que $L.v = 0$.
 \end{thm}
 
 \begin{dem}
@@ -836,11 +838,11 @@ Nous allons déduire le Théorème d'Engel du résultat qui va suivre. Mais avan
 
 Les cas $dim$ $L = 0$ ou $1$ sont évident.
 
-Supponsons que $K \neq \{0\}$ est une sous-algèbre de Lie de $L$. Par le Lemme (\ref{lem:E1}) $K$ agit (via $ad$) comme une algèbre de Lie, d'applications linéaires nilpotentes, dans l'espace vectoriel $L$, d'où sur l'espace vectoriel $L/K$. Comme $dim$ $K < dim$ $L$, l'hypothèse de récurrence assure l’existence d'un vecteur $x + K \neq K $ dans $L/K$, qui est annulé par l'image de $K$ dans $\gl(L/K)$, c.à.d $[y,x]$ $\in K, \forall y \in K$, tandis que $x \notin K$. En d'autre mot, $K$ est strictement inclue dans $N_{L}(K)$.
+Supponsons que $K \neq \{0\}$ est une sous-algèbre de Lie de $L$. Par le Lemme (\ref{lem:E1}) $K$ agit (via $ad$) comme une algèbre de Lie, d'applications linéaires nilpotentes, dans l'espace vectoriel $L$, d'où sur l'espace vectoriel $L/K$. Comme $dim$ $K < dim$ $L$, l'hypothèse de récurrence assure l’existence d'un vecteur $x + K \neq K $ dans $L/K$, qui est annulé par l'image de $K$ dans $\gl(L/K)$, c.à.d $[y,x] \in K$, $\forall y \in K$, tandis que $x \notin K$. En d'autre mot, $K$ est strictement inclue dans $N_{L}(K)$.
 
-Maintenant prenons $K$ une sous algèbre maximal strictement inclue dans $L$. L'argument précédent force $N_{L}(K) = L$, i.e $K$ est un idéal de $L$. Si $dim$ $L/K$ est supérieur à $1$ alors il existe $\overline{H} \subset L/K$ de dimension $1$, tel que par passage à l'image inverse , on a $K \subset H \subset L$ et $H$ est une sous algèbre strictement inclue dans $L$. Mais par maximalisé de $K$, on a $H \subset K$. Contradiction !
+Maintenant prenons $K$ une sous-algèbre maximal strictement inclue dans $L$. L'argument précédent force $N_{L}(K) = L$, i.e $K$ est un idéal de $L$. Si $dim$ $L/K$ est supérieur à $1$ alors il existe $\overline{H} \subset L/K$ de dimension $1$, tel que par passage à l'image inverse, on a $K \subset H \subset L$ et $H$ est une sous algèbre strictement inclue dans $L$. Mais par maximalisé de $K$, on a $H \subset K$. Contradiction !
 
-On déduit alors que $K$ est de codimension $1$. On peut donc écrire $L=K+ \KK z$ pour $z \in L-K$. Par récurrence, $W = \{ v \in V \mid K.v = 0\}$ est non nul. Puisque K est un idéal, $W$ est stable sous $L$: 
+On déduit alors que $K$ est de codimension $1$. On peut donc écrire $L=K+ \KK z$ pour $z \in L-K$. Par récurrence, $W = \{ v \in V \mid K.v = 0\}$ est non nul. Puisque $K$ est un idéal, $W$ est stable sous $L$: 
 \begin{center}
 $x \in L$, $y \in K$, $w \in W$, $\quad yx.w = xy.w - [x,y]w =0$.
 \end{center}
@@ -854,26 +856,26 @@ On a finalement, $L.v = 0$ comme désiré. $\Box$
 Nous avons maintenant tout ce qu'il faut pour démontrer le Théorème d'Engel.
 
 \begin{dem}[Théorème d'Engel]
-\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotent. Par conséquent $ad$ $L \subset \gl(V)$  satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq 0$).
+\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotents. Par conséquent $ad$ $L \subset \gl(V)$  satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq \{0 \}$).
 
-Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[L,x]=\{0\}$, i.e. $Z(L) \neq \{0\}$. Maintenant les éléments de $L/Z(L)$ sont ad-nilpotent et $dim$ $L/Z(L) < dim$ $L$.
+Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[L,x]=\{0\}$, i.e. $Z(L) \neq \{0\}$. Maintenant les éléments de $L/Z(L)$ sont ad-nilpotents et $dim$ $L/Z(L) < dim$ $L$.
 
-Par récurrence sur la dimension de $L$, on  trouve que $L/Z(L)$ est nilpotent. Par le $(b)$ de la proposition (\ref{prop:nilp}), on a que $L$ est aussi nilpotent. $\Box$
+Par récurrence sur la dimension de $L$, on  trouve que $L/Z(L)$ est nilpotent. Par le (b) de la proposition (\ref{prop:nilp}), on a que $L$ est aussi nilpotent. $\Box$
 \end{dem}
 
-Nous pouvons maintenant déduire un Corollaire très utile, cet énoncé est même équivalent à celui du théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
+Nous pouvons maintenant déduire un corollaire très utile, cet énoncé est même équivalent à celui du théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
 
 \begin{df}
-\quad Soit $V$ un espace vectoriel de dimension fini, un \textbf{drapeau de $V$} est une chaîne de sous-espace vectoriel : $0 = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$, avec $dim$ $V_{i} = i$.
+\quad Soit $V$ un espace vectoriel de dimension fini, un \textbf{drapeau de $V$} est une chaîne de sous-espace vectoriel : $\{0\} = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$, avec $dim$ $V_{i} = i$.
 Si $x \in End$ $V$, on dit que $x$ est \textbf{stable} si on obtient, avec le drapeau précédent, $x.V_{i} \subset V_{i}$, $\forall i$.
 \end{df}
 
 \begin{cor}\label{cor:E1}
-\quad Soit $L$ une algèbre de Lie dont tous les éléments sont nilpotents. Il existe un drapeau $(V_{i})_{i}$ de $V$ stable dans $L$, avec $x.V_{i} \subset V_{i}$. En d'autre mots il existe une base de $V$ dans laquelle les matrices de $L$ appartienne à $\nn(n,\KK)$.
+\quad Soit $L$ une algèbre de Lie dont tous les éléments sont nilpotents. Il existe un drapeau $(V_{i})_{i}$ de $V$ stable dans $L$, avec $x.V_{i} \subset V_{i}$. En d'autre mots il existe une base de $V$ dans laquelle les matrices de $L$ appartiennent à $\nn(n,\KK)$.
 \end{cor}
 
 \begin{prv}
-\quad On commence avec un vecteur $v \in V$ non nul annulé par $L$, son existence est assurée par le théorème (\ref{thm:E1}). Posons $V_{1} = \KK v$. Soit $W= V/V_{1}$ et on observe que l'action induite de $L$ dans $W$ est un endomorphisme nilpotent.
+\quad On commence avec un vecteur $v \in V$, non nul, annulé par $L$, son existence est assurée par le théorème (\ref{thm:E1}). Posons $V_{1} = \KK v$. Soit $W= V/V_{1}$ et on observe que l'action induite de $L$ dans $W$ est un endomorphisme nilpotent.
 
 Par récurrence sur la dimension de $V$, $W$ a un drapeau stabilisé par $L$, par passage à l'image inverse on obtient le résultat voulu. $\Box$
 \end{prv}
@@ -900,7 +902,7 @@ L'essence du Théorème d'Engel est l’existence d'un vecteur propre commun pou
 Le théorème qui va suivre est de nature similaire. Cependant il nécessite une clôture algébrique afin d'assuré que $\KK$ contient toutes les valeurs propres. De même il est nécessaire d'avoir $car$ $\KK =0$.
 
 \begin{thm}\label{thm:L1}
-\quad Soit $L$ une sous algèbre de Lie solvable de $\gl(V)$, avec $dim$ $V < +\infty$. Si $V \neq 0$, alors $V$ contient un vecteur propre commun pour tous les endomorphismes de $L$.
+\quad Soit $L$ une sous-algèbre de Lie résoluble de $\gl(V)$, avec $dim$ $V < +\infty$. Si $V \neq \{0\}$, alors $V$ contient un vecteur propre commun pour tous les endomorphismes de $L$.
 \end{thm}
 
 \begin{dem}
@@ -929,7 +931,7 @@ On a bien que $W \neq \{0\}$.
 \begin{center}
 $yx.w=xy.w-[x,y].w= \lambda(y)x.y- \lambda([x,y])w $
 \end{center}
-Ainsi il faut montrer que $\lambda([x,y])=0$. Pour cela fixons $w \in W$ et $x \in L$. Soit $n>0$ le plus petit entier pour lequel $w$, $x.w, \cdots$, $x^{n}.w$ sont linéairement indépendant. Notons $W_{i}$ le sous espace engendré par $w$, $\cdots$, $x^{i-1}.w$, donc $dim$ $W_{n}=n$ et $W_{n}=W_{n+i}$ ($i\geq 0$) et $x$ est une application de $W_{n}$ dans $W_{n}$. Il est facile de vérifier que chaque $y \in K$ laisse chacun des $W_{i}$ invariant. Relativement à la base $w$, $x.w$, $\cdots$, $x^{n}.w$, on affirme que $y \in K$ est représenté par une matrice triangulaire supérieur dont les éléments diagonaux sont égaux à $\lambda(y)$. Il vient la congruence :
+Ainsi il faut montrer que $\lambda([x,y])=0$. Pour cela fixons $w \in W$ et $x \in L$. Soit $n>0$ le plus petit entier pour lequel $w$, $x.w, \cdots$, $x^{n}.w$ sont linéairement indépendant. Notons $W_{i}$ le sous-espace engendré par $w$, $\cdots$, $x^{i-1}.w$, donc $dim$ $W_{n}=n$ et $W_{n}=W_{n+i}$ ($i\geq 0$) et $x$ est une application de $W_{n}$ dans $W_{n}$. Il est facile de vérifier que chaque $y \in K$ laisse chacun des $W_{i}$ invariant. Relativement à la base $w$, $x.w$, $\cdots$, $x^{n}.w$, on affirme que $y \in K$ est représenté par une matrice triangulaire supérieur dont les éléments diagonaux sont égaux à $\lambda(y)$. Il vient la congruence :
 \begin{center}
 $(\star) \quad yx^{i}.w = \lambda(y)x^{i} \quad (mod$ $W_{i})$
 \end{center}
@@ -954,24 +956,23 @@ En d'autre mot, les matrices de $L$, dans une base de $V$ bien choisi, sont tria
 \quad On utilise le théorème (\ref{thm:L1}), ainsi qu'une récurrence sur la dimention de $V$. $\Box$
 \end{prv}
 
-Plus généralement, si on considère $L$ une algèbre de Lie résoluble, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de L. Alors $\phi(L)$ est résoluble, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
+Plus généralement, si on considère $L$ une algèbre de Lie résoluble, et $\phi$: $L \to \gl(V)$ une représentation de dimension finie de $L$. Alors $\phi(L)$ est résoluble, par la proposition (\ref{prop:solv})(a), donc stabilise un drapeau de $V$ par le corollaire (\ref{cor:L1}).
 
-De plus, si $\phi$ est la représentation adjointe, un drapeau de sous-espaces stables par $L$ est juste une chaîne d'idéaux de $L$, chacuns de codimension 1.
+De plus, si $\phi$ est la représentation adjointe, un drapeau de sous-espaces stables par $L$ est juste une chaîne d'idéaux de $L$, chacuns de codimension $1$.
 
 On en déduit le corollaire suivant: 
 
 \begin{cor}\label{cor:L2}
-\quad Soit $L$ résoluble. 
-Alors il existe une chaîne d'idéaux de $L$, $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$, telle que $dim$ $L_{i}=i$.
+\quad Soit $L$ résoluble. Alors il existe une chaîne d'idéaux de $L$, $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$, telle que $dim$ $L_{i}=i$.
 \end{cor}
 
 \begin{cor}\label{cor:L3}
-\quad Soit $L$ une algèbre de Lie résoluble. Alors $x \in [LL]$ implique que $ad_{L}$ $x$ est nilpotent.
-En particulier, $[LL]$ est nilpotente.
+\quad Soit $L$ une algèbre de Lie résoluble. Alors $x \in [L,L]$ implique que $ad_{L}$ $x$ est nilpotent.
+En particulier, $[L,L]$ est nilpotente.
 \end{cor}
 
 \begin{prv}[Corollaire \ref{cor:L3}]
-\quad On trouve un drapeau d'idéal comme dans le corollaire (\ref{cor:L2}). On considère la base $x_{1}$, $\cdots$, $x_{n}$ de $L$, telle que $x_{1}$, $\cdots$, $x_{i}$ engendre $L_{i}$. Dans cette base la matrice de $ad$ $L$ vie dans $\ttt(n,\KK)$. Par conséquence les matrices de $[ad$ $L$,$ad$ $L]$ sont dans $\nn(n,\KK)$, l'algèbre dérivée de $\ttt(n,\KK)$. Il en suit que $ad_{L}$ $x$ est nilpotent pour $x \in [LL]$, a fortiori $ad_{[LL]}$ $x$ est nilpotent, alors $[LL]$ est nilpotent par le théorème d'Engel (\ref{thm:engel}). $\Box$
+\quad On trouve un drapeau d'idéal comme dans le corollaire (\ref{cor:L2}). On considère la base $x_{1}$, $\cdots$, $x_{n}$ de $L$, telle que $x_{1}$, $\cdots$, $x_{i}$ engendre $L_{i}$. Dans cette base la matrice de $ad$ $L$ vie dans $\ttt(n,\KK)$. Par conséquence les matrices de $[ad$ $L$,$ad$ $L]$ sont dans $\nn(n,\KK)$, l'algèbre dérivée de $\ttt(n,\KK)$. Il en suit que $ad_{L}$ $x$ est nilpotent pour $x \in [L,L]$, a fortiori $ad_{[L,L]}$ $x$ est nilpotent, alors $[L,L]$ est nilpotent par le théorème d'Engel (\ref{thm:engel}). $\Box$
 \end{prv}
 
 Au début de ce chapitre nous avons instiqué sur l'importance de $car$ $\KK = 0$, nous allons maintenant donner un exemple du cas $car$ $\KK \neq 0$:
@@ -1013,16 +1014,16 @@ Montrons que l'espace $L$ engendré par $x$ et $y$ est une sous-algèbre de Lie 
 & = (a_1b_2-b_2a_1)x \in L
 \end{align*}
 
-$L$ est bien une sous algèbre de Lie. De plus comme $[x,y]=x$, on a que $[L,L]$ est engendré par $x$. Ainsi $[L,L]$ est abélienne, donc $L$ résoluble. 
+$L$ est bien une sous-algèbre de Lie. De plus comme $[x,y]=x$, on a que $[L,L]$ est engendré par $x$. Ainsi $[L,L]$ est abélienne, donc $L$ résoluble. 
 
-Pour la matrice $y$ il est facile de trouver des vecteurs propre. $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, $e_2 = \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}$ et $e_3 = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}$ sont des vecteurs propres de $y$ respectivement associés aux valeurs propres $0$, $1$ et $2$.
+Pour la matrice $y$ il est facile de trouver des vecteurs propres. $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, $e_2 = \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}$ et $e_3 = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}$ sont des vecteurs propres de $y$ respectivement associés aux valeurs propres $0$, $1$ et $2$.
 
 Regardons si $x$ a un vecteur propre commun avec $y$:
 \begin{center}
 $xe_1 = e_3$, \quad $xe_2=e_1$, \quad $xe_3=e_2$
 \end{center}
 
-Il est alors évidant qu'aucun de ces trois vecteurs est vecteur propre de $x$. 
+Il est alors évidant qu'aucun de ces trois vecteurs n'est vecteur propre de $x$. 
 
 La conclusion du théorème de Lie est donc faux dans ce cas. 
 \end{exe}
@@ -1059,7 +1060,7 @@ Puisque $diag(a, \cdots, a)$ commute avec une matrice nilpotente qui a des $1$ s
 \end{prop}
 
 \begin{rmq}
-\quad La somme ou la différence de deux endomorphismes semisimple est encore semisimple. De même que la restriction à un sous-espace sera encore semisimple.
+\quad La somme ou la différence de deux endomorphismes semisimples est encore semisimple. De même que la restriction à un sous-espace sera encore semisimple.
 \end{rmq}
 
 \begin{prop}\label{prop:C1}
@@ -1083,7 +1084,7 @@ En particulier, $x_{s}$ et $x_{n}$ commute avec tout endomorphisme qui commute a
 \end{df}
 
 \begin{prv}
-\quad Soient $a_{1},\cdots,a_{k}$ (avec multiplicité $m_{1},\cdots,m_{k}$) les valeurs propres distinctes de $x$, donc le polynôme caractéristique de $x$ est $\prod\limits_{i=0}^k  \left( T-a_{i} \right)^{m_{i}}$. Si $V_{i}=ker$ $(x-a_{i}.I_{n})^{m_{i}}$, alors $V$ est la somme direct des sous-espaces $V_{1}, \cdots, V_{k}$, qui sont tous stable par $x$. Dans $V_{i}$, $x$ a clairement $(T-a_{i})^{m_{i}}$ comme polynôme caractéristique.
+\quad Soient $a_{1},\cdots,a_{k}$ (avec multiplicité $m_{1},\cdots,m_{k}$) les valeurs propres distinctes de $x$, donc le polynôme caractéristique de $x$ est $\prod\limits_{i=0}^k  \left( T-a_{i} \right)^{m_{i}}$. Si $V_{i}=Ker$ $(x-a_{i}.I_{n})^{m_{i}}$, alors $V$ est la somme direct des sous-espaces $V_{1}, \cdots, V_{k}$, qui sont tous stable par $x$. Dans $V_{i}$, $x$ a clairement $(T-a_{i})^{m_{i}}$ comme polynôme caractéristique.
 
 Maintenant on applique le théorème des restes Chinois (pour l'anneau $\KK [T]$) pour trouver le polynôme $p(T)$ qui satisfait les congruences suivantes :
 \begin{center}
@@ -1096,11 +1097,11 @@ p(T) & \equiv 0 \quad (mod \enskip T)
 \right. $
 \end{center}
 
-Notons que le dernière condition est superflue si $0$ est valeur propre de $x$, alors qu'autrement $T$ est premier avec les autres polynômes. 
+Notons que la dernière condition est superflue si $0$ est valeur propre de $x$, alors qu'autrement $T$ est premier avec les autres polynômes. 
 
 Fixons $q(T)=T-p(T)$. Il est évidant que $p(T)$ et $q(T)$ n'ont pas de terme constant, puisque $p(T) \equiv 0 \quad (mod \enskip T)$.
 
-Nomons $x_{s} = p(x)$ et $x_{n} = q(x)$. Puisque ce sont des polynômes en $x$, $x_{s}$ et $x_{n}$, ils commutent entre eux, mais aussi avec les endomorphismes qui commutent avec $x$. Ils stabilisent tous les sous-espaces de $V$ stable par $x$, en particulier les $V_{i}$. Les congruences $(\star)$ montrent que la restriction de $x_{s}-a_{i}.I_{n}$ a $V_{i}$ est $\{0\}$ $\forall i$, par conséquence $x_{s}$ est diagonal sur $V_{i}$ avec pour valeurs propres $a_{i}$.
+Nomons $x_{s} = p(x)$ et $x_{n} = q(x)$. Puisque ce sont des polynômes en $x$, $x_{s}$ et $x_{n}$, ils commutent entre eux, mais aussi avec les endomorphismes qui commutent avec $x$. Ils stabilisent tous les sous-espaces de $V$ stable par $x$, en particulier les $V_{i}$. Les congruences $(\star)$ montrent que la restriction de $x_{s}-a_{i}.I_{n}$ a $V_{i}$ est $\{0\}$, $\forall i$, par conséquence $x_{s}$ est diagonal sur $V_{i}$ avec pour valeurs propres $a_{i}$.
 
 Par définition, $x_{n} = x - x_{s}$, il est donc clair que $x_{n}$ est nilpotent. Du fait que $p(T)$ et $q(T)$ n'ont pas de terme constant (c) est évident à ce stade. 
 
@@ -1114,40 +1115,40 @@ Pour préciser pourquoi la décomposition de Jordan est un outils précieux, reg
 
 Similairement, si $x$ est semisimple, alors $ad$ $x$ l'est aussi. Vérifions cela: 
 
-Choisissons une base $(v_{1},\cdots,v_{n})$ de $V$ telle que la matrice de $x$ soit $diag(a_{1},\cdots,a_{n})$. Soit $\{ e_{ij} \}$ la base canonique de $\gl(V)$ par rapport à notre base de $V$, i.e. $e_{ij}(v_{k})=\delta_{jk}v_{i}$. Alors un calcul rapide (voir formule $(\star)$ dans de la section (\ref{b}) montre que $ad$ $x(e_{ij})=(a_{i}-a_{j})e_{ij}$, donc $ad$ $x$ est une matrice diagonale, dans une base bien choisi de $\gl(V)$. 
+Choisissons une base $(v_{1},\cdots,v_{n})$ de $V$ telle que la matrice de $x$ soit $diag(a_{1},\cdots,a_{n})$. Soit $\{ e_{ij} \}$ la base canonique de $\gl(V)$ par rapport à notre base de $V$, i.e. $e_{ij}(v_{k})=\delta_{jk}v_{i}$. Alors un calcul rapide (voir formule $(\star)$ dans de la section (\ref{b})) montre que $ad$ $x(e_{ij})=(a_{i}-a_{j})e_{ij}$, donc $ad$ $x$ est une matrice diagonale, dans une base bien choisi de $\gl(V)$. 
 \end{ex}
 
 \begin{lem}\label{lem:C1}
-\quad Soit $x \in End$ $V$ ($dim$ $V < +\infty$), $x=x_{s}+x_{n}$ la décomposition de Jordan. Alors $ad$ $x = ad$ $x_{s}+ad$ $x_{n}$ est la décomposition de Jordan de $ad$ $x$ dans $End(End$ $V)$. $\Box$
+\quad Soit $x \in End$ $V$ ($dim$ $V < +\infty$), $x=x_{s}+x_{n}$ la décomposition de Jordan. Alors $ad$ $x = ad$ $x_{s}+ad$ $x_{n}$ est la décomposition de Jordan de $ad$ $x$ dans $End(End$ $V)$. 
 \end{lem}
 
 \begin{prv}
-\quad Nous avons vu que $ad$ $x_{s}$ et $ad$ $x_{n}$ sont respectivement semisimple et nilpotent. Ils commutent, puisque $[ad$ $x_{s},ad$ $x_{n}] = ad$ $[x_{s},x_{n}]=0$. Alors le (a) de la proposition (\ref{prop:C1}) s'applique.
+\quad Nous avons vu que $ad$ $x_{s}$ et $ad$ $x_{n}$ sont respectivement semisimple et nilpotent. Ils commutent, puisque $[ad$ $x_{s},ad$ $x_{n}] = ad$ $[x_{s},x_{n}]=0$. Alors le (a) de la proposition (\ref{prop:C1}) s'applique. $\Box$
 \end{prv}
 
 \subsection{Critère de nilpotence d'un endomorphisme}\label{a}
 
-Nous pouvons obtenir un critère puissant en se basant sur la trace de certains endomorphismes de $L$. Il est évidant que $L$ va être résoluble si $[LL]$ est nilpotente (c'est la réciproque du corollaire (\ref{cor:L3})).
+Nous pouvons obtenir un critère puissant en se basant sur la trace de certains endomorphismes de $L$. Il est évidant que $L$ va être résoluble si $[L,L]$ est nilpotente (c'est la réciproque du corollaire (\ref{cor:L3})).
 
-Le théorème d'Engel (\ref{thm:engel}) nous dit que $[LL]$ est nilpotente si (et seulement si) tout $ad_{[LL]}$ $x$, $x \in [LL]$, est nilpotent. Nous commencerons avec un critère sur la "trace" pour la nilpotence d'un endomorphisme.
+Le théorème d'Engel (\ref{thm:engel}) nous dit que $[L,L]$ est nilpotente si (et seulement si) tout $ad_{[L,L]}$ $x$, $x \in [L,L]$, est nilpotent. Nous commencerons avec un critère sur la "trace" pour la nilpotence d'un endomorphisme.
 
 \begin{lem}\label{lem:C2}
-\quad Soit $A \subset B$ deux sous espace de $\gl(V)$ ($dim$ $V<+\infty$). Soit $M= \{ x \in \gl(V) \mid [x,B] \subset A \}$. Supposons que $x \in M$ satisfait $tr(xy)=0$, $\forall y \in M$.
+\quad Soit $A \subset B$ deux sous-espaces de $\gl(V)$ ($dim$ $V<+\infty$). Soit $M= \{ x \in \gl(V) \mid [x,B] \subset A \}$. Supposons que $x \in M$ satisfait $tr(xy)=0$, $\forall y \in M$.
 
 Alors $x$ est nilpotent. 
 \end{lem}
 
 \begin{prv}
-\quad Soit $x=s+n$ la décomposition de Jordan pour $x$. On fixe une base $(v_{1},\cdots,v_{m})$ de $V$ telle que la matrice de $s$ soit $diag(a_{1}, \cdots,a_{m})$. Soit $E$ le sous-espace vectoriel de $\KK$ (par rapport à son sous coprs premier $\QQ$) engendré par les valeurs propres $a_{1},\cdots,a_{m}$ de $s$. On a à monter que $s=0$, ou par équivalence, que $E=0$. Puisque $E$ est de dimension finie sur $\QQ$ (par construction), il est suffisant de montrer que l'espace dual $E^{*}= \{0\}$, i.e. que toutes applications linéaires $f:$ $E \to \QQ$ sont nulles. 
+\quad Soit $x=s+n$ la décomposition de Jordan pour $x$. On fixe une base $(v_{1},\cdots,v_{m})$ de $V$ telle que la matrice de $s$ soit $diag(a_{1}, \cdots,a_{m})$. Soit $E$ le sous-espace vectoriel de $\KK$ (par rapport à son sous-coprs premier $\QQ$) engendré par les valeurs propres $a_{1},\cdots,a_{m}$ de $s$. On a monté que $s=0$, ou par équivalence, que $E= \{0\}$. Puisque $E$ est de dimension finie sur $\QQ$ (par construction), il est suffisant de montrer que l'espace dual $E^{*}= \{0\}$, i.e. que toutes applications linéaires $f:$ $E \to \QQ$ sont nulles. 
 
 On se donne $f \in E^{*}$, soit $y \in \gl(V)$ dont la matrice dans la base précédente est $diag\left( (f(a_{1}),\cdots,f(a_{m}) \right)$. Si $\{ e_{ij} \}$ est la base correspondante de $\gl(V)$, on a vu dans l'exemple précedent que :
 \begin{center}
 $ad$ $s(e_{ij}) = (a_{i} - a_{j})e_{ij}$ et $y(e_{ij}) = (f(a_{i})-f(a_{j}))e_{ij}$.
 \end{center}
 
-Maintenant soit $r(T) \in \KK[T]$ un polynôme sans terme constant qui satisfait $r(a_{i}-a_{j}) = f(a_{i})-f(a_{j})$ $\forall (i,j)$. L’existence d'un tel polynôme est donner par l’interpolation de Lagrange, il n'y pas d’ambigument sur les variables d'assignations puisque $a_{i} - a_{j} = a_{k} -a_{l}$ implique (par la linéarité de $f$) que $f(a_{i}) - f(a_{j}) = f(a_{k}) -f(a_{l})$. On a donc $ad$ $y= r(ad$ $s)$.
+Maintenant soit $r(T) \in \KK[T]$ un polynôme sans terme constant qui satisfait $r(a_{i}-a_{j}) = f(a_{i})-f(a_{j})$, $\forall (i,j)$. L’existence d'un tel polynôme est donner par l’interpolation de Lagrange, il n'y pas d’ambiguité sur les variables d'assignations puisque $a_{i} - a_{j} = a_{k} -a_{l}$ implique (par linéarité de $f$) que $f(a_{i}) - f(a_{j}) = f(a_{k}) -f(a_{l})$. On a donc $ad$ $y= r(ad$ $s)$.
 
-Maintenant, $ad$ $s$ est la partie semisimple de $ad$ $x$, par le lemme (\ref{lem:C1}), donc on peut l'écrire comme un polynôme en $ad$ $x$ sans terme constant par la propriété (\ref{prop:C1}). Ainsi $ad$ $y$ est aussi un polynôme en $ad$ $x$ sans terme constant. Par hypothèse, $ad$ $x$ est une application de $B$ dans $A$, donc on a aussi $ad$ $y(B) \subset A$, i.e. $y \in M$.
+Maintenant, $ad$ $s$ est la partie semisimple de $ad$ $x$, par le lemme (\ref{lem:C1}), donc on peut l'écrire comme un polynôme en $ad$ $x$ sans terme constant, par la propriété (\ref{prop:C1}). Ainsi $ad$ $y$ est aussi un polynôme en $ad$ $x$ sans terme constant. Par hypothèse, $ad$ $x$ est une application de $B$ dans $A$, donc on a aussi $ad$ $y(B) \subset A$, i.e. $y \in M$.
 
 On utilise l'hypothèse $tr(xy)=0$, on a $\sum a_{i}f(a_{i}) = 0$. Le côté gauche est une combinaison $\QQ$-linéaire d'éléments de $E$, en appliquant $f$ on obtient : $\sum f(a_{i})^2 = 0$. Comme les $f(a_{i}) \in \QQ$, on a $f(a_{i})=0$, $\forall i$. Finalement $f$ doit être identiquement nulle, parce que les $a_{i}$ engendre $E$. Ce qui conclu cette preuve. $\Box$
 \end{prv}
@@ -1168,14 +1169,14 @@ Alors $L$ est résoluble.
 \begin{dem}
 \quad Comme remarquer au début du (\ref{a}), il est suffisant de montrer que $[L,L]$ est nilpotent, ou juste que tout $x \in [L,L]$ est un endomorphisme nilpotent (lemme (\ref{lem:E1}) et théorème d'Engel). Pour cela nous appliquons le lemme (\ref{lem:C2}) à la situation : $V$ comme donné, $A=[L,L]$, $B=L$.
 
-Soit $M= \{ x \in \gl(V) \mid [x,L] \subset [L,L] \}$. Il est évident que $L \subset M$. Notre hypothèse est que $Tr(xy)=0$ $\forall x \in [L,L]$, $\forall y \in L$, alors que pour conclure avec le lemme (\ref{lem:C2}) on a besoin d'un argument plus fort: \quad $tr(xy)=0$ pour $x \in [L,L]$, $y \in M$.
+Soit $M= \{ x \in \gl(V) \mid [x,L] \subset [L,L] \}$. Il est évident que $L \subset M$. Notre hypothèse est que $Ttr(xy)=0$, $\forall x \in [L,L]$, $\forall y \in L$, alors que pour conclure avec le lemme (\ref{lem:C2}) on a besoin d'un argument plus fort: \quad $tr(xy)=0$ pour $x \in [L,L]$, $y \in M$.
 
-Maintenant si $[x,y]$ est le générateur de $[LL]$ et si $z \in M$, alors l'identité $(\star)$ montre que:
+Maintenant si $[x,y]$ est le générateur de $[L,L]$ et si $z \in M$, alors l'identité $(\star)$ montre que:
 \begin{center}
-$tr([x,y]z)=tr(x[yz])=tr([yz]x)$
+$tr([x,y]z)=tr(x[y,z])=tr([y,z]x)$
 \end{center}
 
-Par définition de $M$, $[y,z] \in [LL]$, d'où $tr([y,z]x)=0$ par hypothèse. $\Box$
+Par définition de $M$, $[y,z] \in [L,L]$, d'où $tr([y,z]x)=0$ par hypothèse. $\Box$
 \end{dem}
 
 \begin{cor}
@@ -1185,7 +1186,7 @@ Alors $L$ est résoluble.
 \end{cor}
 
 \begin{prv}
-\quad On applique le théorème à le représentation adjointe de $L$, et on obtient que $ad$ $L$ résoluble. Puisque $Ker$ $ad = Z(L)$ est résoluble, $L$ est lui-même est résoluble (proposition (\ref{prop:solv}). $\Box$
+\quad On applique le théorème à la représentation adjointe de $L$, et on obtient que $ad$ $L$ résoluble. Puisque $Ker$ $ad = Z(L)$ est résoluble, $L$ est lui-même est résoluble (proposition (\ref{prop:solv}). $\Box$
 \end{prv}
 
 
@@ -1214,12 +1215,12 @@ Le lemme qui va suivre aurait pu être utile si nous avions poussé plus loin ce
 \end{lem}
 
 \begin{prv}
-\quad Rapelons un fait d'algèbre linéaire : Si $W$ un sous-espace de $V$ de dimension fini, et $\phi$ un endomorphisme de $V$, tel que $Im$ $\phi \subset W$, alors $tr(\phi) = tr(\phi_{\mid W})$. Pour prouver cela, il faut étendre une base de $W$ en une base de $V$ et regarder la matrice de $\phi$ dans cette base. Maintenant si $x,y \in I$, alors ($ad$ $x)(ad$ $y)$ est un andomorphisme de $L$, application de $L$ dans $I$, donc la trace de $\kappa(x,y)$ coïncide avec la trace de $\kappa_{I}(x,y)$, soit $(ad$ $x)(ad$ $y)_{\mid I}=(ad_I$ $x)(ad_I$ $y)$. $\Box$
+\quad Rapelons un fait d'algèbre linéaire: Si $W$ un sous-espace de $V$ de dimension fini, et $\phi$ un endomorphisme de $V$, tel que $Im$ $\phi \subset W$, alors $tr(\phi) = tr(\phi_{\mid W})$. Pour prouver cela, il faut étendre une base de $W$ en une base de $V$ et regarder la matrice de $\phi$ dans cette base. Maintenant si $x,y \in I$, alors $(ad$ $x)(ad$ $y)$ est un endomorphisme de $L$, application de $L$ dans $I$, donc la trace de $\kappa(x,y)$ coïncide avec la trace de $\kappa_{I}(x,y)$, soit $(ad$ $x)(ad$ $y)_{\mid I}=(ad_I$ $x)(ad_I$ $y)$. $\Box$
 \end{prv}
 
-\quad En général, une forme bilinéaire symétrique $\beta(x,y)$ est appeler non-dégénéré si son noyau ou radical $S$ est $\{0\}$, où $S = \{ x \in L \mid \beta(x,y)=0 \forall y \in L \}$. Du fait que la forme de Killing est associative, son noyaux est plus qu'un simple sous-espace: $S$ est un idéal de $L$. Pour les algèbres linéaires, un moyen pratique pour tester la non dégénérecence suit: 
+En général, une forme bilinéaire symétrique $\beta(x,y)$ est appeler non-dégénéré si son noyau ou radical $S$ est $\{0\}$, où $S = \{ x \in L \mid \beta(x,y)=0$, $\forall y \in L \}$. Du fait que la forme de Killing est associative, son noyaux est plus qu'un simple sous-espace: $S$ est un idéal de $L$. Pour les algèbres linéaires, un moyen pratique pour tester la non dégénérecence suit: 
 
-On fixe une base $x_1, \cdots, x_n$ de $L$. Alors $\kappa$ est non dégénéré si et seulement si la matrice de taille $n \times n$ telle que son entré $i,j$ est égal à $\kappa(x_i,x_j)$ soit de déterminant non nul. 
+On fixe une base $x_1, \cdots, x_n$ de $L$. Alors $\kappa$ est non dégénéré si et seulement si la matrice de taille $n \times n$, telle que son entré $i,j$ soit égal à $\kappa(x_i,x_j)$, est son déterminant non nul. 
 
 \begin{exe}
 \quad Calculons la forme de Killing de $\ssl(2,\KK)$, pour cela utilisons la base cannonique donner dans le paragraphe (\ref{b}), nous changerons seulement l'ordre $(x,h,y)$. On a :
@@ -1228,22 +1229,23 @@ $ad$ $x = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -2 \end{pmatrix}$,
 $ad$ $h = \begin{pmatrix} 0 & -2 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}$,
 $ad$ $y = \begin{pmatrix} 0 & 0 & 0 \\ -1 & 0 & 0 \\ 0 & 2 & 0 \end{pmatrix}$.
 \end{center} 
-\quad Par consequence la matrice de $\kappa$ est 
+
+Par consequence la matrice de $\kappa$ est: 
 $\begin{pmatrix} 
 0 & 0 & 4 \\
 0 & 8 & 0 \\
 4 & 0 & 0
-\end{pmatrix}$, son déterminant est $-128$, ainsi $\kappa$ est non dégénéré. (Ceci est vrai temps que $car$ $\KK \neq 2$.)
+\end{pmatrix}$,et son déterminant est $-128$, ainsi $\kappa$ est non dégénéré. (Ceci est vrai temps que $car$ $\KK \neq 2$.)
 \end{exe}
 
-\quad Rappelons qu'une algèbre de Lie est semisimple si $Rad(L)= \{0\}$. 
+Rappelons qu'une algèbre de Lie est semisimple si $Rad(L)= \{0\}$. 
 
 \begin{prop}
 \quad $L$ est semisimple si et seulement si le seul idéal abélien de $L$ est $\{0\}$.
 \end{prop}
 
 \begin{prv}
-\quad En effet, un idéal abélien sera automatiquement résoluble, donc inclue dans $Rad$ $L$. Et réciproquement, si $Rad(L) \neq \{0\}$ il est inclue $Rad$ $L$, cet idéal dera même le dernier terme non nul de la série dérivée.
+\quad En effet, un idéal abélien sera automatiquement résoluble, donc inclue dans $Rad(L)$. Et réciproquement, si $Rad(L) \neq \{0\}$ il est inclue $Rad(L)$, cet idéal sera même le dernier terme non nul de la série dérivée.
 \end{prv}
 
 \begin{thm}
@@ -1251,9 +1253,9 @@ $\begin{pmatrix}
 \end{thm}
 
 \begin{dem}
-\quad Suposons dabord que $Rad(L) = \{0\}$. Soit $S$ le noyaux de $\kappa$. Par définition, $tr(ad$ $x$ $ad$ $y)=0$, $\forall x \in S,y \in L$ (en particulier pour $y \in [L,L]$). Selon le critére de Cartan (\ref{cartan}), $ad_L$ $S$ est résoluble, par consequent $S$ est résoluble. Comme remarquer plus haut $S$ est un idéal de $L$, donc $S \subset Rad(L) = \{0\}$. Ainsi $\kappa$ est non dégénéré. 
+\quad Suposons d'abord que $Rad(L) = \{0\}$. Soit $S$ le noyaux de $\kappa$. Par définition, $tr(ad$ $x$ $ad$ $y)=0$, $\forall x \in S,y \in L$ (en particulier pour $y \in [L,L]$). Selon le critére de Cartan (\ref{cartan}), $ad_L$ $S$ est résoluble, par consequent $S$ est résoluble. Comme remarquer plus haut $S$ est un idéal de $L$, donc $S \subset Rad(L) = \{0\}$. Ainsi $\kappa$ est non dégénéré. 
 
-\quad Réciproquement, supposons que $S = \{0 \}$. Pour montrer que $L$ est semisimple, il suffit de prouver que tout idéal abélien $I$ de $L$ est inclue dans $S$. Soient $x \in I,y \in L$. Alors $ad$ $x$ $ad$ $y$ application de $L \to I$, et $(ad$ $x$ $ad$ $y)^2$ une application de $L$ dans $[I,I] =\{0\}$. Ceci nous dit que $ad$ $x$ $ad$ $y$ est nilpotent, donc que $0 = tr(ad$ $x$ $ad$ $y)= \kappa(x,y)$. Ainsi $I \subset S = \{0\}$. $\Box$
+Réciproquement, supposons que $S = \{0 \}$. Pour montrer que $L$ est semisimple, il suffit de prouver que tout idéal abélien $I$ de $L$ est inclue dans $S$. Soient $x \in I$ et $y \in L$. Alors $ad$ $x$ $ad$ $y$ application de $L \to I$, et $(ad$ $x$ $ad$ $y)^2$ une application de $L$ dans $[I,I] =\{0\}$. Ceci nous dit que $ad$ $x$ $ad$ $y$ est nilpotent, donc que $0 = tr(ad$ $x$ $ad$ $y)= \kappa(x,y)$. Ainsi $I \subset S = \{0\}$. $\Box$
 \end{dem}
 
 \begin{rmq}
@@ -1261,6 +1263,5 @@ $\begin{pmatrix}
 \end{rmq}
 
 Pour finir ce memoire, nous soulignerons que cette démonstration montrer que nous avons toujours $S \subset Rad(L)$. 
-
 
 \end{document}
