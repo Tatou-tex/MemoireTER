@@ -22,23 +22,23 @@
 \contentsline {rmq}{{Remarque :}{4}{}}{9}{rmq.4}
 \contentsline {shadedf}{{D\'efinition}{11}{}}{9}{shadedf.11}
 \contentsline {rmq}{{Remarque :}{5}{}}{9}{rmq.5}
-\contentsline {exe}{{Exemple : }{3}{}}{9}{exe.3}
-\contentsline {shadedf}{{D\'efinition}{12}{}}{9}{shadedf.12}
 \contentsline {ex}{{Exemples :}{4}{}}{9}{ex.4}
+\contentsline {shadedf}{{D\'efinition}{12}{}}{9}{shadedf.12}
+\contentsline {ex}{{Exemples :}{5}{}}{10}{ex.5}
 \contentsline {rmq}{{Remarque :}{6}{}}{10}{rmq.6}
 \contentsline {shadethm}{{Th\'eor\`eme}{1.{1}}{}}{10}{shadethm.1.1}
 \contentsline {shadedf}{{D\'efinition}{13}{}}{10}{shadedf.13}
-\contentsline {ex}{{Exemples :}{5}{}}{10}{ex.5}
+\contentsline {ex}{{Exemples :}{6}{}}{11}{ex.6}
 \contentsline {shadedf}{{D\'efinition}{14}{}}{11}{shadedf.14}
 \contentsline {rmq}{{Remarque :}{7}{}}{11}{rmq.7}
-\contentsline {exe}{{Exemple : }{4}{}}{11}{exe.4}
+\contentsline {exe}{{Exemple : }{3}{}}{11}{exe.3}
 \contentsline {shadeprop}{{Proposition}{1.{2}}{}}{12}{shadeprop.1.2}
 \contentsline {prv}{{Preuve :}{2}{}}{12}{prv.2}
 \contentsline {shadedf}{{D\'efinition}{15}{}}{12}{shadedf.15}
 \contentsline {shadedf}{{D\'efinition}{16}{}}{12}{shadedf.16}
-\contentsline {ex}{{Exemples :}{6}{}}{12}{ex.6}
+\contentsline {ex}{{Exemples :}{7}{}}{12}{ex.7}
 \contentsline {shadedf}{{D\'efinition}{17}{}}{13}{shadedf.17}
-\contentsline {ex}{{Exemples :}{7}{}}{13}{ex.7}
+\contentsline {ex}{{Exemples :}{8}{}}{13}{ex.8}
 \contentsline {shadeprop}{{Proposition}{1.{3}}{}}{13}{shadeprop.1.3}
 \contentsline {prv}{{Preuve :}{3}{}}{13}{prv.3}
 \contentsline {rmq}{{Remarque :}{8}{}}{13}{rmq.8}
@@ -64,14 +64,14 @@
 \contentsline {shadecor}{{Corollaire}{3.{2}}{}}{18}{shadecor.3.2}
 \contentsline {shadecor}{{Corollaire}{3.{3}}{}}{19}{shadecor.3.3}
 \contentsline {prv}{{Preuve :}{9}{Corollaire \ref {cor:L3}}}{19}{prv.9}
-\contentsline {exe}{{Exemple : }{5}{}}{19}{exe.5}
+\contentsline {exe}{{Exemple : }{4}{}}{19}{exe.4}
 \contentsline {shadedf}{{D\'efinition}{20}{}}{20}{shadedf.20}
 \contentsline {shadeprop}{{Proposition}{4.{1}}{}}{20}{shadeprop.4.1}
 \contentsline {rmq}{{Remarque :}{10}{}}{20}{rmq.10}
 \contentsline {shadeprop}{{Proposition}{4.{2}}{}}{21}{shadeprop.4.2}
 \contentsline {shadedf}{{D\'efinition}{21}{}}{21}{shadedf.21}
 \contentsline {prv}{{Preuve :}{10}{}}{21}{prv.10}
-\contentsline {ex}{{Exemples :}{8}{}}{22}{ex.8}
+\contentsline {ex}{{Exemples :}{9}{}}{22}{ex.9}
 \contentsline {shadelem}{{Lemme}{4.{1}}{}}{22}{shadelem.4.1}
 \contentsline {prv}{{Preuve :}{11}{}}{22}{prv.11}
 \contentsline {shadelem}{{Lemme}{4.{2}}{}}{22}{shadelem.4.2}
@@ -85,7 +85,7 @@
 \contentsline {prv}{{Preuve :}{14}{}}{24}{prv.14}
 \contentsline {shadelem}{{Lemme}{5.{1}}{}}{24}{shadelem.5.1}
 \contentsline {prv}{{Preuve :}{15}{}}{24}{prv.15}
-\contentsline {exe}{{Exemple : }{6}{}}{25}{exe.6}
+\contentsline {exe}{{Exemple : }{5}{}}{25}{exe.5}
 \contentsline {shadeprop}{{Proposition}{5.{2}}{}}{25}{shadeprop.5.2}
 \contentsline {prv}{{Preuve :}{16}{}}{25}{prv.16}
 \contentsline {shadethm}{{Th\'eor\`eme}{5.{1}}{}}{25}{shadethm.5.1}
