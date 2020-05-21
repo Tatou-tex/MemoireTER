@@ -524,6 +524,8 @@ Dans le cas où $K$ est une sous-algèbre, $N_{L}(K)$ est la plus grande sous-al
 
 \begin{ex}
 \begin{enumerate}
+\item Soient $L= \gl(n,\KK)$ et $K = \ssl(n,\KK)$. On a alors $N_L(K) = L$, car $\forall x \in L$, $\forall y \in K$, $tr([x,y]) = 0$, donc $[x,y] \in K$. De plus, comme $K$ une sous-algèbre de $L$, on a que $K$ est un idéal de $L$.
+
 \item L'algèbre des matrices diagonales $ \dd(n,\CC) \subset \gl(n,\CC)$ est un exemple d'auto-normalisateur.
 
 \item Soit $L$ une algèbre de Lie. Le centralisateur de $L$ est son centre, i.e. $C_L(L)=Z(L)$.
@@ -651,6 +653,16 @@ Cette constatation nous permet de déduire:
 \begin{center}
 $L^{(0)} = L$, $L^{(1)} = [L,L]$, $L^{(2)} = [L^{(1)},L^{(1)}] \cdots L^{(i)} = [L^{(i-1)},L^{(i-1)}]$.
 \end{center}
+
+Justifions que $L^{(i)}$ est un idéal $\forall i$:
+
+\quad Par réccurence, $L^{(0)} = L$ est évidament un idéal de $L$. Supposons que $L^{(i)}$ est un idéal de $L$. Montrons que $L^{(i+1)}$ est encore un idéal. Soit $x \in L$ et $[y,z] \in L^{(i+1)}$, avec $y,z \in L^{(i)}$:
+\begin{align*}
+[x,[y,z]] & = -[y,[z,x]]-[z,[x,y]]
+\end{align*}
+or comme $L^{(i)}$ est un idéal, on a $[z,x],[x,y] \in L^{(i)} \Rightarrow [y,[z,x]],[z,[x,y]] \in L^{(i)}$, donc $[x,[y,z]] \in L^{(i+1)}$. 
+
+Ainsi $L^{(i+1)}$ est un idéal de $L$. 
 
 \begin{df}
 \quad Une algèbre de Lie $L$ est dite \textbf{résoluble} si: $\exists n \in \NN $ tel que $L^{(n)} = \{0\}$.
@@ -859,7 +871,7 @@ On a finalement, $L.v = 0$ comme désiré. $\Box$
 Nous avons maintenant tout ce qu'il faut pour démontrer le Théorème d'Engel.
 
 \begin{dem}[Théorème d'Engel]
-\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotents. Par conséquent $ad$ $L \subset \gl(V)$  satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq \{0 \}$).
+\quad Soit $L$ une algèbre de Lie dont tous les éléments sont ad-nilpotents. Par conséquent $ad$ $L \subset \gl(L)$  satisfait les hypothèses du théorème (\ref{thm:E1}) (on peut supposer que $L \neq \{0 \}$).
 
 Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[L,x]=\{0\}$, i.e. $Z(L) \neq \{0\}$. Maintenant les éléments de $L/Z(L)$ sont ad-nilpotents et $dim$ $L/Z(L) < dim$ $L$.
 
@@ -870,7 +882,8 @@ Nous pouvons maintenant déduire un corollaire très utile, même équivalent à
 
 \begin{df}
 \quad Soit $V$ un espace vectoriel de dimension finie, un \textbf{drapeau de $V$} est une chaîne de sous-espaces vectoriels : $\{0\} = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$, avec $dim$ $V_{i} = i$.
-Si $x \in End$ $V$, on dit que $x$ est \textbf{stable} si $x.V_{i} \subset V_{i}$, $\forall i$.
+
+Si $x \in End$ $V$, on dit que $x$ \textbf{stablilise} (ou laisse invariant) le drapeau précédent si $x.V_{i} \subset V_{i}$, $\forall i$.
 \end{df}
 
 \begin{cor}\label{cor:E1}
@@ -900,9 +913,7 @@ En particulier, $Z(L) \neq \{ 0 \}$.
 
 Dans les chapitres précédent nous avons regardé les algèbres de Lie sur un corps $\KK$ quelconque. Dans la suite nous aurons besoin que $\KK$ soit de caractéristique $0$. En outre pour avoir à disposition les valeurs propres de $ad$ $x$ pour un $x$ quelconque, et non seulement pour $ad$ $x$ nilpotent, nous supposerons aussi que $\KK$ est algébriquement clos. Si tel n'ai pas le cas nous le préciserons.
 
-L'essence du Théorème d'Engel est l’existence d'un vecteur propre commun pour les endomorphismes nilpotents, pour les algèbres de Lie cela consiste en un endomorphisme nilpotent.
-
-Le théorème qui va suivre est de nature similaire. Cependant il nécessite une clôture algébrique afin d'assurer que $\KK$ contient toutes les valeurs propres. De même il est nécessaire d'avoir $car$ $\KK =0$.
+L'essence du Théorème d'Engel pour une algèbre de Lie nilpotente est l’existence d'un vecteur propre commun pour une algèbre de Lie composé endomorphismes nilpotents (Théorème (\ref{thm:E1})). Le théorème qui va suivre est de nature similaire. Cependant il nécessite une clôture algébrique afin d'assurer que $\KK$ contient toutes les valeurs propres. De même il est nécessaire d'avoir $car$ $\KK =0$.
 
 \begin{thm}\label{thm:L1}
 \quad Soit $L$ une sous-algèbre de Lie résoluble de $\gl(V)$, avec $dim$ $V < +\infty$. Si $V \neq \{0\}$, alors $V$ contient un vecteur propre commun pour tous les endomorphismes de $L$.
