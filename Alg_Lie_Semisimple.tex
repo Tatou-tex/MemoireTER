@@ -249,7 +249,7 @@ On dit que $B$ est :
 \quad Dans les espaces vectoriels de dimension paire, si $B$ est une forme bilinéaire antisymétrique et non dégénérée, alors il existe une base $\mathcal{B}$ dans laquelle la matrice de $B$ est : $[ B ]_\mathcal{B}=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} $.
 \end{rmq}
 
-$ C_{\ell} $: Parlons maintenant de l'\emph{\textbf{algèbre sympléctique}}, dans ce cas $dim$ $V=2 \ell$. L'algèbre symplétique est définie comme l'ensemble des endomorphismes $x \in \gl(V)$ qui satisfont $f(x(v),w)=-f(v,x(w))$, pour $f$ une forme bilinéaire \textit{antisymétrique} non-dégénérée. On la note $\ssp (2\ell,\KK)$.
+$ C_{\ell} $: Parlons maintenant de l'\emph{\textbf{algèbre symplectique}}, dans ce cas $dim$ $V=2 \ell$. L'algèbre sympletique est définie comme l'ensemble des endomorphismes $x \in \gl(V)$ qui satisfont $f(x(v),w)=-f(v,x(w))$, pour $f$ une forme bilinéaire \textit{antisymétrique} non-dégénérée. On la note $\ssp (2\ell,\KK)$.
 
 Montrons que $\ssp(2 \ell,\KK)$ est bien une sous-algèbre de $\gl(V)$. 
 Soit $ x,y \in \ssp (V) $:
@@ -264,7 +264,7 @@ En terme matriciel:
 $\ssp (2 \ell,\KK)= \left \{ x\in \gl(2\ell,\KK) \mid sx=-x^ts, \quad s=\begin{pmatrix} 0 & I_\ell \\ -I_\ell & 0 \end{pmatrix} \right \}$.
 \end{center}
 
-Cherchons maintenant une base de $\ssp(2 \ell,\KK)$, pour cela nous allons décrire de façon plus précise les matrices symplèctiques.
+Cherchons maintenant une base de $\ssp(2 \ell,\KK)$, pour cela nous allons décrire de façon plus précise les matrices symplectiques.
 
 Soit $ x=\begin{pmatrix} m & n \\ p & q \end{pmatrix}$ avec $m,n,p,q \in \gl(\ell, \KK)$. Après calcul nous trouvons le système suivant : 
 \[ \left\{
@@ -309,6 +309,7 @@ $\oo(2\ell+1,\KK)= \left \{ x \in \gl(2\ell+1, \KK) \mid sx= -x^ts,\quad s = \be
 \end{center}
 
 Soit $x \in \oo(2 \ell +1, \KK)$, il sera alors de la forme:
+\begin{center}
 $x = 
 \begin{pmatrix}
 a & b_{1} & b_{2} \\
@@ -316,6 +317,7 @@ c_{1} & m & n \\
 c_{2} & p & q 
 \end{pmatrix} $
 , avec $a \in \KK$, $b_{i}^t,c_{i} \in \KK^{\ell}$ et $m,n,p,q \in \gl(\ell,\KK)$.
+\end{center}
 
 En appliquant la condition $sx = -x^ts$ à $x$, on déduit le système suivant :
 \[ \left \{
@@ -341,7 +343,7 @@ e_{i+\ell,j}-e_{j+\ell,i} & \quad 2 \leq i < j \leq \ell+1
 \right \} \]
 Alors $dim$ $\oo(2\ell+1,\KK)=2\ell^2+\ell$.\\
 \\
-$ D_{l} $:  On nomme l'\textbf{\emph{algèbre orthogonale}} paire, notée  $\oo (2\ell,\KK)$, l'ensemble:
+$ D_{\ell} $:  On nomme l'\textbf{\emph{algèbre orthogonale}} paire, notée  $\oo (2\ell,\KK)$, l'ensemble:
 \begin{center}
 $ \left \{ x \in \gl(2\ell+1, \KK) \mid sx= -x^ts, \quad s =\begin{pmatrix} 0 & I_\ell \\ I_\ell & 0 \end{pmatrix} \right \}$
 \end{center}
@@ -447,7 +449,7 @@ Ainsi $ad$ $x$ est bien une dérivation.
 \end{df}
 
 \begin{df}
-\quad Un sous-ensemble $I$ de $L$ est un \textbf{idéal} de $L$ si $I$ est un sous-espace vectoriel de $L$ et si pour tous $x \in I$, $y \in L,$ on ai $[x, y] \in I$.
+\quad Un sous-ensemble $I$ de $L$ est un \textbf{idéal} de $L$ si $I$ est un sous-espace vectoriel de $L$ et si pour tous $x \in I$, $y \in L$, $[x, y] \in I$.
 \end{df}
 
 \begin{ex}
@@ -495,7 +497,7 @@ La construction de l'algèbre $L / I$ est formellement le même que le quotient 
 \end{df}
 
 \begin{rmq}
-\quad Dans le cas où $L$ n'est pas une algèbre de Lie simple et $dim>1$, il est possible de factoriser par un idéal propre non nul. On obtient ainsi une algèbre de Lie de dimension plus petite.
+\quad Dans le cas où $L$ n'est pas une algèbre de Lie simple et $dim$ $L > 1$, il est possible de factoriser par un idéal propre non nul. On obtient ainsi une algèbre de Lie de dimension plus petite.
 \end{rmq}
 
 Pour un usage ultérieur, nous allons introduire quelques notions connexes, analogues à celles de la théorie des groupes.
@@ -599,14 +601,16 @@ Soit $\phi: L_{1}  \to L_{2} $ un homomorphisme d'algèbre de Lie. Et soient $I$
 Alors: 
 \begin{itemize}
 \item[(a)] $L / Ker$ $\phi \cong Im$ $\phi$.
-\item[(b)] Si $I \subset Ker$ $\phi$, alors il existe un unique homomorphisme $\psi: L_{1} / I \to L_{2} $ tel que $\psi \circ \pi= \phi$.
+\item[(b)] Si $I \subset Ker$ $\phi$, alors il existe un unique homomorphisme 
+
+$\psi: L_{1} / I \to L_{2} $ tel que $\psi \circ \pi= \phi$.
 \item[(c)] Si $I \subset J$ alors $J / I$ est un idéal de $L/ I$ et $(L_{1} / I) /(J / I)\cong L_{1} / J$.
 \item[(d)] $(I+J) / J \cong I /(I \cap J)$.
 \end{itemize}
 \end{thm}
 
 \begin{df}
-\quad  Une \textbf{représentation} d’une algèbre de Lie $L$ est un homomorphisme $\phi: L \rightarrow \gl(V)$, où $V$ est un $\KK$-espace vectoriel.
+\quad  Une \textbf{représentation} d’une algèbre de Lie $L$ est un homomorphisme \\ $\phi: L \rightarrow \gl(V)$, où $V$ est un $\KK$-espace vectoriel.
 
 Si $\phi$ est injectif, on dit que c'est une représentation  \textbf{fidèle}.
 \end{df}
@@ -660,7 +664,7 @@ Justifions que $L^{(i)}$ est un idéal $\forall i$:
 \begin{align*}
 [x,[y,z]] & = -[y,[z,x]]-[z,[x,y]]
 \end{align*}
-or comme $L^{(i)}$ est un idéal, on a $[z,x],[x,y] \in L^{(i)} \Rightarrow [y,[z,x]],[z,[x,y]] \in L^{(i)}$, donc $[x,[y,z]] \in L^{(i+1)}$. 
+or comme $L^{(i)}$ est un idéal, on a $[z,x],[x,y] \in L^{(i)} \Rightarrow [y,[z,x]],[z,[x,y]] \in L^{(i)}$, donc $[x,[y,z]] \in L^{(i+1)}$. De plus, il est clair que $L^{(i+1)}$ est une sous-algèbre de $L$.
 
 Ainsi $L^{(i+1)}$ est un idéal de $L$. 
 
@@ -694,7 +698,7 @@ e_{il} &\quad si \quad j = k \\
 \end{aligned}
 \right. $
 \end{center}
-Le niveau de $e_{il}$ est égal à la somme des niveaux de $e_{ij}$ et de $e_{kl}$. Ainsi, le niveau du crochet de deux éléments de niveau $1$ sera $2$. On a donc que $L^{(2)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2$. Par réccurence on obtient que $L^{(i)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2^{i-1}$. Finalement, il est clair que $L^{(i)} = \{0\}$ quand $2^{i-1} > n$. Ainsi $\nn(n, \KK)$ est résoluble. 
+Le niveau de $e_{il}$ est égal à la somme des niveaux de $e_{ij}$ et de $e_{kl}$. Ainsi, le niveau du crochet de deux éléments de niveau $1$ sera $2$. On a donc que $L^{(2)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2$. Par réccurence on obtient que $L^{(i)}$ est engendré par les éléments $e_{ij}$ avec $j-i \geq 2^{i-1}$. Finalement, il est clair que $L^{(i)} = \{0\}$ quand $2^{i-1} > n-1$. Ainsi $\nn(n, \KK)$ est résoluble. 
 
 Donc $\ttt(n, \KK)$ est également résoluble. 
 
@@ -731,13 +735,13 @@ Soit $L$ une algèbre de Lie:
 \begin{ex}
 \begin{enumerate}
 \item Une algèbre de Lie simple est semisimple.
-En effet: $L$ est simple donc il n'a que deux idéaux $\{ 0 \}$ et $L$. Or $L$ n'est pas résoluble donc $Rad (L)= \{0\}$.
+En effet: $L$ est simple donc il n'a que deux idéaux $\{ 0 \}$ et $L$. Or $L$ n'est pas résoluble, donc $Rad (L)= \{0\}$.
 
 \item $L= \{0\}$ est semisimple.
 \end{enumerate}
 \end{ex}
 
-Notons que pour une algèbre de Lie arbitraire $L$ on a $L/(Rad (L))$ est semisimple (d'après la proposition (\ref{prop:solv}) (b)).
+Notons que pour une algèbre de Lie arbitraire $L$, on a $L/(Rad (L))$ est semisimple (d'après la proposition (\ref{prop:solv}) (b)).
 
 \subsection{Algèbres nilpotentes}
 
@@ -756,7 +760,7 @@ $L^{1}=L, \quad L^{2}=[L, L]=\left[L, L^{1}\right], \quad L^{3}=\left[L, L^{2}\r
 
 \item On clairement $L^{(i)} \subset L^{i}$, $\forall i$, donc les algèbres nilpotentes sont résolubles. Pour illustrer prenons la sous-algèbre des matrices strictement triangulaires supérieures $L = \nn(4,\KK)$. $L$ est engendré par $\{e_{12},e_{13},e_{14},e_{23},e_{24},e_{34}\}$. En procédant comme dans l'exemple de la section (\ref{d}) sur l'algèbre résoluble $\ttt(n, \KK)$, on trouve que $L^{1}$ est engendré par ${e_{13},e_{14},e_{24}}$, et $L^{2}$ est engendré par $\{e_{14}\}$, ainsi que $ L^{3}=0 $. Donc $L$ est nilpotente.
  
-\item Une algèbre résoluble n'est cependant pas nécessairement nilpotente. Considèrons $L = \ttt(3,\KK)$. Par le même type de calculs que précedament, on a: $L^2 = \nn(3, \KK) = \{ e_{12} \}$. Or $L^3 = [L,L^2]$, donc $[e_{11},e_{12}] = e_{12} \in L^3$. On déduit $L^i = \nn(3, \KK)$, $\forall i \geq 2$. L'algèbre $\ttt(3, \KK)$ n'est donc pas nilpotente.
+\item Une algèbre résoluble n'est cependant pas nécessairement nilpotente. Considérons $L = \ttt(3,\KK)$. Par le même type de calculs que précedament, on a: $L^2 = \nn(3, \KK) = \{ e_{12} \}$. Or $L^3 = [L,L^2]$, donc $[e_{11},e_{12}] = e_{12} \in L^3$. On déduit $L^i = \nn(3, \KK)$, $\forall i \geq 2$. L'algèbre $\ttt(3, \KK)$ n'est donc pas nilpotente.
 \end{enumerate} 
 \end{ex}
 
@@ -878,16 +882,22 @@ Conclusion, il existe $x \neq 0$ dans $L$ pour lequel $[L,x]=\{0\}$, i.e. $Z(L) 
 Par récurrence sur la dimension de $L$, on  trouve que $L/Z(L)$ est nilpotent. Par le (b) de la proposition (\ref{prop:nilp}), on a que $L$ est aussi nilpotente. $\Box$
 \end{dem}
 
-Nous pouvons maintenant déduire un corollaire très utile, même équivalent à celui du théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
+Nous pouvons maintenant déduire un corollaire très utile, même équivalent au théorème d'Engel. Mais avant nous avons besoin d'introduire la définition suivante:
 
 \begin{df}
-\quad Soit $V$ un espace vectoriel de dimension finie, un \textbf{drapeau de $V$} est une chaîne de sous-espaces vectoriels : $\{0\} = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$, avec $dim$ $V_{i} = i$.
+\quad Soit $V$ un espace vectoriel de dimension finie, un \textbf{drapeau de $V$} est une chaîne de sous-espaces vectoriels tels que:
+\begin{center}
+$\{0\} = V_{0} \subset V_{1} \subset \cdots \subset V_{n} = V$ et $dim$ $V_{i} = i$, $\forall i$.
+\end{center} 
 
-Si $x \in End$ $V$, on dit que $x$ \textbf{stablilise} (ou laisse invariant) le drapeau précédent si $x.V_{i} \subset V_{i}$, $\forall i$.
+Si $x \in End$ $V$, on dit que $x$ \textbf{stablilise} (ou \textbf{laisse invariant}) le drapeau précédent si:
+\center $x.V_{i} \subset V_{i}$, \quad $\forall i$.
 \end{df}
 
 \begin{cor}\label{cor:E1}
-\quad Soit $L$ une algèbre de Lie dont tous les éléments sont nilpotents. Il existe un drapeau $(V_{i})_{i}$ de $V$ stable dans $L$, avec $x.V_{i} \subset V_{i}$. En d'autre mots il existe une base de $V$ dans laquelle les matrices de $L$ appartiennent à $\nn(n,\KK)$.
+\quad Soit $L$ une algèbre de Lie dont tous les éléments sont nilpotents. Il existe un drapeau $(V_{i})_{i}$ de $V$ stable dans $L$, i.e. $x.V_{i} \subset V_{i}$, $\forall x \in L$. 
+
+En d'autres mots: il existe une base de $V$ dans laquelle les matrices de $L$ appartiennent à $\nn(n,\KK)$.
 \end{cor}
 
 \begin{prv}
@@ -977,7 +987,8 @@ De plus, si $\phi$ est la représentation adjointe, un drapeau de sous-espaces s
 On en déduit le corollaire suivant: 
 
 \begin{cor}\label{cor:L2}
-\quad Soit $L$ résoluble. Alors il existe une chaîne d'idéaux de $L$, $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$, telle que $dim$ $L_{i}=i$.
+\quad Soit $L$ résoluble. Alors il existe une chaîne d'idéaux de $L$ tels que:
+\center $\{0\}=L_{0} \subset L_{1} \subset \cdots \subset L_{n} = L$ et $dim$ $L_{i}=i$.
 \end{cor}
 
 \begin{cor}\label{cor:L3}
@@ -1005,8 +1016,9 @@ $y = \begin{pmatrix}
 0 & 0 & 2 
 \end{pmatrix}$
 \end{center}
-On a: $[x,y] = xy - yx = 
-\begin{pmatrix} 
+\begin{align*}
+\text{On a:} \qquad [x,y] & = xy - yx \\
+ & = \begin{pmatrix} 
 0 & 1 & 0 \\
 0 & 0 & 2 \\
 0 & 0 & 0 
@@ -1014,12 +1026,14 @@ On a: $[x,y] = xy - yx =
 0 & 0 & 0 \\
 0 & 0 & 1 \\
 2 & 0 & 0 
-\end{pmatrix} = \begin{pmatrix}
+\end{pmatrix}\\ & = \begin{pmatrix}
 0 & 1 & 0 \\
 0 & 0 & 1 \\
 -2 & 0 & 0 
-\end{pmatrix} = x $. (car $\overline{1} = -2$ dans $\FF_3$)\\
-\\
+\end{pmatrix} \\ & = x \quad 
+(\text{car } \overline{1} = -2 \text{ dans } \FF_3).
+\end{align*}
+
 Montrons que l'espace $L$ engendré par $x$ et $y$ est une sous-algèbre de Lie résoluble. Soient $z_1,z_2 \in L$, tels que $z_1 = a_1x+b_1y$ et $z_2=a_2x+b_2y$ avec $a_i,b_i \in \FF_3$. On a:
 \begin{align*}
 [z_1,z_2] &= [a_1x+b_1y,a_2x+b_y]\\
@@ -1028,9 +1042,12 @@ Montrons que l'espace $L$ engendré par $x$ et $y$ est une sous-algèbre de Lie 
 & = (a_1b_2-b_2a_1)x \in L
 \end{align*}
 
-$L$ est bien une sous-algèbre de Lie. De plus comme $[x,y]=x$, on a que $[L,L]$ est engendré par $x$. Ainsi $[L,L]$ est abélienne, donc $L$ résoluble. 
+$L$ est bien une sous-algèbre de Lie. De plus comme $[x,y]=x$, on a que $[L,L]$ est engendré par $x$. Ainsi $[L,L]$ est abélienne, donc $L$ résoluble.
 
-Pour la matrice $y$ il est facile de trouver des vecteurs propres. $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, $e_2 = \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}$ et $e_3 = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}$ sont des vecteurs propres de $y$ respectivement associés aux valeurs propres $0$, $1$ et $2$.
+\bigskip
+Pour la matrice $y$ il est facile de trouver des vecteurs propres.
+
+Posons $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, $e_2 = \begin{pmatrix}0 \\ 1 \\ 0 \end{pmatrix}$ et $e_3 = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}$. Alors $e_1$, $e_2$ et $e_3$ sont des vecteurs propres de $y$ respectivement associés aux valeurs propres $0$, $1$ et $2$.
 
 Regardons si $x$ a un vecteur propre commun avec $y$:
 \begin{center}
