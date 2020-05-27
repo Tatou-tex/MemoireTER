@@ -153,9 +153,11 @@ Dans tout le rapport $\KK$ sera un corps commutatif et $V$ un $\KK$-espace vecto
 \section{Définitions et exemples}
 \begin{df}
 \quad Une $\KK \textbf{-algèbre de Lie}$ est un $\KK$-espace vectoriel $L$ muni d'une opération:
-\begin{center}
-$[\enskip , \enskip ]: L\times L\to  L,$\quad$(x,y) \to [x,y] $ 
-\end{center}
+\begin{align*}
+[\enskip , \enskip ]: L \times L & \to  L \\
+(x , \enskip y) & \mapsto [x,y] 
+\end{align*}
+
 appelée crochet de Lie et vérifiant: 
 \begin{center}
 \begin{itemize}
@@ -198,7 +200,7 @@ $dim$ $\gl(V)= dim$ $\MM_{n}(\KK) = n^{2}$
 
 Nous pouvons aussi définir une base de $\gl(n,\KK)$ : $ \{ e_{ij} \}$, où $e_{ij}$ est la matrice dont le seul coefficient non nul est sur la $i$-ième ligne et la $j$-ième colonne.
  
-Nous avons donc $\gl(n,\KK)=vect\{ { e_{ij} \quad , 1\leq i , j \leq n }\}$. Regardons l'effet du crochet de Lie sur deux éléments de la base:
+Nous avons donc $\gl(n,\KK)=vect\{ { e_{ij}, \enskip 1 \leq i , j \leq n }\}$. Regardons l'effet du crochet de Lie sur deux éléments de la base:
 \begin{center}
 $(\star)$ \quad $ [ e_{ij},e_{kl} ] = e_{ij} e_{kl} - e_{kl} e_{ij}  = \delta_{jk}e_{il}  -  \delta_{li}e_{kj} $, avec 
 $ \delta_{ij} = \left \{
